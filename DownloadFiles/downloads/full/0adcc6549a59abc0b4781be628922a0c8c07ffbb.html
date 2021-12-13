@@ -1,0 +1,540 @@
+<html>
+<head>
+<title>Edit Outlook AutoComplete files from command-line with scripts.</title>
+<link rel="stylesheet" href="../main.css">
+<meta name="keywords" content="edit,nk2,command,line,script,delete,add,SMTP">
+<meta name="description" content="Write small scripts to edit/modify all NK2 files in your company from command-line.">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/edit_nk2_script.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/edit_nk2_script.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<img src="//www.nirsoft.net/banners/empty729x90.gif">
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+<a name="start"></a>
+<p>
+<h4 class="utilsubject">Edit NK2 files from command-line.</h4>
+<a href="outlook_nk2_edit.html">NK2Edit</a> allows you to write small and simple scripts that can add/modify/delete records in .NK2 files, and execute them from command-line, 
+without displaying any user interface.
+<br>
+
+
+<p>
+<h4 class="utilsubject">NK2Edit Script Features</h4>
+<ul class="spacelist">
+<li>NK2Edit scripts can be executed in the logon script of any computer (Starting from Windows 2000) without need of any installation. 
+<li>NK2Edit scripts allow you to automatically remove specific types of NK2 records.
+For example, you can choose to remove all SMTP addresses, or you can choose to remove all SMTP 
+addresses with specific domain.
+<li>NK2Edit scripts allow you to automatically fix common errors and problems that occurred in the NK2 files of all users
+in your organization. For example, if there was a change in any email address or in the MS-Exchange addresses,
+and the addresses stored in the NK2 are now invalid, simply create a script that modifies the old addresses to the new
+addresses, and the problem will be solved for all users at once.
+<li>NK2Edit scripts can also fix corrupted NK2 files: 
+When NK2Edit script modifies the NK2 file, it also rebuilds the entire file and removes 
+errors found in it, so if there is any problem in the NK2 file and Outlook cannot load it,
+there is a good chance that the problem will be solved after running the NK2 script.        
+</ul>
+
+
+<p>
+<h4 class="utilsubject">Getting Started</h4>
+
+A script can be executed from command-line by using /script parameter:
+<br>
+NK2Edit.exe /script &lt;Script Filename&gt; &lt;NK2 Source&gt; &lt;NK2 Destination&gt; 
+<p>
+The  &lt;Script Filename&gt;  parameter specifies the filename contains the script commands.
+The &lt;NK2 Source&gt; is the NK2 filename to load, and the &lt;NK2 Destination&gt; is the NK2 file to save your changes.
+If &lt;NK2 Destination&gt;  is not specified or you specify an empty string (&quot;&quot;), your changes will overwrite the filename specified in &lt;NK2 Source&gt; parameter.
+
+<br>
+You can use /LogFile parameter in order diagnose problems with your script. 
+When you use the /LogFile parameter, all actions made by the script are saved into the specified text file.
+
+<p>
+<b>For NK2Edit with commercial license:</b> You can also specify $default instead of the NK2 filename. 
+When $default is specified, NK2Edit uses the NK2 file of the default Outlook profile, in the context of the user that executes the script.
+ 
+
+<p>
+Examples:
+<br>NK2Edit.exe /script &quot;f:\scripts\myscript.txt&quot; &quot;C:\Documents and Settings\Administrator\Application Data\Microsoft\Outlook\Outlook.NK2&quot;
+<br>NK2Edit.exe /script &quot;f:\scripts\myscript.txt&quot; &quot;C:\Documents and Settings\Administrator\Application Data\Microsoft\Outlook\Outlook.NK2&quot; &quot;c:\temp\mynewfile.nk2&quot;
+<br>NK2Edit.exe /script &quot;f:\scripts\myscript.txt&quot; $default
+<br>NK2Edit.exe /script &quot;f:\scripts\myscript.txt&quot; $default &quot;&quot; /LogFile &quot;f:\%computername%.txt&quot;
+<br>NK2Edit.exe /script &quot;f:\scripts\myscript.txt&quot; &quot;C:\Documents and Settings\Administrator\Application Data\Microsoft\Outlook\Outlook.NK2&quot; &quot;&quot;  /NoBackup /LogFile &quot;f:\mylog.txt&quot;
+<p>
+
+Starting from version 2.65, you can also use /script_express command-line option, which allows you to run a script without using external script file:
+<br>
+NK2Edit.exe /script_express &lt;NK2 File&gt;  'Script Line 1' 'Script Line 2' 'Script Line 3' ...
+
+<p>
+When using /script_express, every script line must be delimited with single-quote characters and you should not add any other command-line options after the script lines.
+All other command-line options must precede the  /script_express command-line option.
+<p>
+Examples:
+<br>NK2Edit.exe /LogFile &quot;express_log.txt&quot; /script_express $default 'If AddressType equal &quot;EX&quot; EXToSMTP' 'If Domain Equal &quot;gmail.com&quot; Delete'
+<br>NK2Edit.exe /LogFile &quot;express_log.txt&quot; /AutoExportToMessageStore 1 /script_express $default 'If AddressType equal &quot;EX&quot; EXToSMTP'
+<br>NK2Edit.exe /script_express &quot;mynk2.nk2&quot; 'If Domain Equal &quot;gmail.com&quot; Delete' 'If Domain Equal &quot;yahoo.com&quot; Delete' 'If Domain Equal &quot;hotmail.com&quot; Delete'  
+
+<p>
+
+
+Currently, the scripts of NK2Edit support the following commands:
+<ul class="spacelist">
+<li>If - Allows you to remove and modify existing records according to the specified condition.
+<li>Add - Allows you add new records, by specifying address type, name, and email/Exchange string.
+<li>MergeMode - Specifies the merge mode for Add command.
+<li>RemoveQuotes - Removes the single-quotes from the display names and drop-down names in all NK2 records.
+<li>RemoveDoubleQuotes - Removes double-quotes from the display names and drop-down names in all NK2 records.
+<li>TrimSpaces - Trims leading/trailing whitespaces from the email addresses and display names in all NK2 records. 
+<li>RemoveProperty - Removes an optional property from all records of the AutoComplete file.
+<br>
+For example, in order to remove the certificate property 3a701102 (PR_USER_X509_CERTIFICATE):
+<br>
+RemoveProperty 3a701102
+<li>WaitOutlookClose - Waits until Outlook is closed. NK2Edit will not continue to the next script line until there is no running Outlook.exe process. 
+</ul>
+
+
+<p>
+It's possible that more commands will be added in the future according to customer's requests.
+
+<p>
+<h4 class="utilsubject">Automatic Backups</h4>
+When editing NK2 file using a script, NK2Edit automatically creates 2 types of backups:
+<ul class="spacelist">
+<li>First Time Backup: This backup is created only in the first time that NK2Edit overwrite existing NK2 file.
+The backup file is saved with .NK2Edit.First.bak extension. If you don't want that this backup will be created,
+use /nofirstbackup command-line option.
+<li>Every Save Backup: This backup is created on every time that changes are made into existing NK2 file.
+The backup file is saved with .NK2Edit.Cmd.bak extension. If you don't want that this backup will be created,
+use /nobackup command-line option.
+</ul>
+
+<p>
+It's highly recommended to allow NK2Edit to backup the NK2 files, unless you maintain your own backup system.
+Making backups for NK2 files insure that if something goes wrong with your scripts, you'll be able to restore
+the original NK2 file.
+
+<p>
+<h4 class="utilsubject">General guidelines for NK2Edit scripts</h4>
+<ul class="spacelist">
+<li>The script commands are not case sensitive.
+<li>You can edit the script with notepad or any other text editor and then save  it to Ascii or Unicode text file.
+If you have non-English characters in your script, it's recommended to save the file as Unicode.
+<li>You must write every command in separated line. 
+</ul>
+
+<p>
+<h4 class="utilsubject">Using the 'If' command</h4>
+The general syntax of 'If' command is:
+<br>
+If [FieldName] [Operator] [Value] [Action]
+<p>
+The [FieldName] may specify the following fields: AddressType, DisplayName, Email, DropDown, SearchString, Domain, DisplayType, Weight, SMTPEmail (SMTP email For Exchange records only), and EmailString.
+For DisplayType field, you can specify one of the following numeric values: 0 for Mail User, 1 for Distribution List, 5 for Private Distribution List, and 6 for Remote User.
+<br>
+The EmailString field (Added in version 2.95) is a combination of Email and SMTPEmail fields, which means that it returns the correct email address string for both SMTP and Exchange records.
+
+<p>
+The [Operator] may specify the following values: Contain, Equal, BeginWith, EndWith, NotContain, NotEqual, NotBeginWith, NotEndWith, Like, LengthRange, IsNumber.
+For Weight and DisplayType fields, the following operators also available: GreaterThan, LessThan.
+<p>
+The [Action] may contain one of the following actions to perform on the records:
+<ul class="spacelist">
+<li>Delete - Delete the record
+<li>NoDelete - Mark the record for 'no delete', so the record won't be deleted even if other
+'if' command request to delete it.
+<li>Set [FieldName] [Value] - Set a value into the specified string. [FieldName] may also contain 'weight' string, if you want to set the weight of the NK2 record.
+[FieldName] may also contain 'SendingFormat' string, if you want to set the sending format.
+For 'SendingFormat' field, you can use the following values:
+<ul class="spacelist">
+<li>0 - Send using Outlook Rich Text Format
+<li>1 - Let Outlook decide the best sending format
+<li>7 - Send Plain Text Only
+</ul>
+
+<li>Replace [Find String] [Replace String] - Replace a string with a new string in all major fields.
+<li>ReplaceField [FieldName] [Find String] [Replace String] - Replace a string with a new string only in the specified field.
+<li>ReplaceCS [Find String] [Replace String] - The same as Replace action, but the find string is case sensitive.
+<li>ReplaceFieldCS [FieldName] [Find String] [Replace String] - The same as ReplaceField action, but the find string is case sensitive.
+<li>AutoFill - Automatically fill the DropDown Name and Search String of the record with the right values.
+It's recommended to use this action after Set or ReplaceField actions.
+<li>EXToSMTP - Automatically convert EX record into SMTP record.
+This action only works if the NK2 record stores the correct SMTP address of the EX record. 
+(You can look at the 'SMTP Address' column of the EX record. If it's empty, it means that 
+you cannot use the EXToSMTP action)
+
+<li>RemoveLinkToProfile - This action removes the link to profile of SMTP addresses.
+This action is only relevant for SMTP records with 'Yes' value on the 'Linked To Profile' column.
+</ul>
+
+Here's some examples for using If command:
+<ul class="spacelist">
+<li>Put all emails with @mydomain.com domain at the top of the AutoComplete list, by giving them very high weight value:
+<br>
+if EmailString Contain &quot;@mydomain.com&quot; set weight 1000000
+
+<li>Delete all non-private distribution lists:
+<br>
+if DisplayType Equal 1 delete
+
+<li>Delete all SMTP addresses: 
+<br>
+If AddressType equal &quot;SMTP&quot; Delete
+
+<li>Delete all Exchange addresses: 
+<br>
+If AddressType equal &quot;EX&quot; Delete
+
+<li>Delete all Exchange addresses that their SMTP address is empty: 
+<br>
+if SMTPEmail Equal &quot;&quot; And AddressType Equal &quot;EX&quot; delete
+
+<li>Delete all records that their display name contains 0 - 7 characters:
+<br>
+If DisplayName LengthRange 0-7 Delete
+
+<li>Delete all SMTP addresses except of email addresses of hotmail.com and msn.com: (The NoDelete command overrides the delete command) 
+<br>If AddressType equal "SMTP" Delete
+<br>If Email Contain "@hotmail.com" NoDelete
+<br>If Email Contain "@msn.com" NoDelete
+
+<li>Delete all records that their domain name is gmail.com :
+<br>
+If Domain Equal &quot;gmail.com&quot; Delete
+
+<li>Delete all records that their email address ends with .co.uk
+<br>
+If EmailString EndWith &quot;.co.uk&quot; Delete
+
+<li>Delete all records begins with 'support' and ends with .net
+<br>
+if EmailString Like &quot;support*@*.net&quot; delete
+
+<li>Switch from specific MS-Exchange email to SMTP email address:
+<br>
+if Email Equal &quot;/o=First Organization/ou=first administrative group/cn=Recipients/cn=Nirs&quot; Set Email &quot;smtp_email@nirsoft.net&quot; Set AddressType &quot;SMTP&quot; AutoFill
+
+<li>Switch all MS-Exchange addresses to SMTP email addresses automatically:
+<br>
+If AddressType equal &quot;EX&quot; EXToSMTP
+
+<li>Set the sending format of all SMTP addresses to automatic (Let Outlook decide the best sending format)
+<br>
+If AddressType equal &quot;SMTP&quot; Set SendingFormat 1
+
+
+<li>Find the record with aaaaa@msn.com as email address, and change it to helloworld@msn.com as email and 'Hello World' as display name.
+Also, fill the appropriate values in the DropDown and Search string (AutoFill) .
+<br>If Email Equal "aaaaa@msn.com" Set Email "helloworld@msn.com" Set DisplayName "Hello World" AutoFill
+
+<li>Find the record with support@nirsoft.net as email address and delete it:
+<br>If EmailString Equal "support@nirsoft.net" Delete
+
+<li>Find all Exchange records (AddressType="EX") and change their address to a new server:
+<br>If AddressType equal "EX" ReplaceField "Email" "/o=First Organization/ou=first administrative group" "/O=NirSoft Organization/OU=NirSoft"
+
+<li>Find all SMTP email addresses with @domain1.com and change their domain to @domain2.com
+<br>Also, update the DropDown and Search strings according to the email address change (AutoFill).
+<br>If AddressType equal "SMTP" ReplaceField "Email" "@domain1.com" "@domain2.com" AutoFill
+
+<li>Replace 'NirSoft' string to 'SoftNir' in all SMTP records. This change will affect all major fields,
+including the display name and the email address.
+<br>If AddressType equal "SMTP" Replace "NirSoft" "SoftNir"
+
+<li>Delete all records that their search string is a number:
+<br>If SearchString IsNumber Delete
+
+
+</ul>
+
+
+<p>
+<h4 class="utilsubject">Using the 'Add' command</h4>
+The general syntax of 'Add' command is:
+<br>
+Add [Address Type] [Email/Exchange String] [Display Name] {Display Type} {Drop-Down Name} {Search String}
+
+<p>
+The {Display Type} is optional parameter that may contain the following values:
+0 for standard mail user (default), 1 for distribution list, and 6 for remote user
+<p>
+The {Drop-Down Name} {Search String} fields are optional fields. If you don't specify them, NK2Edit automatically updates them according to the [Email/Exchange String] and [Display Name] fields.
+
+<p>
+Examples for using Add command:
+<ul class="spacelist">
+<li>Add "SMTP" "nirsofer@yahoo.com" "Nir Sofer"
+<li>Add "EX" "/o=First Organization/ou=first administrative group/cn=Recipients/cn=Nirs" "Nir Sofer"
+<li>Add "EX" "/o=First Organization/ou=first administrative group/cn=Recipients/cn=everyone" "Everyone" 1
+<li>Add &quot;EX&quot; &quot;/o=First Organization/ou=Exchange Administrative Group/cn=Recipients/cn=John Doe1&quot;  &quot;John Doe&quot; 0 &quot;John Doe &lt;John Doe&gt;&quot; &quot;John Doe&quot;
+</ul>
+
+<p>
+If the Email address or Exchange account already exist, the MergeMode is used to determine whether to add the record,
+replace it with the old one, or discard it.
+
+<p>
+<h4 class="utilsubject">Using the 'MergeMode' command</h4>
+The general syntax of 'MergeMode' command is:
+<br>
+MergeMode [Mode Number] 
+
+<p>
+Examples for using MergeMode command:
+<ul class="spacelist">
+<li>Specifies that the Add command should always add the record, even if it already exist (duplicates might be created):
+<br>MergeMode 1
+<li>Specifies that if the email already exists, the Add command should replace it with the new one:
+<br>MergeMode 2
+<li>Specifies that if the email already exists, the Add command should not add the record:
+<br>MergeMode 3
+
+</ul>
+
+<p>
+<h4 class="utilsubject">Script example with all commands</h4>
+<pre class="srcbg">
+if AddressType Equal "SMTP" Delete
+if Email Contain "@hotmail.com" NoDelete
+if Email Contain "@msn.com" NoDelete
+if Email Equal "abcdefg@msn.com" Set Email "helloworld@msn.com" Set DisplayName "Hello World"
+MergeMode 2
+Add "SMTP" "nirsofer@yahoo.com" "Nir Sofer"
+Add "SMTP" "abcdefg@hotmail.com" "abcdefg"
+Add "EX" "/o=First Organization/ou=first administrative group/cn=Recipients/cn=Nirs" "Nir Sofer"
+Add "EX" "/o=First Organization/ou=first administrative group/cn=Recipients/cn=everyone" "Everyone" 1
+If AddressType equal "EX" ReplaceField "Email" "/o=First Organization/ou=first administrative group" "/O=NirSoft Organization/OU=NirSoft"
+If AddressType equal "SMTP" ReplaceField "Email" "@domain1.com" "@domain2.com" AutoFill
+If AddressType equal "SMTP" Replace "NirSoft" "SoftNir"
+RemoveQuotes
+</pre>
+
+<a name="ScriptWithParameters"></a>
+<p>
+<h4 class="utilsubject">Script With Parameters</h4>
+Starting from version 1.85, you can also create a script 
+with parameters that are loaded from comma-delimited (csv) or tab-delimited text file.
+<br>
+In the script file, a parameter is specified as *X. *0 for the first parameter, *1 for the
+second parameter, *2 for the third parameter, and so on (up to 10 parameters).
+<br>
+The parameters file (input file) is specified with the /ScriptInput command-line option.
+<p>
+For example, you can create a script with the following script line:
+<br>
+if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=*0&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=*1&quot; AutoFill
+<p>
+In the input file, you specify the 2 parameters for every line, delimited by comma (You can also use tab-delimited file, NK2Edit automatically detects the file type):
+<br>user01, newuser01
+<br>user02, newuser02
+<br>user03, newuser03
+<br>user04, newuser04
+
+<p>
+In order the execute the script with the input file, use both /ScriptInput and /script command-line option:
+<br>
+NK2Edit.exe /ScriptInput &quot;inputfile.txt&quot; /script &quot;f:\scripts\myscript.txt&quot; $default &quot;&quot;
+
+<p>
+In the above example, NK2Edit will execute the specified script line 4 times,
+each time with different parameters values taken from the input file.
+So it's exactly like executing the following 4 script lines:
+<br>if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=user01&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser01&quot; AutoFill
+<br>if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=user02&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser02&quot; AutoFill
+<br>if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=user03&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser03&quot; AutoFill
+<br>if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=user04&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser04&quot; AutoFill
+
+<p>
+
+When executing the script, the nk2 record with /o=Domain/ou=First Administrative Group/cn=Recipients/cn=user01
+will be replaced with  /o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser01
+, nk2 record with /o=Domain/ou=First Administrative Group/cn=Recipients/cn=user02 
+will be replaced with /o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser02,
+and so on...
+
+
+
+<p>
+<b><a href="outlook_nk2_edit.html">Return to NK2Edit introduction page</a></b>
+<p>
+
+<table>
+<tr>
+<td>
+
+</table>
+
+
+<a name="end"></a>
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

@@ -1,0 +1,837 @@
+<!doctype html>
+<html>
+<head>
+<title>GetNir: Command line tool to extract values from tab-delimited and comma-delimited data</title>
+<meta name="keywords" content="command,line,tool,windows,csv,tab-delimited,extract,values,stdin,stdout">
+<meta name="description" content="Command line tool for Windows to extract values from tab-delimited and comma-delimited data">
+<link rel="stylesheet" href="../main.css">
+
+<meta property="og:title" content="GetNir: Command line tool to extract values from tab-delimited and comma-delimited data" />
+<meta property="og:description" content="GetNir is a command-line tool for Windows that receives tab-delimited or comma-delimited data from other NirSoft tools through Standard input (stdin) , finds and extracts the desired values according to the specified filter expression and column names, and then sends these values to the Standard output (stdout)." />
+<meta property="og:image" content="https://www.nirsoft.net/utils/getnir_soundvolumeview.png" />
+<meta property="og:image:width" content="588" />
+<meta property="og:image:height" content="168" />
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/get_nir_command_line_tool.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/get_nir_command_line_tool.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+
+<table class="utilcaption">
+<tr>
+<td>GetNir v1.01
+<br/>
+Copyright (c) 2019 - 2021 Nir Sofer
+
+</td>
+</tr>
+
+</table>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" async="async" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=nirsofer"></script>
+<!-- AddThis Button END -->
+
+
+
+
+<p/>
+<h4 class="utilsubject">Description</h4>
+GetNir is a command-line tool for Windows that receives tab-delimited or comma-delimited data from other NirSoft tools through Standard input (stdin) ,
+finds and extracts the desired values according to the specified filter expression and column names, and then sends these values to the Standard output (stdout).
+
+
+<p/>
+<h4 class="utilsubject">Versions History</h4>
+<ul>
+
+<li>Version 1.01:
+<ul>
+<li>You can now specify @NumberOfRecords@ as the column name in order to get the number of found records, instead of getting the actual records.
+</li>
+
+<li>For example: the following command will display the number of opened Chrome windows:
+<br/>
+GUIPropView.exe /stab &quot;&quot; | GetNir @NumberOfRecords@ &quot;Visible=Yes && ProcessFilename Like *chrome.exe&quot;
+</li>
+
+</ul>
+
+</li>
+
+
+
+<li>Version 1.00 - First release.
+
+</li>
+</ul>
+
+
+
+<p/>
+<img src="getnir_soundvolumeview.png" />
+
+
+<p/>
+<h4 class="utilsubject">Examples for what you can do with GetNir</h4>
+
+
+<table class="mytable1">
+<tr>
+<td>
+Get the current version of Google Chrome from the <a href="https://www.nirsoft.net/utils/uninstall_view.html">installed applications list generated by UninstallView</a>
+</td>
+
+<td class="tdnowrap">
+UninstallView.exe /stab &quot;&quot; | GetNir &quot;Display Version&quot; &quot;'Registry Name'='Google Chrome'&quot;
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Get the install location of Adobe Reader from the <a href="https://www.nirsoft.net/utils/uninstall_view.html">installed applications list generated by UninstallView</a>:
+</td>
+
+<td class="tdnowrap">
+UninstallView.exe /stab &quot;&quot; | GetNir &quot;Install Location&quot; &quot;'Display Name' Like 'Adobe Reader*'&quot;
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+Get current application sound volume of VLC media player (in percent) , <a href="https://www.nirsoft.net/utils/sound_volume_view.html">from SoundVolumeView tool</a>
+</td>
+
+<td class="tdnowrap">
+SoundVolumeView.exe /stab &quot;&quot; | GetNir &quot;Volume Percent&quot; &quot;'Process Path' LIKE *vlc.exe&quot;
+</td>
+
+</tr>
+
+
+
+
+<tr>
+<td>
+Get current sound volume (in percent) of Speakers device, <a href="https://www.nirsoft.net/utils/sound_volume_view.html">from SoundVolumeView tool</a>
+
+</td>
+
+<td class="tdnowrap">
+SoundVolumeView.exe /stab &quot;&quot; | GetNir &quot;Volume Percent&quot; &quot;Name=Speakers && Type=Device&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get name and device name of the default audio render device <a href="https://www.nirsoft.net/utils/sound_volume_view.html">from SoundVolumeView tool</a>
+</td>
+
+<td class="tdnowrap">
+SoundVolumeView.exe /stab &quot;&quot; | GetNir &quot;Name,DeviceName&quot; &quot;Default=Render&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the email address of 'Nir Sofer' <a href="https://www.nirsoft.net/utils/outlook_address_book_view.html">from the address book of Outlook</a>, using OutlookAddressBookView tool
+</td>
+
+<td class="tdnowrap">
+OutlookAddressBookView.exe /stab &quot;&quot; | GetNir &quot;EmailAddress&quot; &quot;DisplayName='Nir Sofer'&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the email address of 'Nir Sofer' (SMTP Record) from the <a href="https://www.nirsoft.net/utils/outlook_nk2_edit.html">AutoComplete file of Microsoft Outlook</a>, using the NK2Edit tool
+</td>
+
+
+<td class="tdnowrap">
+nk2edit.exe /AddExportHeaderLine 1 /scomma &quot;&quot; | GetNir &quot;Email/Exchange String&quot; &quot;DisplayName='Nir Sofer'&quot;
+</td>
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the name of the person who has the support@nirsoft.net email address from the <a href="https://www.nirsoft.net/utils/outlook_nk2_edit.html">AutoComplete file of Microsoft Outlook</a>, using the NK2Edit tool
+</td>
+
+
+<td class="tdnowrap">
+nk2edit.exe /AddExportHeaderLine 1 /scomma &quot;&quot; | GetNir &quot;DisplayName&quot; &quot;Email/ExchangeString='support@nirsoft.net' || SMTPAddress='support@nirsoft.net'&quot;
+</td>
+</tr>
+
+
+<tr>
+
+<td>
+Get the current <a href="https://www.nirsoft.net/utils/control_my_monitor.html">brightness of your monitor</a>, using ControlMyMonitor tool
+</td>
+
+<td class="tdnowrap">
+ControlMyMonitor.exe /stab &quot;&quot; | GetNir &quot;Current Value&quot; &quot;VCPCode=10&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the process ID and process name of the processes that listen to TCP ports 135-139, <a href="https://www.nirsoft.net/utils/cports.html">using CurrPorts tool</a>:
+</td>
+
+<td class="tdnowrap">
+cports.exe /stab &quot;&quot; | GetNir &quotProcess ID,Process Path&quot &quot;LocalPort >= 135 &amp;&amp; LocalPort <= 139 &amp;&amp; State=Listening&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get current CPU usage of Explorer.exe from the task manager of Windows, using SysExporter tool:
+</td>
+
+<td class="tdnowrap">
+sysexp.exe /Title &quot;Windows Task Manager&quot; /class SysListView32 /Visible Yes /stab &quot;&quot; | GetNir &quot;CPU&quot; &quot;'Image Name'=Explorer.exe&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the serial number of plugged USB device (only if the serial number is available), using the <a href="https://www.nirsoft.net/utils/usb_devices_view.html">USBDeview tool</a>:
+
+</td>
+
+<td class="tdnowrap">
+USBDeview.exe /stab &quot;&quot; | GetNir &quot;Serial Number&quot; &quot;Connected=Yes&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the drive letter of plugged USB Mass Storage device, using the <a href="https://www.nirsoft.net/utils/usb_devices_view.html">USBDeview tool</a>:
+</td>
+
+<td class="tdnowrap">
+USBDeview.exe /stab &quot;&quot; | GetNir &quot;Drive Letter&quot; &quot;Connected=Yes AND 'Device Type'='Mass Storage'&quot;
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Get RSSI value of the MyNet wireless access point, using <a href="https://www.nirsoft.net/utils/wifi_information_view.html">WifiInfoView tool</a>:
+
+</td>
+
+<td class="tdnowrap">
+WifiInfoView.exe /stab &quot;&quot; | GetNir &quot;RSSI&quot; &quot;SSID=MyNet&quot;
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Get the <a href="https://www.nirsoft.net/utils/wifi_information_view.html">SSID, MAC Address, and RSSI of the access point</a> you are connected at this moment
+</td>
+
+<td class="tdnowrap">
+WifiInfoView.exe /stab &quot;&quot; | GetNir &quot;SSID,MACAddress,RSSI&quot; &quot;Connected=Yes&quot;
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Get the cookies of youtube.com stored in Chrome Web browser, using the ChromeCookiesView tool 
+</td>
+
+<td class="tdnowrap">
+ChromeCookiesView.exe /stab &quot;&quot; | GetNir &quot;Name, Value&quot; &quot;'Host Name' LIKE *youtube.com&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the <a href="https://www.nirsoft.net/utils/process_tcp_summary.html">number of established TCP connections</a> of every firefox.exe process, using ProcessTCPSummary tool
+</td>
+
+<td class="tdnowrap">
+ProcessTCPSummary.exe /stab &quot;&quot; | GetNir &quot;Process ID,TCP Established&quot; &quot;'Process Name' = firefox.exe&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the current <a href="https://www.nirsoft.net/utils/app_network_counter.html">download bandwidth</a> of Firefox Web browser, using AppNetworkCounter (Requires to run the command-prompt window as Administrator)
+
+</td>
+
+<td class="tdnowrap">
+AppNetworkCounter.exe /CaptureTime 5000 /scomma &quot;&quot; | GetNir &quot;ReceiveSpeed&quot; &quot;ApplicationName=firefox.exe&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the process name and path of <a href="https://www.nirsoft.net/utils/app_network_counter.html">application that uses the most download bandwidth</a> (in the last 5 seconds).
+AppNetworkCounter sorts the output so the application with the most &quot;Received Bytes&quot; will be in the first line and then GetNir displays the application name and path only of the first line (/TopLines 1) 
+</td>
+
+<td class="tdnowrap">
+AppNetworkCounter.exe /CaptureTime 5000 /Sort &quot;~Received Bytes&quot; /scomma &quot;&quot; | GetNir &quot;ApplicationName,ApplicationPath&quot; &quot;&quot; /TopLines 1
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the name of your active display adapters, using <a href="https://www.nirsoft.net/utils/device_manager_view.html">DevManView tool</a> (Requires to run the command-prompt window as Administrator)
+</td>
+
+<td class="tdnowrap">
+DevManView.exe /AddExportHeaderLine 1 /stab &quot;&quot; | GetNir &quot;DeviceName&quot; &quot;DeviceTypeCode=Display And Connected=Yes&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the drive letter and name of active CD-ROM/DVD devices, using <a href="https://www.nirsoft.net/utils/device_manager_view.html">DevManView tool</a> (Requires to run the command-prompt window as Administrator)
+</td>
+
+<td class="tdnowrap">
+DevManView.exe /AddExportHeaderLine 1 /stab &quot;&quot; | GetNir &quot;DriveLetter,DeviceName&quot; &quot;DeviceTypeCode=CDROM And Connected=Yes&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the window title of Chrome Web browser, using <a href="https://www.nirsoft.net/utils/gui_prop_view.html">GUIPropView</a>
+</td>
+
+<td class="tdnowrap">
+GUIPropView.exe /stab &quot;&quot; | GetNir &quot;Title&quot; &quot;Visible=Yes && ProcessFilename Like *chrome.exe&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Scan your local network and get name, MAC address, and manufacturer name of the device in IP address 192.168.0.36, using <a href="https://www.nirsoft.net/utils/wireless_network_watcher.html">Wireless Network Watcher</a>:
+</td>
+
+<td class="tdnowrap">
+WNetWatcher.exe /stab &quot;&quot; | GetNir &quot;DeviceName,MACAddress,NetworkAdapterCompany&quot; &quot;IPAddress=192.168.0.36&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get your current <a href="https://www.nirsoft.net/utils/wireless_connection_information.html">wireless network connection</a> speed, using WirelessConnectionInfo tool:
+</td>
+
+<td class="tdnowrap">
+WirelessConnectionInfo.exe /stab &quot;&quot; | GetNir &quot;Value&quot; &quot;Description='Receiving rate'&quot;
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the process name and path of the <a href="https://www.nirsoft.net/utils/app_read_write_counter.html">application with most active disk-write activity</a> in the last 5 seconds. The output is first sorted by AppReadWriteCounter so
+the application with the largest &quot;Write Bytes&quot; is in the first line, and then GetNir takes only the first line (/TopLines 1)
+</td>
+
+<td class="tdnowrap">
+AppReadWriteCounter.exe /CaptureTime 5000 /sort &quot;~Write Bytes&quot; /scomma &quot;&quot; | GetNir &quot;ApplicationName,ApplicationPath&quot; &quot;&quot; /TopLines 1
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Get the tasks that are currently running and their description, <a href="https://www.nirsoft.net/utils/task_scheduler_view.html">using TaskSchedulerView</a>
+</td>
+
+<td class="tdnowrap">
+TaskSchedulerView.exe /stab &quot;&quot; | GetNir &quot;TaskName,Description&quot; &quot;Status=Running&quot;
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Get the next 3 tasks (Task Name and Next Run Time) that the <a href="https://www.nirsoft.net/utils/task_scheduler_view.html">Task Scheduler of Windows<a> going to run.
+</td>
+
+<td class="tdnowrap">
+TaskSchedulerView.exe /sort &quot;Next Run&quot; /stab &quot;&quot; | GetNir &quot;TaskName,NextRun&quot; &quot;NextRun != ''&quot; /TopLines 3
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Get the command-line that is used to open .mp4 files on your system, using the <a href="https://www.nirsoft.net/utils/file_types_manager.html">FileTypesMan tool</a>. (Requires to run the command-prompt window as Administrator)
+</td>
+
+<td class="tdnowrap">
+FileTypesMan.exe /SelectedExt .mp4 /AddExportHeaderLine 1 /scomma &quot;&quot; | GetNir &quot;Command-Line&quot; &quot;Name=Open&quot;
+</td>
+
+</tr>
+
+
+
+
+</table>
+
+
+
+
+<p/>
+Be aware that the above examples will work only when the 'Add Header Line To CSV/Tab-Delimited File' option is turned on.
+
+
+
+<p/>
+<h4 class="utilsubject">System Requirements</h4>
+This tool works on any version of Windows - From Windows XP and up to Windows 10. 
+
+
+<p/>
+<h4 class="utilsubject">Usage</h4>
+GetNir [Display Columns] [Filter Expression] {More Options}
+<p/>
+
+The [Display Columns] contains the name of one or more columns (comma-delimited list) to display. For example:
+&quot;Install Location&quot;  &nbsp;  &quot;Display Name,Display Version&quot;  
+<br/>
+You can use the column numbers instead of column names, for example: &quot;Column1,Column3&quot;
+
+<br/>
+If [Display Columns] is &quot;@NumberOfRecords@&quot;, GetNir will display the number of found records.
+
+<br/>
+If [Display Columns] is an empty string, GetNir will display the entire csv/tab-delimited line.
+<p/>
+The [Filter Expression] is an expression similar to the SQL WHERE clause that filters the records you want to see. 
+<p/>
+In the {More Options} section you can use the following options:
+
+<p/>
+<table class="mytable1">
+<tr>
+<td class="tdnowrap">
+/NoColumnNames  
+<td>
+If the first line of the tab-delimited/comma-delimited data doesn't contain the column/field names (In NirSoft tools - 'Add Header Line To CSV/Tab-Delimited File' option is turned off)
+you should specify the /NoColumnNames command-line option.
+<br/>
+In the [Display Columns] and [Filter Expression] you should use Column1 as name of the first column, Column2 as name of the second column, and so on...
+
+
+<tr>
+<td class="tdnowrap">
+/TopLines {Number Of Lines}  
+<td>
+Display only the top xx lines.
+
+</table>
+
+
+
+<p/>
+<h4 class="utilsubject">The Filter Expression</h4>
+<ul class="spacelist">
+<li>The filter expression is similar to the SQL WHERE clause and allows you to filter the records you want to see.
+<li>You must put the entire filter expression in double quotes (&quot;&quot;) and also every field name or string in the expression that contains one or more
+space characters must be in single quotes ('').
+
+<li>When a column name has space characters, you can omit the spaces and then there is no need to put the name in single quotes.
+For example: Instead of 'Display Name', you can specify the column name as DisplayName.
+
+<li>The following operators are supported: = &nbsp; != &nbsp; &gt; &nbsp; &lt; &nbsp; &gt;=  &nbsp; &lt;=  &nbsp;  Like Contains BeginsWith EndsWith Not And Or .
+You can use &amp;&amp; instead of 'And' ,  || instead of  'Or', like in C/C++/C#/Java.
+
+<li>The gt; &nbsp; &lt; &nbsp; &gt;=  &nbsp; &lt;=  operators can be used for numeric columns to get the desired range, for example: &quot;Channel >= 1 && Channel <= 3&quot;
+<li>The Like operator checks a string using a wildcard, for example: &quot;DisplayName LIKE 'Mozilla Firefox*'&quot;   &nbsp;  &quot;SSID LIKE 'MyNet?'&quot;
+<li>The BeginsWith operator checks if a string begins with the specified string, for example: &quot;DisplayName BeginsWith 'Mozilla Firefox'&quot;
+<li>The EndsWith operator checks if a string ends with the specified string, for example: &quot;'Host Name' EndsWith .com&quot;
+<li>The Contains operator checks if a string contains the  specified string, for example: &quot;'Host Name' Contains Google&quot;
+<li>You can use the NOT operator to reverse the result, for example... If you want to get all records that their 'Host Name' doesn't contain the 'Google' string:
+&quot;'Host Name' Not Contains Google&quot;
+<li>You can use column numbers instead of column names. Column1 for the first column, Column2 for the second column, and so on.
+For example: &quot;Column1=5 && Column3=10&quot;
+</ul>
+
+<p/>
+<h4 class="utilsubject">Using GetNir With NirSoft Tools</h4>
+In most NirSoft tools you can send tab-delimited or comma-delimited data to stdout by specifying empty string (&quot;&quot;) instead of filename, for example:
+<br/>
+UninstallView.exe /stab &quot;&quot; 
+
+<p/>
+This feature allows you work directly with GetNir without writing the data to a file.
+<p/>
+In order to type the correct column name to display and filter, you have to look at the names of the columns as they appear in the GUI and inside exported files:
+<br/>
+<img src="getnir_uninstallview.png" />
+
+<p/>
+So now let's say that you want to get the uninstall string of Google Chrome from the UninstallView tool:
+<br/>
+UninstallView.exe /stab &quot;&quot; | GetNir &quot;Uninstall String&quot; &quot;'Registry Name'='Google Chrome'&quot;
+<p/>
+In the above command, UninstallView sends to stdout the list of all installed programs, as tab-delimited format.
+GetNir receives the data from UninstallView and searches the record with 'Google Chrome' value under the 'Registry Name' column.
+When GetNir finds the record, it display the value of 'Uninstall String' column:
+<br/>
+<img src="getnir_uninstallview2.png">
+
+<p/>
+You can also use the column names without space characters, for example:
+<br/>
+UninstallView.exe /stab &quot;&quot; | GetNir &quot;UninstallString&quot; &quot;RegistryName='Google Chrome'&quot;
+
+
+<p/>
+If you already have the csv/tab-delimited data on a file, you can also use GetNir to extract the desired value from the file, for example:
+<br/>
+GetNir &quot;UninstallString&quot; &quot;RegistryName='Google Chrome'&quot; &lt; uninstallview.csv
+
+
+
+
+<p/>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. 
+You are allowed to freely distribute this utility via CD-ROM, DVD,
+Internet, or in any other way, as long as you don't charge anything for this and you don't
+sell it or distribute it as a part of commercial product.  
+If you distribute this utility, you must include all files in
+the distribution package, without any modification !
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Disclaimer</h4>
+The software is provided &quot;AS IS&quot; without any warranty, either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose. The author will not be liable for any special, incidental,
+consequential or indirect damages due to loss of data or any other reason. 
+
+<p/>
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, 
+you can send a message to <a href="mailto:support@nirsoft.net">support@nirsoft.net</a>
+
+
+
+
+
+
+<p/>
+
+<table class="downloadline1">
+<tr><td>
+<a href="getnir.zip">Download GetNir</a>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>

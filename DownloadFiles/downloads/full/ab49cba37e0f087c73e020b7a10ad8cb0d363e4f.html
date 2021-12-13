@@ -1,0 +1,629 @@
+<!doctype html>
+<html>
+<head>
+<title>View Windows Defender threats on local and remote computer</title>
+<meta name="keywords" content="view,threats,Windows,Defender,local,remote,set,action,Allow,Quarantine" />
+<meta name="description" content="Tool for Windows 10 that displays the list of all threats detected by Windows Defender Antivirus and allows you to easily set the default action (Allow, Quarantine, Clean, Remove, Block, or No Action) for multiple threats at once." />
+<link rel="stylesheet" href="../main.css" />
+
+
+<meta property="og:title" content="View Windows Defender threats on local and remote computer" />
+<meta property="og:description" content="Tool for Windows 10 that displays the list of all threats detected by Windows Defender Antivirus and allows you to easily set the default action (Allow, Quarantine, Clean, Remove, Block, or No Action) for multiple threats at once." />
+<meta property="og:image" content="https://www.nirsoft.net/utils/windefthreatsview.png" />
+<meta property="og:image:width" content="728" />
+<meta property="og:image:height" content="401" />
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/windows_defender_threats_view.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/windows_defender_threats_view.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" />
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+<table border="0" class="utilcaption" cellspacing="3">
+<tr><td><img src="windefthreatsview_icon.png" /></td>
+<td>WinDefThreatsView v1.12
+<br/>
+Copyright (c) 2019 - 2021 Nir Sofer
+
+
+
+</td>
+</tr>
+
+
+</table>
+
+
+
+
+<p/>
+<h4 class="utilsubject">Description</h4>
+WinDefThreatsView is tool for Windows 10 that displays the list of all threats detected by Windows Defender Antivirus and allows you to easily set the default action (Allow, Quarantine, Clean, Remove, Block, or No Action) for multiple threats at once.
+You can use this tool on your local computer and also on remote computer, as long as you have permission to access WMI on the remote machine. 
+<br/>
+For every threat, the following information is displayed: Filename, Threat Name, Severity, Process Name, Initial Detect Time, Status Change Time, Remediation Time, Threat ID, Threat Status, Default Threat Action, and more...
+
+<p/>
+
+<img src="windefthreatsview.png" alt="Windows Defender Threats Viewer" />
+
+<p/>
+<h4 class="utilsubject">System Requirements</h4>
+This tool works only on Windows 10 and Windows 8.1. Both 32-bit and 64-bit systems are supported. 
+You can also use this tool on Windows 7 to connect a Windows 10 remote computer.
+
+
+
+<p/>
+<h4 class="utilsubject">Versions History</h4>
+<ul class="spacelist">
+
+<li>Version 1.12
+<ul class="spacelist">
+<li>Added 'Start As Hidden' option. When this option and 'Put Icon On Tray' option are turned on, the main window of WinDefThreatsView will be invisible on start. 
+
+</li>
+
+<li>Fixed some display issues in high DPI mode.
+</li>
+
+</ul>
+</li>
+
+
+<li>Version 1.11
+<ul class="spacelist">
+<li>Added 'Add Header Line To CSV/Tab-Delimited File' option (Turned on by default). 
+
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+<li>Version 1.10
+<ul class="spacelist">
+<li>Added option to choose another font (name and size) to display in the main window. 
+</li>
+
+<li>When pressing F5 (Refresh) the refresh process is smoother, keeping the selected item and scroll position. 
+
+</li>
+
+</ul>
+</li>
+
+
+
+<li>Version 1.06
+<ul class="spacelist">
+<li>Added 'Put Icon On Tray' option.
+</li>
+</ul>
+</li>
+
+
+
+
+<li>Version 1.05
+<ul class="spacelist">
+<li>You can now use any variable stored in the .cfg as command-line option. For example, in order to connect a remote computer that its IP address is 192.168.0.105 :
+<br/>
+WinDefThreatsView.exe /ConnectMode 2 /ComputerName 192.168.0.105
+</li>
+</ul>
+</li>
+
+<li>Version 1.00 - First release.
+</li>
+</ul>
+
+
+
+<p/>
+<h4 class="utilsubject">Start Using WinDefThreatsView</h4>
+WinDefThreatsView doesn't require any installation process or additional DLL files. In order to start using it, simply run the executable file - WinDefThreatsView.exe
+<br/>
+After running WinDefThreatsView, the main window displays the list of all threats detected by Windows Defender Antivirus.
+
+
+<p/>
+<h4 class="utilsubject">Connect Windows Defender on remote computer</h4>
+In order to view the Windows Defender threats on a remote computer, simply open the 'Advanced Options' window (F9),  choose the 'Load threats data from remote computer' option, 
+type the IP address or the computer name of the remote computer and then press the 'Ok' button. 
+If you get  'Access Denied' error on the status bar, you may also need to specify the user name and password to connect the remote computer.
+Be aware that this feature works only if you have permission to access WMI on the remote machine. 
+
+
+<p/>
+<h4 class="utilsubject">Set default action of Windows Defender</h4>
+After the list of all Windows Defender threats is displayed on the main window, you can select one or more threats and then set the default action for these threats.
+You can set on of the following actions: Allow, Quarantine, Clean, Remove, Block, or No Action. You can set the default action for your local computer and for remote computer on your network.
+<br/>
+You can use this feature to quickly handle multiple false positive issues: Simply select the threats that are false positives, set their default action to 'Allow' and then WinDefThreatsView
+will not block anymore.
+<p/>
+Be aware that setting the default action of Windows Defender threat requires elevation (Run As Administrator)
+
+
+<p/>
+<h4 class="utilsubject">View threat information</h4>
+You can get more information about  Windows Defender threat from Microsoft Web site by selecting the threat item and using the 'Open Threat Web Page' option (Ctrl+W).
+
+
+<p/>
+<h4 class="utilsubject">Command-Line Options</h4>
+<table class="mytable1">
+
+<tr>
+<td class="tdnowrap">
+/ConnectMode &lt;Mode&gt;
+</td>
+
+<td>
+Specifies the connect mode. 1 = local comouter, 2 = remote computer
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/ComputerName &lt;Name&gt;
+</td>
+
+<td>
+Specifies the name or IP address of the remote computer. (For using with /ConnectMode 2)
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/UseLoginInfo &lt;0 | 1&gt;
+</td>
+
+<td>
+Specifies whether to connect the remote computer with the specified user name and password. 0 = No, 1 = Yes.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/UserName &lt;Name&gt;
+</td>
+
+<td>
+Specifies the user name to connect the remote computer. (For using with /ConnectMode 2 and /UseLoginInfo 1)
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/Password &lt;Password&gt;
+</td>
+
+<td>
+Specifies the password to connect the remote computer. (For using with /ConnectMode 2 and /UseLoginInfo 1)
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td class="tdnowrap">
+/stext &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to a simple text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/stab &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to a tab-delimited text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/scomma &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to a  comma-delimited text file (csv).
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/shtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to HTML5 file (Horizontal).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sverhtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to HTML5 file (Vertical).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sxml &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to XML file.
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/sjson &lt;Filename&gt;
+</td>
+
+<td>
+Save the threats list of Windows Defender to JSON file.
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/sort &lt;column&gt; 
+</td>
+
+<td>
+This command-line option can be used with other save options for sorting by the desired column. The &lt;column&gt;  parameter can specify the column index (0 for the first column, 1 for the second column, and so on) or the name of the column, like &quot;Threat Name&quot; and &quot;Filename&quot;. You can specify the '~' prefix character (e.g: &quot;~Initial Detect Time&quot;) if you want to sort in descending order. You can put multiple /sort in the command-line if you want to sort by multiple columns. 
+
+</td>
+</tr>
+
+
+
+</table>
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Translating WinDefThreatsView to other languages</h4>
+In order to translate WinDefThreatsView to other language, follow the instructions below:
+<ol>
+<li>Run WinDefThreatsView with /savelangfile parameter:
+<br/>
+WinDefThreatsView.exe /savelangfile
+<br/>
+A file named WinDefThreatsView_lng.ini will be created in the folder of WinDefThreatsView utility.
+<li>Open the created language file in Notepad or in any other text editor. 
+<li>Translate all string entries to the desired language.
+Optionally, you can also add your name and/or a link to your Web site. 
+(TranslatorName and TranslatorURL values) If you add this information, it'll be 
+used in the 'About' window. 
+ 
+<li>After you finish the translation, Run WinDefThreatsView, and all translated 
+strings will be loaded from the language file.
+<br/>If you want to run WinDefThreatsView without the translation, simply rename the language file, or move 
+it to another folder. 
+
+</ol>
+
+
+
+<p/>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. 
+You are allowed to freely distribute this utility via CD-ROM, DVD,
+Internet, or in any other way, as long as you don't charge anything for this and you don't
+sell it or distribute it as a part of commercial product.  
+If you distribute this utility, you must include all files in
+the distribution package, without any modification !
+
+
+
+<p/>
+<h4 class="utilsubject">Disclaimer</h4>
+The software is provided &quot;AS IS&quot; without any warranty, either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose. The author will not be liable for any special, incidental,
+consequential or indirect damages due to loss of data or any other reason. 
+
+<p/>
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, 
+you can send a message to <a href="mailto:support@nirsoft.net">support@nirsoft.net</a>
+
+
+
+
+<p/>
+
+<table class="downloadline1">
+<tr><td>
+<a href="windefthreatsview.zip">Download WinDefThreatsView (32-bit)</a>
+</td>
+</tr>
+
+
+<tr><td>
+<a href="windefthreatsview-x64.zip">Download WinDefThreatsView (64-bit)</a>
+</td>
+</tr>
+
+
+<tr><td>
+<a href="https://www.nirsoft.net/hash_check/?software=windefthreatsview">Check Download MD5/SHA1/SHA256 Hashes</a>
+</td>
+</tr>
+
+
+</table>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+WinDefThreatsView is also available in other languages. In order to change the language of 
+WinDefThreatsView, download the appropriate language zip file, extract the 'windefthreatsview_lng.ini', 
+and put it in the same folder that you Installed WinDefThreatsView utility.
+<p/>
+<table class="mytable1"><tr class="utiltableheader">
+<th>Language</th><th>Translated By</th><th>Date</th><th>Version</th></tr>
+
+<tr><td><a href="trans/windefthreatsview_dutch.zip">Dutch</a></td><td>Jan Verheijen</td><td>17/02/2021</td><td>1.12</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_french.zip">French</a></td><td>Largo</td><td>28/03/2020</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_german.zip">German</a></td><td>
+<a href="https://www.wintotal.de/nirsoft-uebersetzungen/" target="trans">«Latino» auf WinTotal.de</a></td><td>17/02/2021</td><td>1.12</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_greek.zip">Greek</a></td><td>
+<a href="https://www.geogeo.gr" target="trans">geogeo.gr</a></td><td>18/11/2020</td><td>1.10</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_hungarian.zip">Hungarian</a></td><td>
+<a href="https://www.fuszerez.hu" target="trans">Kiss Dénes László</a></td><td>02/04/2020</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_japanese.zip">Japanese</a></td><td>
+<a href="https://pc.genkaku.in/" target="trans">maboroshin</a></td><td>27/10/2020</td><td>1.10</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_russian.zip">Russian</a></td><td>Dmitry Yerokhin</td><td>24/11/2020</td><td>1.11</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_schinese.zip">Simplified Chinese</a></td><td>
+<a href="http://dickmoore.cn" target="trans">DickMoore</a></td><td>20/02/2021</td><td>1.12</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_slovak.zip">Slovak</a></td><td>František Fico</td><td>22/02/2021</td><td>1.12</td></tr>
+
+<tr><td><a href="trans/windefthreatsview_tchinese.zip">Traditional Chinese</a></td><td>
+<a href="https://zhtwnet.com" target="trans">Danfong Hsieh</a></td><td>03/03/2021</td><td>1.12</td></tr>
+
+</table>
+<p/>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>

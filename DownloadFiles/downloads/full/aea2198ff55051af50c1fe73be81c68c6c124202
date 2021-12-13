@@ -1,0 +1,700 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Windows 8 DLL File Information</title>
+<link rel="stylesheet" href="main.css">
+<meta name="description" content="DLL information of Windows 8 - Resources,Import,Export,Icons,Cursors, and more.">
+<meta name="keywords" content="DLL,Information,Windows 8,Resources,Import,Export,Icons,Cursors">
+<meta name="robots" content="index, follow">
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<div class="topheader">
+<table cellspacing="0" cellpadding="0" border="0" style="width:800px">
+<tr>
+<td class="topheaderlogospcleft">
+<td class="topheaderlogo" align="left" valign="bottom">
+<a href="index.html"><img src="dllinfo.gif" border="0"></a>
+<td class="topheaderlogospc">
+<td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td class="topheaderad">
+
+
+
+
+
+
+<tr>
+<td class="topheadermenu">
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" class="topheadermenutable">
+<tr>
+<td class="topmenuitem">
+<a href="index.html">Main Page</a>
+
+<td class="topmenuitem">
+<a href="http://www.win7dll.info">Windows 7 DLLs</a>
+
+<td class="topmenuitem topmenuitemlast">
+<a href="http://www.nirsoft.net" target="nirsoft">NirSoft Utilities</a>
+
+</table>
+
+</table>
+
+
+</table>
+
+
+
+</div>
+
+<div class="toptomain">
+</div>
+
+<div class="maincontent">
+
+
+
+<table border="0" class="misccaption">
+<tr><td>
+Windows 8 DLL File Information
+<br>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_google_plusone"></a>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=nirsofer"></script>
+<!-- AddThis Button END -->
+
+
+</table>
+<p>
+
+Welcome to DLL information site for Windows 8.<br>
+This site was built by scanning all DLL files located in system32 directory of Windows 8 and 
+creating (with automatic script) a Web page for each DLL with all found infromation.
+<p>
+Each DLL information page includes:
+<ul>
+<li>Version information - product name, company, file desctiption, and so on.
+<li>DLL popularity - Shows you how many DLLs are statically linked to this file.
+<li>List of files that are statically linked to the specified file. Displayed only when the number of files in the list is 10 or less.
+<li>Sections information - Shows you the code and data sections in the DLL.
+<li>Resources information - Displays a summary of resources stored in the DLL (icons, bitmaps, cursors, dialog-boxes, and so on)
+<li>Icons Thumbnail - A Thumbnail with all icons stored in the DLL.
+<li>Cursors Thumbnail - A Thumbnail with all cursors stored in the DLL.
+<li>Strings information - Displays a list of strings stored in this DLL (Currently the list is limited to 200 strings)
+<li>Diaogbox information  - Displays a list of dialog-boxes captions in this DLL (Currently the list is limited to 200 dialog-boxes)
+<li>Static Linking - Displays the list of DLL files that are statically linked to the DLL.
+When a DLL is loaded the DLL in this Static Linking list are also loaded with it.
+<li>Exports/Imports List - A list of all imported and exported functions.
+</ul>
+
+Looking in the Web page of specific DLL can help to learn what is this DLL and how it's linked with the other DLL files on Windows 8 operating system.
+
+<p>
+<a name="letter_dll_links"></a>
+
+In order to browse into the right DLL page, select the first letter of the DLL file, and then you'll get a list of all
+dll files begins with this letter:
+<p>
+<center>
+<a href="a.html#letter_dll_links">A</a> | <a href="b.html#letter_dll_links">B</a> | <a href="c.html#letter_dll_links">C</a> | <a href="d.html#letter_dll_links">D</a> | <a href="e.html#letter_dll_links">E</a> | <a href="f.html#letter_dll_links">F</a> | <a href="g.html#letter_dll_links">G</a> | <a href="h.html#letter_dll_links">H</a> | <a href="i.html#letter_dll_links">I</a> | <a href="j.html#letter_dll_links">J</a> | <a href="k.html#letter_dll_links">K</a> | <a href="l.html#letter_dll_links">L</a> | <a href="m.html#letter_dll_links">M</a> | <a href="n.html#letter_dll_links">N</a> | <a href="o.html#letter_dll_links">O</a> | <a href="p.html#letter_dll_links">P</a> | <a href="q.html#letter_dll_links">Q</a> | <a href="r.html#letter_dll_links">R</a> | <a href="s.html#letter_dll_links">S</a> | <a href="t.html#letter_dll_links">T</a> | <a href="u.html#letter_dll_links">U</a> | <a href="v.html#letter_dll_links">V</a> | <a href="w.html#letter_dll_links">W</a> | <a href="x.html#letter_dll_links">X</a> | <a href="y.html#letter_dll_links">Y</a> | <a href="z.html#letter_dll_links">Z</a> | 
+</center>
+<p>
+
+
+
+<p>
+
+
+You can also locate a DLL according to the following &quot;TOP DLL&quot; statistics: 
+
+
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest number of icons</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of icons
+
+<tr>
+<td><a href="imageres_dll.html">imageres.dll</a>
+<td>Windows Image Resource &nbsp;
+<td>384 
+
+<tr>
+<td><a href="shell32_dll.html">shell32.dll</a>
+<td>Windows Shell Common Dll &nbsp;
+<td>322 
+
+<tr>
+<td><a href="wmploc_dll.html">wmploc.DLL</a>
+<td>Windows Media Player Resources &nbsp;
+<td>193 
+
+<tr>
+<td><a href="netshell_dll.html">netshell.dll</a>
+<td>Network Connections Shell &nbsp;
+<td>165 
+
+<tr>
+<td><a href="ddores_dll.html">DDORes.dll</a>
+<td>Device Category information and resources &nbsp;
+<td>132 
+
+<tr>
+<td><a href="mmcndmgr_dll.html">mmcndmgr.dll</a>
+<td>MMC Node Manager DLL &nbsp;
+<td>129 
+
+<tr>
+<td><a href="moricons_dll.html">moricons.dll</a>
+<td>Windows NT Setup Icon Resources Library &nbsp;
+<td>113 
+
+<tr>
+<td><a href="ieframe_dll.html">ieframe.dll</a>
+<td>Internet Browser &nbsp;
+<td>104 
+
+<tr>
+<td><a href="compstui_dll.html">compstui.dll</a>
+<td>Common Property Sheet User Interface DLL &nbsp;
+<td>101 
+
+<tr>
+<td><a href="twinui_dll.html">twinui.dll</a>
+<td>TWINUI &nbsp;
+<td>94 
+
+
+
+</table>
+
+
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest number of cursors</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of cursors
+
+<tr>
+<td><a href="user32_dll.html">user32.dll</a>
+<td>Multi-User Windows USER API Client DLL &nbsp;
+<td>32 
+
+<tr>
+<td><a href="mshtml_dll.html">mshtml.dll</a>
+<td>Microsoft (R) HTML Viewer &nbsp;
+<td>22 
+
+<tr>
+<td><a href="msftedit_dll.html">msftedit.dll</a>
+<td>Rich Text Edit Control, v7.5 &nbsp;
+<td>21 
+
+<tr>
+<td><a href="comctl32_dll.html">comctl32.dll</a>
+<td>Common Controls Library &nbsp;
+<td>18 
+
+<tr>
+<td><a href="riched20_dll.html">riched20.dll</a>
+<td>Rich Text Edit Control, v3.1 &nbsp;
+<td>17 
+
+<tr>
+<td><a href="wfsr_dll.html">WFSR.dll</a>
+<td>Windows Fax and Scan Resources &nbsp;
+<td>15 
+
+<tr>
+<td><a href="fxsresm_dll.html">FXSRESM.dll</a>
+<td>Microsoft  Fax Resource DLL &nbsp;
+<td>14 
+
+<tr>
+<td><a href="mfc40u_dll.html">mfc40u.dll</a>
+<td>MFCDLL Shared Library - Retail Version &nbsp;
+<td>12 
+
+<tr>
+<td><a href="mfc42_dll.html">mfc42.dll</a>
+<td>MFCDLL Shared Library - Retail Version &nbsp;
+<td>12 
+
+<tr>
+<td><a href="mfc42u_dll.html">mfc42u.dll</a>
+<td>MFCDLL Shared Library - Retail Version &nbsp;
+<td>12 
+
+
+
+</table>
+
+
+<table><tr><td>&nbsp;</table>
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest number of bitmaps</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of bitmaps
+
+<tr>
+<td><a href="ieframe_dll.html">ieframe.dll</a>
+<td>Internet Browser &nbsp;
+<td>372 
+
+<tr>
+<td><a href="explorerframe_dll.html">ExplorerFrame.dll</a>
+<td>ExplorerFrame &nbsp;
+<td>263 
+
+<tr>
+<td><a href="wmploc_dll.html">wmploc.DLL</a>
+<td>Windows Media Player Resources &nbsp;
+<td>261 
+
+<tr>
+<td><a href="uiribbonres_dll.html">UIRibbonRes.dll</a>
+<td>Windows Ribbon Framework Resources &nbsp;
+<td>234 
+
+<tr>
+<td><a href="twinui_dll.html">twinui.dll</a>
+<td>TWINUI &nbsp;
+<td>92 
+
+<tr>
+<td><a href="wdc_dll.html">wdc.dll</a>
+<td>Performance Monitor &nbsp;
+<td>55 
+
+<tr>
+<td><a href="uiribbon_dll.html">UIRibbon.dll</a>
+<td>Windows Ribbon Framework &nbsp;
+<td>43 
+
+<tr>
+<td><a href="shell32_dll.html">shell32.dll</a>
+<td>Windows Shell Common Dll &nbsp;
+<td>36 
+
+<tr>
+<td><a href="display_dll.html">Display.dll</a>
+<td>Display Control Panel &nbsp;
+<td>31 
+
+<tr>
+<td><a href="mmcndmgr_dll.html">mmcndmgr.dll</a>
+<td>MMC Node Manager DLL &nbsp;
+<td>29 
+
+
+
+</table>
+
+
+<table><tr><td>&nbsp;</table>
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest number of dialog-boxes</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of dialog-boxes
+
+<tr>
+<td><a href="wmploc_dll.html">wmploc.DLL</a>
+<td>Windows Media Player Resources &nbsp;
+<td>117 
+
+<tr>
+<td><a href="comres_dll.html">comres.dll</a>
+<td>COM+ Resources &nbsp;
+<td>109 
+
+<tr>
+<td><a href="ieframe_dll.html">ieframe.dll</a>
+<td>Internet Browser &nbsp;
+<td>107 
+
+<tr>
+<td><a href="shell32_dll.html">shell32.dll</a>
+<td>Windows Shell Common Dll &nbsp;
+<td>100 
+
+<tr>
+<td><a href="rasdlg_dll.html">rasdlg.dll</a>
+<td>Remote Access Common Dialog API &nbsp;
+<td>96 
+
+<tr>
+<td><a href="wsecedit_dll.html">wsecedit.dll</a>
+<td>Security Configuration UI Module &nbsp;
+<td>66 
+
+<tr>
+<td><a href="fxsresm_dll.html">FXSRESM.dll</a>
+<td>Microsoft  Fax Resource DLL &nbsp;
+<td>60 
+
+<tr>
+<td><a href="cmdial32_dll.html">cmdial32.dll</a>
+<td>Microsoft Connection Manager &nbsp;
+<td>56 
+
+<tr>
+<td><a href="acctres_dll.html">ACCTRES.dll</a>
+<td>Microsoft Internet Account Manager Resources &nbsp;
+<td>50 
+
+<tr>
+<td><a href="dmdskres_dll.html">dmdskres.dll</a>
+<td>Disk Management Snap-in Resources &nbsp;
+<td>49 
+
+
+
+</table>
+
+<table><tr><td>&nbsp;</table>
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest number of string resources</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of strings
+
+<tr>
+<td><a href="getuname_dll.html">getuname.dll</a>
+<td>Unicode name Dll for UCE &nbsp;
+<td>15,979 
+
+<tr>
+<td><a href="winlangdb_dll.html">Winlangdb.dll</a>
+<td>Windows Bcp47 Language Database &nbsp;
+<td>10,085 
+
+<tr>
+<td><a href="shell32_dll.html">shell32.dll</a>
+<td>Windows Shell Common Dll &nbsp;
+<td>3,545 
+
+<tr>
+<td><a href="wmploc_dll.html">wmploc.DLL</a>
+<td>Windows Media Player Resources &nbsp;
+<td>2,920 
+
+<tr>
+<td><a href="ieframe_dll.html">ieframe.dll</a>
+<td>Internet Browser &nbsp;
+<td>2,477 
+
+<tr>
+<td><a href="propsys_dll.html">propsys.dll</a>
+<td>Microsoft Property System &nbsp;
+<td>1,809 
+
+<tr>
+<td><a href="msjint40_dll.html">msjint40.dll</a>
+<td>Microsoft Jet Database Engine International DLL &nbsp;
+<td>1,424 
+
+<tr>
+<td><a href="odbcjt32_dll.html">odbcjt32.dll</a>
+<td>Microsoft ODBC Desktop Driver Pack 3.5 &nbsp;
+<td>1,215 
+
+<tr>
+<td><a href="fxsresm_dll.html">FXSRESM.dll</a>
+<td>Microsoft  Fax Resource DLL &nbsp;
+<td>1,184 
+
+<tr>
+<td><a href="storagewmi_dll.html">storagewmi.dll</a>
+<td>WMI Provider for Storage Management &nbsp;
+<td>1,172 
+
+
+
+</table>
+
+
+<table><tr><td>&nbsp;</table>
+<p>
+<h4 class="utilsubject">Top 10 DLL files with largest type library</h4>
+
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Type library size
+
+<tr>
+<td><a href="msvidctl_dll.html">MSVidCtl.dll</a>
+<td>ActiveX control for streaming video &nbsp;
+<td>256 KB 
+
+<tr>
+<td><a href="wmp_dll.html">wmp.dll</a>
+<td>Windows Media Player &nbsp;
+<td>208 KB 
+
+<tr>
+<td><a href="srm_dll.html">srm.dll</a>
+<td>Microsoft® File Server Resource Manager Common Library &nbsp;
+<td>172 KB 
+
+<tr>
+<td><a href="msvbvm60_dll.html">msvbvm60.dll</a>
+<td>Visual Basic Virtual Machine &nbsp;
+<td>145 KB 
+
+<tr>
+<td><a href="certenroll_dll.html">CertEnroll.dll</a>
+<td>Microsoft® Active Directory Certificate Services Enrollment Client &nbsp;
+<td>141 KB 
+
+<tr>
+<td><a href="tapi3_dll.html">tapi3.dll</a>
+<td>Microsoft TAPI3 &nbsp;
+<td>113 KB 
+
+<tr>
+<td><a href="comsvcs_dll.html">comsvcs.dll</a>
+<td>COM+ Services &nbsp;
+<td>106 KB 
+
+<tr>
+<td><a href="srh_dll.html">SRH.dll</a>
+<td>Screen Reader Helper DLL &nbsp;
+<td>102 KB 
+
+<tr>
+<td><a href="inked_dll.html">InkEd.dll</a>
+<td>Microsoft Tablet PC InkEdit Control &nbsp;
+<td>99 KB 
+
+<tr>
+<td><a href="msxml3_dll.html">msxml3.dll</a>
+<td>MSXML 3.0 &nbsp;
+<td>93 KB 
+
+
+
+</table>
+
+
+<table><tr><td>&nbsp;</table>
+<p>
+<h4 class="utilsubject">Top 25 popular DLL files in System32 directory</h4>
+
+In the following table, you can find the DLL files that are commonly used by other DLL files.
+The 'Number of DLLs' column represents the number of DLL files that use the specified DLL.
+For example: The first DLL file in this table - <a href="msvcrt_dll.html">msvcrt.dll</a>, is loaded by other 1,674 DLL files in
+the system32 directory.
+This statistics is based on static link (import tables) between the DLL files.
+<table border="1" cellspacing="1" cellpadding="5">
+<tr class="tableheader">
+<th>Filename
+<th>Description
+<th>Number of DLLs
+
+
+<tr>
+<td><a href="msvcrt_dll.html">msvcrt.dll</a>
+<td>Windows NT CRT DLL &nbsp;
+<td>1,674 
+
+<tr>
+<td><a href="kernel32_dll.html">kernel32.dll</a>
+<td>Windows NT BASE API Client DLL &nbsp;
+<td>1,377 
+
+<tr>
+<td><a href="ntdll_dll.html">ntdll.dll</a>
+<td>NT Layer DLL &nbsp;
+<td>1,090 
+
+<tr>
+<td><a href="user32_dll.html">user32.dll</a>
+<td>Multi-User Windows USER API Client DLL &nbsp;
+<td>803 
+
+<tr>
+<td><a href="advapi32_dll.html">advapi32.dll</a>
+<td>Advanced Windows 32 Base API &nbsp;
+<td>778 
+
+<tr>
+<td><a href="api-ms-win-core-processthreads-l1-1-1_dll.html">api-ms-win-core-processthreads-l1-1-1.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>672 
+
+<tr>
+<td><a href="oleaut32_dll.html">oleaut32.dll</a>
+<td> &nbsp;
+<td>648 
+
+<tr>
+<td><a href="ole32_dll.html">ole32.dll</a>
+<td>Microsoft OLE for Windows &nbsp;
+<td>645 
+
+<tr>
+<td><a href="api-ms-win-core-sysinfo-l1-2-0_dll.html">api-ms-win-core-sysinfo-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>644 
+
+<tr>
+<td><a href="api-ms-win-core-errorhandling-l1-1-1_dll.html">api-ms-win-core-errorhandling-l1-1-1.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>641 
+
+<tr>
+<td><a href="api-ms-win-core-profile-l1-1-0_dll.html">api-ms-win-core-profile-l1-1-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>622 
+
+<tr>
+<td><a href="api-ms-win-core-synch-l1-2-0_dll.html">api-ms-win-core-synch-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>616 
+
+<tr>
+<td><a href="api-ms-win-core-interlocked-l1-2-0_dll.html">api-ms-win-core-interlocked-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>614 
+
+<tr>
+<td><a href="api-ms-win-core-libraryloader-l1-1-1_dll.html">api-ms-win-core-libraryloader-l1-1-1.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>601 
+
+<tr>
+<td><a href="rpcrt4_dll.html">rpcrt4.dll</a>
+<td>Remote Procedure Call Runtime &nbsp;
+<td>558 
+
+<tr>
+<td><a href="api-ms-win-core-handle-l1-1-0_dll.html">api-ms-win-core-handle-l1-1-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>515 
+
+<tr>
+<td><a href="api-ms-win-core-registry-l1-1-0_dll.html">api-ms-win-core-registry-l1-1-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>512 
+
+<tr>
+<td><a href="api-ms-win-core-string-l1-1-0_dll.html">api-ms-win-core-string-l1-1-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>397 
+
+<tr>
+<td><a href="api-ms-win-security-base-l1-2-0_dll.html">api-ms-win-security-base-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>395 
+
+<tr>
+<td><a href="api-ms-win-core-heap-l1-2-0_dll.html">api-ms-win-core-heap-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>387 
+
+<tr>
+<td><a href="api-ms-win-core-file-l1-2-0_dll.html">api-ms-win-core-file-l1-2-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>377 
+
+<tr>
+<td><a href="api-ms-win-core-delayload-l1-1-1_dll.html">api-ms-win-core-delayload-l1-1-1.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>340 
+
+<tr>
+<td><a href="api-ms-win-core-heap-obsolete-l1-1-0_dll.html">api-ms-win-core-heap-obsolete-l1-1-0.dll</a>
+<td>ApiSet Stub DLL &nbsp;
+<td>320 
+
+<tr>
+<td><a href="shlwapi_dll.html">shlwapi.dll</a>
+<td>Shell Light-weight Utility Library &nbsp;
+<td>310 
+
+<tr>
+<td><a href="gdi32_dll.html">gdi32.dll</a>
+<td>GDI Client DLL &nbsp;
+<td>276 
+
+</table>
+
+
+
+<p>
+
+
+
+</div>
+
+<div class="footer">
+<p>
+
+<center>
+
+
+<table border="0" width="700" height="40">
+
+<tr valign="center">
+
+<td><a href="http://xpdll.nirsoft.net">XP DLL Information</a>
+<td><a href="http://usbspeed.nirsoft.net">Flash Drive Speed</a>
+<td><a href="http://extension.nirsoft.net">Extension Information</a>
+<td><a href="http://www.nirsoft.net/password_recovery_tools.html">Windows Password Recovery</a>
+
+</table>
+</center>
+
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+
+</html>

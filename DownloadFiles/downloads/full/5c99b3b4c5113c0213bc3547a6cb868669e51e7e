@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hash Check For Downloaded Tools</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Hash Check For Downloaded NirSoft Tools" />
+<link rel="stylesheet" href="../main.css" />
+
+<script type='text/javascript'>
+
+function copyTextToClipboard(text) {
+    if (window.clipboardData && window.clipboardData.setData) {
+        return clipboardData.setData("Text", text); 
+
+    } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+        var cliptextarea = document.createElement("textarea");
+        cliptextarea.textContent = text;
+        cliptextarea.style.position = "fixed"; 
+        document.body.appendChild(cliptextarea);
+		cliptextarea.focus();
+        cliptextarea.select();
+        try {
+            return document.execCommand("copy");  
+        } catch (ex) {
+            return false;
+        } finally {
+            document.body.removeChild(cliptextarea);
+        }
+    }
+}
+
+
+
+</script>
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/hash_check/?software=usbdeview" />
+<link rel="canonical" href="https://www.nirsoft.net/hash_check/?software=usbdeview" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+
+<table border="0" class="utilcaption" cellspacing="3">
+<tr>
+<td>
+Hash Check For Downloaded Tools
+</td>
+
+</tr>
+
+</table>
+
+
+<p/>
+
+You can use the following hashes to verify that the file you downloaded is identical to the file on the nirsoft.net server.
+When there are multiple downloads for the same software, you should compare the hashes of the same filename that you downloaded.
+You can click the hash in order to copy the hash to the clipboard.
+<br>
+Optionally, you can use the <a href="https://www.nirsoft.net/utils/hash_my_files.html">HashMyFiles tool</a> to calculate the hashes of downloaded files 
+and then when you click the hash on this Web page and
+it's copied to the clipboard, HashMyFiles automatically marks the file in light-green color if the hashes are identical.
+
+<p/>
+You can also use the <a href="https://www.nirsoft.net/utils/web_browser_downloads_view.html">BrowserDownloadsView tool</a> to automatically calculate the hash of downloaded files.
+Simply select one or more download items in the main window of BrowserDownloadsView, and from the right-click context menu choose the desired hash (MD5 or SHA1 or SHA256 or SHA512) and the calculated hash will appear
+under the hash column. After the hash is calculated, you can press Ctrl+H to copy the hash to the clipboard.
+
+<p/>
+Be aware that the hashes in this page are updated every few minutes. If you download a file immediately after a new release, you might see here the hashes of previous file.
+
+<p/>
+
+What to do if the hash on your system is different from the hash displayed on this Web page ?
+<ul>
+<li>Check if you have any Antivirus or Firewall that blocked the downloaded file or put it in quarantine.
+There are some Antivirus programs that may detect the downloaded file as a threat and modify it without telling you.
+<li>Try to clear the cache of your Web browser and download the file again or try to download the file from another Web browser.
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+<table border="1" cellspacing="1" cellpadding="5">
+<tr>
+<td nowrap>Filename</td>
+<td>usbdeview.zip</td>
+</tr>
+
+<tr>
+<td nowrap>Download URL</td>
+<td><a href="https://www.nirsoft.net/utils/usbdeview.zip">https://www.nirsoft.net/utils/usbdeview.zip</a></td>
+</tr>
+
+
+
+<tr>
+<td nowrap>File Size</td>
+<td>100569 Bytes</td>
+</tr>
+
+<tr>
+<td nowrap>Update Time</td>
+<td>June 20 2021 17:10:36</td>
+</tr>
+
+
+<tr>
+<td nowrap>MD5 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('d088007e2ff5de195c46004b74fdd593');return false;">d088007e2ff5de195c46004b74fdd593</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA1 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('9d471aa7a15a5986e29d7f53c96d0c661886a5a9');return false;">9d471aa7a15a5986e29d7f53c96d0c661886a5a9</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA256 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('7d57df95dac449a9c021f8e774f4e7d7d22f8ab82bc5852f29873d3b58c27184');return false;">7d57df95dac449a9c021f8e774f4e7d7d22f8ab82bc5852f29873d3b58c27184</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA512 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('869472add707e0df277b82b16d6b7903cd6595a81d0e6eb59725eda3ea07ac9d556357cd98a90a3d27a2a0e6d1f97afe4064f82432f4cd21800fe7fe73d3c529');return false;">869472add707e0df277b82b16d6b7903cd6595a81d0e6eb59725eda3ea07ac9d556357cd98a90a3d27a2a0e6d1f97afe4064f82432f4cd21800fe7fe73d3c529</a></td>
+</tr>
+
+
+
+</table>
+
+
+<p/>
+<table border="1" cellspacing="1" cellpadding="5">
+<tr>
+<td nowrap>Filename</td>
+<td>usbdeview-x64.zip</td>
+</tr>
+
+<tr>
+<td nowrap>Download URL</td>
+<td><a href="https://www.nirsoft.net/utils/usbdeview-x64.zip">https://www.nirsoft.net/utils/usbdeview-x64.zip</a></td>
+</tr>
+
+
+
+<tr>
+<td nowrap>File Size</td>
+<td>124764 Bytes</td>
+</tr>
+
+<tr>
+<td nowrap>Update Time</td>
+<td>June 20 2021 17:10:37</td>
+</tr>
+
+
+<tr>
+<td nowrap>MD5 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('2cba14e5ed4f38378594c3923b729c95');return false;">2cba14e5ed4f38378594c3923b729c95</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA1 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('2d641a3adf700328b0492884c0619ac6437fd7f6');return false;">2d641a3adf700328b0492884c0619ac6437fd7f6</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA256 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('1802eccdc6eed1f1b5b50c59344677394c1b4a0590fe34450909ad13e3823cdd');return false;">1802eccdc6eed1f1b5b50c59344677394c1b4a0590fe34450909ad13e3823cdd</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA512 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('72335885bba3aecf74739e234ff70cd56b467a41ab8d2b69fe0b7ef8104e4e97d1346a1373ce05fa751776a1e312f747b827e0086822977ad3d5a5a9a8391e5f');return false;">72335885bba3aecf74739e234ff70cd56b467a41ab8d2b69fe0b7ef8104e4e97d1346a1373ce05fa751776a1e312f747b827e0086822977ad3d5a5a9a8391e5f</a></td>
+</tr>
+
+
+
+</table>
+
+
+
+
+
+
+<p/>
+<table border="1" cellspacing="1" cellpadding="5">
+<tr>
+<td nowrap>Filename</td>
+<td>USBDeview.exe</td>
+</tr>
+
+<tr>
+<td nowrap>Stored In</td>
+<td><a href="https://www.nirsoft.net/utils/usbdeview.zip">https://www.nirsoft.net/utils/usbdeview.zip</a></td>
+ 
+ 
+</tr>
+
+
+
+<tr>
+<td nowrap>File Size</td>
+<td>138616 Bytes</td>
+</tr>
+
+
+<tr>
+<td nowrap>Update Time</td>
+<td>June 21 2021 00:10:34</td>
+</tr>
+
+
+<tr>
+<td nowrap>MD5 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('90c932023af5fc1900e374e66f5e8140');return false;">90c932023af5fc1900e374e66f5e8140</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA1 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('aa2f0f102cfd05645abf9e6daf195bd8c405d284');return false;">aa2f0f102cfd05645abf9e6daf195bd8c405d284</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA256 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('70caeb831ce0e739a50658fbe7477a6ee3280365dd9646c8bf1931a7b324e362');return false;">70caeb831ce0e739a50658fbe7477a6ee3280365dd9646c8bf1931a7b324e362</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA512 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('c1ee55afd753be9c9f84557cda0e44615fb23043880949e9939a941e1dd94453b4c2c9178be3fd664237d39e6bcdbae1e518808c834455804e7328a013da007c');return false;">c1ee55afd753be9c9f84557cda0e44615fb23043880949e9939a941e1dd94453b4c2c9178be3fd664237d39e6bcdbae1e518808c834455804e7328a013da007c</a></td>
+</tr>
+
+
+
+</table>
+
+
+
+
+
+
+<p/>
+<table border="1" cellspacing="1" cellpadding="5">
+<tr>
+<td nowrap>Filename</td>
+<td>USBDeview.exe</td>
+</tr>
+
+<tr>
+<td nowrap>Stored In</td>
+<td><a href="https://www.nirsoft.net/utils/usbdeview-x64.zip">https://www.nirsoft.net/utils/usbdeview-x64.zip</a></td>
+ 
+ 
+</tr>
+
+
+
+<tr>
+<td nowrap>File Size</td>
+<td>194424 Bytes</td>
+</tr>
+
+
+<tr>
+<td nowrap>Update Time</td>
+<td>June 21 2021 00:10:36</td>
+</tr>
+
+
+<tr>
+<td nowrap>MD5 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('0d62b20a26c83f020fa257f0dea897e0');return false;">0d62b20a26c83f020fa257f0dea897e0</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA1 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('cdd21d60df8a68072f81a4a2d04a8484a580cb53');return false;">cdd21d60df8a68072f81a4a2d04a8484a580cb53</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA256 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('5ba58ea77e77dd0f86bdd200b931cce7d9f48f92df7545e30fdcc91198f09504');return false;">5ba58ea77e77dd0f86bdd200b931cce7d9f48f92df7545e30fdcc91198f09504</a></td>
+</tr>
+
+<tr>
+<td nowrap>SHA512 Hash</td>
+<td><a href="" onclick="copyTextToClipboard('b236c7c2d4bfa4b4f5524a5792737e20f5f90f13ebc878e43afb3e9e9e97dfb6c081a78de064e7c32f7632e1742f0d55b8268bdf12af5951a27688cb083a8c8e');return false;">b236c7c2d4bfa4b4f5524a5792737e20f5f90f13ebc878e43afb3e9e9e97dfb6c081a78de064e7c32f7632e1742f0d55b8268bdf12af5951a27688cb083a8c8e</a></td>
+</tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+
+
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>

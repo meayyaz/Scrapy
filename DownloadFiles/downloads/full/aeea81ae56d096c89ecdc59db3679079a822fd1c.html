@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>AutoComplete feature changes on Outlook 2010 and later versions (Including Outlook 2016/2013)</title>
+<link rel="stylesheet" href="../main.css">
+<meta name="keywords" content="edit,nk2,AutoComplete,feature,changes">
+<meta name="description" content="Outlook 2010 introduced multiple changes in the mechanism of the AutoComplete feature and you should be aware of these changes when using NK2Edit software to edit the AutoComplete files">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/outlook_2010_autocomplete_changes.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/outlook_2010_autocomplete_changes.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<img src="//www.nirsoft.net/banners/empty729x90.gif">
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+
+
+
+<p>
+<h4 class="utilsubject">AutoComplete feature changes on Outlook 2010 and later versions (Including Outlook 2013 and Outlook 2016)</h4>
+
+Outlook 2010 introduced multiple changes in the mechanism of the AutoComplete feature and you should be
+aware of these changes when using NK2Edit software to edit the AutoComplete files of Outlook 2010.
+
+<p>
+Here's the list of AutoComplete changes on Outlook 2010:
+
+<ul>
+<li>Filename change: In the previous versions of Outlook, the AutoComplete filename was created with .nk2 extension.
+On Outlook 2010, the filename is created with .dat extension and in the following format:
+Stream_Autocomplete_0_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.dat 
+<br>
+The xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx section is a random 16-bytes hash.
+
+<p>
+On a new Outlook installation or new Outlook profile, the Stream_Autocomplete file is created only after the user
+sends the first email message. Be aware that NK2Edit cannot edit the Autocomplete data until the Stream_Autocomplete file is created
+in the first time.
+
+
+<li>In additional to the AutoComplete file stored in the local hard drive, another copy of the AutoComplete data is
+stored inside the message store of Outlook. For MS-Exchange profile, this copy of the AutoComplete data is stored
+on the Exchange server. For profile based on .pst file, this copy of the AutoComplete data is stored inside the .pst file.
+
+<p>
+
+<li>If you delete the local AutoComplete file (with .dat extension) or if the user connects the Exchange server from
+another computer, the AutoComplete data stored in the Exchange server is automatically copied to the local computer.  
+
+<p>
+
+<li>When using the combination of Outlook 2010 (or later) and Exchange Server 2010 (or later), sometimes the
+AutoComplete data stored on the Exchange server randomly overwrites the changes made with NK2Edit.
+If you experience the same problem, you can overcome this issue by using the /export_to_message_store command-line option:
+<br>
+NK2Edit.exe /export_to_message_store $default
+
+<p>
+This command-line option copies the local AutoComplete .dat file into the message store of the Exchange Server,
+to ensure that the older AutoComplete data stored inside the Exchange Server will not overwrite the latest changes
+you make with NK2Edit. 
+
+<p>
+Starting from version 2.35, you can also export the AutoComplete data to the message store from the user interface, by using the 'Export To Message Store (Outlook 2010)' option (Ctrl+Shift+M)
+
+<p>
+Starting from version 2.37, there is an option to automatically export the AutoComplete data to the message store every time that you save the AutoComplete file.
+In order to activate it, simply check the 'Automatically Export To Message Store' option located under the Options menu.
+Starting from version 2.65, You can also do it from command-line together with other command-line options, for example: 
+<br>
+NK2Edit.exe /AutoExportToMessageStore 1  /script &quot;f:\scripts\myscript.txt&quot; $default 
+
+<p>
+
+<li>Outlook allows you to delete the AutoComplete cache completely, from both local AutoComplete file and the message store, by
+using the following command-line option:
+<br>
+Outlook.Exe /cleanautocompletecache
+
+<p>
+When you use the above command-line option, the AutoComplete file is deleted completely,
+and NK2Edit will not be able to edit the AutoComplete data until the file is created again by Outlook,
+after the user sends the first message.
+
+<p>
+
+
+<li>Suggested Contacts: Outlook 2010 introduced a new feature known as 'Suggested Contacts', which allows the user
+to manually add items into the AutoComplete combo-box. Be aware that the 'Suggested Contacts' and the older AutoComplete feature
+are maintained  as 2 separated databases. When the AutoComplete combo-box is opened, the emails list is merged from both data sources.
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<p>
+<a href="outlook_nk2_edit.html">Return to NK2Edit introduction page</a>
+<p>
+
+
+
+
+
+<table>
+<tr>
+<td>
+
+</table>
+
+
+<a name="end"></a>
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>
+

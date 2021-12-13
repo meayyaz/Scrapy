@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>NirBlog</title>
+
+  <script type="text/javascript">(function() { var a=window;function e(b){this.t={};this.tick=function(c,h,d){d=d?d:(new Date).getTime();this.t[c]=[d,h]};this.tick("start",null,b)}var f=new e;a.jstiming={Timer:e,load:f};try{a.jstiming.pt=a.chrome&&a.chrome.csi?Math.floor(a.chrome.csi().pageT):a.gtbExternal&&a.gtbExternal.pageT()||a.external&&a.external.pageT}catch(g){};a.tickAboveFold=function(b){b=b;var c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}b=c;b<=750&&a.jstiming.load.tick("aft")};var i=false;function j(){if(!i){i=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",j,false):a.attachEvent("onscroll",j); })();</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.blogger.com/favicon.ico"/>
+<link rel="alternate" type="application/atom+xml" title="NirBlog - Atom" href="http://www.nirsoft.net/blog/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="NirBlog - RSS" href="http://www.nirsoft.net/blog/rss.xml" />
+<link rel="service.post" type="application/atom+xml" title="NirBlog - Atom" href="http://www.blogger.com/feeds/4304412731085068788/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=4304412731085068788" />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/50269083-blog_controls.css"/> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=4304412731085068788&zx=9d758b3b-2a3d-4bba-906b-81c839b05a58"/>
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#f8f8f8;
+  margin:0;
+  padding:40px 20px;
+  font:x-small Arial,Serif;
+  text-align:center;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+a:link {
+  color:#58a;
+  text-decoration:none;
+  }
+a:visited {
+  color:#969;
+  text-decoration:none;
+  }
+a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+@media all {
+  #header {
+    width:850px;
+    margin:0 auto 10px;
+    border:1px solid #ccc;
+    }
+  }
+@media handheld {
+  #header {
+    width:90%;
+    }
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:200%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#666;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#c60;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:820px;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+/* Content
+----------------------------------------------- */
+@media all {
+  #content {
+    width:850px;
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+    }
+  #main {
+    width:550px;
+    float:left;
+    }
+  #sidebar {
+    width:220px;
+    float:right;
+    }
+  }
+@media handheld {
+  #content {
+    width:90%;
+    }
+  #main {
+    width:100%;
+    float:none;
+    }
+  #sidebar {
+    width:100%;
+    float:none;
+    }
+  }
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+@media all {
+  .date-header {
+    margin:1.5em 0 .5em;
+    }
+  .post {
+    margin:.5em 0 1.5em;
+    border-bottom:1px dotted #ccc;
+    padding-bottom:1.5em;
+    }
+  }
+@media handheld {
+  .date-header {
+    padding:0 1.5em 0 1.5em;
+    }
+  .post {
+    padding:0 1.5em 0 1.5em;
+    }
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#4040ff;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post img {
+  padding:4px;
+  border:1px solid #ddd;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:850px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Feeds
+----------------------------------------------- */
+#blogfeeds {
+  }
+#postfeeds {
+  }
+  </style>
+
+<link rel="me" href="http://www.blogger.com/profile/14229772253166199516" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+</head>
+
+<body>
+
+<div id="header">
+
+  <h1 id="blog-title">
+    
+	NirBlog
+	
+  </h1>
+  <p id="description">The official blog of nirsoft.net</p>
+  <p>
+  <h1><font color="#ff0000">
+  NirBlog moved to a new address: <a href="http://blog.nirsoft.net">http://blog.nirsoft.net</a>	
+  </font>
+  </h1>
+  </p>
+
+</div>
+
+
+<!-- Begin #content -->
+<div id="content">
+
+
+<!-- Begin #main -->
+<div id="main"><div id="main2">
+
+
+
+    
+  <h2 class="date-header">Sunday, August 23, 2009</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="4103705945810113060"></a>
+         
+    <h3 class="post-title">
+	 
+	 NirBlog moves to a new home
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      In the last few weeks, I had too much problems with the blogging system of Blogger.com<br />Just for example: in all recent posts, the Blogger system failed to upload the screenshots of my tools through  my FTP server, and I had to manually upload them and then edit the HTML of the post in order to properly show them inside the Blog post.<br /><br />Also, some users complained that they cannot add their comments to my posts or their comments are added only when they use a specific Web browser.<br /><br />Unfortunately, I cannot solve the problems caused by Blogger system, so the only solution is to host the blog on my own server.<br />I installed the latest version of WordPress on my server, and imported all my Blogger posts into the new Blog. The import process is not perfect, but it generally look fine.<br /><br />The new Blog address is <a href="http://blog.nirsoft.net/">http://blog.nirsoft.net/</a>.<br /><br />The old Blog will still be available for some time, because there are other pages that link to it.<br /><br />Also, be aware that if you subscribed the RSS of my Blogger Blog, you should cancel it and subscribe the RSS feed of <a href="http://blog.nirsoft.net/">http://blog.nirsoft.net/</a>.
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/nirblog-moves-to-new-home.html" title="permanent link"> 3:40 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/nirblog-moves-to-new-home.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/nirblog-moves-to-new-home.html#comment-form;><span style="text-transform:lowercase">1 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=4103705945810113060" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Tuesday, August 18, 2009</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="3060687878952124506"></a>
+         
+    <h3 class="post-title">
+	 
+	 BlueScreenView now also support 64-bit MiniDump Files
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      The new version of <a href="http://www.nirsoft.net/utils/blue_screen_view.html">BlueScreenView</a>, version 1.05, now also support the MiniDump Files created by x64 version of Windows.<br />The executable file of BlueScreenView is still created as 32-bit application, but it can read and analyze the crash MiniDump Files of both both 32-bit and x64 systems.
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/bluescreenview-now-also-support-64-bit.html" title="permanent link"> 2:52 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/bluescreenview-now-also-support-64-bit.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/bluescreenview-now-also-support-64-bit.html#comment-form;><span style="text-transform:lowercase">3 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=3060687878952124506" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Saturday, August 15, 2009</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="2940040608664235030"></a>
+         
+    <h3 class="post-title">
+	 
+	 NirSoft Launcher is in development process
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      Many people ask me if there is any package with all NirSoft utilities and a launcher application to easily find and run the desired utility.<br />So now there is something in development:<br />NirLauncher (The name might be changed later) is a utility that will be packed with dozens of NirSoft utilities and will display them in the main window, separated by different categories, like 'Password Recovery Tools', 'Network Tools', 'Web Browser Tools', and so on.<br /><br />It'll allow you to easy run a utility, run the utility with command-line parameters, open the help file, browser into the Web page of the utility, and so on.<br />It's also possible that NirLauncher will allow other developers to provide their utilities as additional package for NirLauncher.<br /><br />I hope that the first Beta of NirSoft Launcher will be available to download in the incoming weeks.<br />For now, you can enjoy the first screenshots of NirLauncher:<br /><p><br /><br /><a href="http://www.nirsoft.net/images/nir_launcher1.png"><img src="http://www.nirsoft.net/images/nir_launcher1.png" height="230" width="450"></a><br /><br /><br /><br /><p><br /><a href="http://www.nirsoft.net/images/nir_launcher2.png" target="launcher2"><img src="http://www.nirsoft.net/images/nir_launcher2.png" height="230" width="450"></a><br /><br /></p>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/nirsoft-launcher-is-in-development.html" title="permanent link"> 2:55 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/nirsoft-launcher-is-in-development.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/nirsoft-launcher-is-in-development.html#comment-form;><span style="text-transform:lowercase">8 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=2940040608664235030" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Tuesday, August 11, 2009</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="6070760380621836252"></a>
+         
+    <h3 class="post-title">
+	 
+	 View all fonts installed in Windows.
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <a href="http://www.nirsoft.net/utils/windows_fonts_viewer.html">WinFontsView</a> is a new utility that enumerates all fonts installed on your system, and displays them in one simple table.<br />For each font, WinFontsView draws 5 samples of the font in different sizes, in order to allow you to easily find and choose the desired font that you need. WinFontsView also allows you to view the fonts as Bold, as Italic or with underline, as well as it allows you to export the fonts list into html file.<br /><br />For more infromation about WinFontsView, <a href="http://www.nirsoft.net/utils/windows_fonts_viewer.html">click here</a>.
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/view-all-fonts-installed-in-windows.html" title="permanent link"> 2:06 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/view-all-fonts-installed-in-windows.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/view-all-fonts-installed-in-windows.html#comment-form;><span style="text-transform:lowercase">0 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=6070760380621836252" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+  <h2 class="date-header">Tuesday, August 4, 2009</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="4623076482594320747"></a>
+         
+    <h3 class="post-title">
+	 
+	 Allopass continue to support msnpass.info and msn-blocked.com scam Web sites.
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      A few days ago, I reported that Allopass company decided to close the account of msnpass.info scam. So it seems that they simply lied to me.<br />After a few days, I saw that msnpass.info Web site is still very active,  so I contacted Allopass again, and now their representative says that they are not going to close the account.<br /><br />The reason: The owner of msnpass.info told them that msnpass.info sell a software developed by msnpass.info team, and this Web site doesn't sell the utilities of NirSoft at all.<br />This is probably the reason for the <a href="http://www.nirsoft.net/blog/2009/07/msnpassinfo-is-active-again-with-new.html">screenshot change, that I reported a few days ago</a>.<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.nirsoft.net/blog/uploaded_images/msnpass_new-795313.png"><img style="cursor: pointer; width: 400px; height: 138px;" src="http://www.nirsoft.net/blog/uploaded_images/msnpass_new-795309.png" alt="" border="0" /></a><br /><br />The owner of msnpass.info created a fake screenshot of a software that doesn't really exist, and told the Allopass company that msnpass.info sell the software shown in the screenshot, which doesn't look like the MessenPass utility of NirSoft.<br /><br />But according to reports that I received in the last days from 2 people that fell into msnpass.info scam, after users pay through the payment system of Allopass, they are still sent to download my MessenPass and Mail PassView utilities.<br />The fake screenshot in the landing page of msnpass.info was just created to give Allopass a good excuse for not closing the account.<br /><br />The sad fact is - Both msnpass.info and Allopass company have interest of keeping msnpass.info account open and to continue making a lots of money from this nasty scam.<br /><br />In the last few weeks, I was in contact with a few employees of Allopass company regarding this scam, and in all this time, they just wasted my time and protected the side of the criminals.<br />Instead of suspending the account of msnpass.info and require this Web site owner to stop the nasty MSN spamming activities and to stop selling the software of others,<br />Allopass simply sent my complaint to msnpass.info owner. msnpass.info owner answered them that he sell his own software and not my software, and Allopass simply accepted this answer, and decided to keep the account open.<br /><br />Just to remind you again - msnpass.info and msn-blocked.com are a pair of scam Web sites in french that use very nasty way to get a large amount of traffic and... money.<br />The first one, msn-blocked.com - asks innocent users to type their MSN user/password, and then floods all their contacts with fake instant messages that invite them to join msn-blocked Web site, and enter their user/password too.<br />The second one, msnpass.info - offer the users of msn-blocked.com to purchase the MessenPass utility of NirSoft through the SMS payment system of allopass.com, misleading french users that don't know that this utility is available for free at www.nirsoft.net.<br /><br />For more information about how this scam works,  <a href="http://www.nirsoft.net/blog/2009/07/msn-blockedcom-and-msnpassinfo-scams.html">read this post</a>.<br /><br /><br /><span style="color: rgb(0, 0, 153); font-weight: bold;font-size:130%;" >msn-blocked.com blocked by Firefox, so other domains are used</span><br /><br />Due to complains of many users about msn-blocked Web site, Firefox and Google blocked this domain for 'Reported Web Forgery'.<br />So the owner of this scam started to redirect Firefox users to other domains like msn-block.info, msn-blocking.com, msn-check.info, and possibly others.<br />msn-block.info and msn-blocking.com domains are already completely blocked by Firefox too, while msn-check.info is only partly blocked.<br /><br />So for, Firefox/Google are the only good side in this world that do something against this scam.<br />I already reported about this scam to Microsoft (for MSN Messenger abuse), to GoDaddy (The domain registrar), to Domains By Proxy (the privacy protection company), to EURO-WEB Servers renting (the current hosting company), and to some other organizations that handle these kind of scams. So far, there is no any action from any of them.
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/allopass-continue-to-support.html" title="permanent link"> 2:37 PM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/allopass-continue-to-support.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/allopass-continue-to-support.html#comment-form;><span style="text-transform:lowercase">5 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=4623076482594320747" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="3024862657032059693"></a>
+         
+    <h3 class="post-title">
+	 
+	 Getting information about BSODs that occurred in your system
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <a href="http://www.nirsoft.net/utils/blue_screen_view.html">BlueScreenView</a> is a new utility that allows you to watch the details of all 'Blue Screen of Death' crashes that occurred in your system.<br /><br />It automatically scans all your minidump files created during 'blue screen of death' crashes, and displays the information about all crashes in one table. For each crash, BlueScreenView displays the minidump filename, the date/time of the crash, the basic crash information displayed in the blue screen (Bug Check Code and 4 parameters), and the details of the driver or module that possibly caused the crash (filename, product name, file description, and file version).<br />BlueScreenView also displays the list of all drivers loaded during the crash, as well as it allows you to view a blue screen window which is very similar to the one that Windows displayed during the crash.<br /><br />For more information about this utility, go to <a href="http://www.nirsoft.net/utils/blue_screen_view.html">BlueScreenView Web page</a>.<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.nirsoft.net/blog/uploaded_images/bluescreenview2-783737.gif"><img style="cursor: pointer; width: 400px; height: 332px;" src="http://www.nirsoft.net/blog/uploaded_images/bluescreenview2-783735.gif" alt="" border="0" /></a>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/getting-information-about-bsods-that.html" title="permanent link"> 3:08 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/getting-information-about-bsods-that.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/getting-information-about-bsods-that.html#comment-form;><span style="text-transform:lowercase">0 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=3024862657032059693" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+
+    
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="4763107821167105063"></a>
+         
+    <h3 class="post-title">
+	 
+	 Watching current METAR weather reports in Google earth
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      <a href="http://www.nirsoft.net/utils/mweather.html">MetarWeather</a> utility has a new feature that allows you to watch the latest METAR weather reports from Google Earth map.<br />In order to use this feature, simply selected the desired METAR report lines, go to 'Save Selected Items' (Ctrl+S), choose the KML in the file type combo-box, and save the file. After that, you can open the saved .kml file in Google Earth, and watch the METAR reports on earth map.<br /><br />Here's a sample result of METAR reports in Google Earth:<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.nirsoft.net/blog/uploaded_images/mweather_google_earth-770996.png"><img style="cursor: pointer; width: 400px; height: 368px;" src="http://www.nirsoft.net/blog/uploaded_images/mweather_google_earth-770505.png" alt="" border="0" /></a>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2009/08/watching-current-metar-weather-reports.html" title="permanent link"> 3:01 AM </a></em>
+      
+
+         <a class="comment-link" href="http://www.nirsoft.net/blog/2009/08/watching-current-metar-weather-reports.html#comments"location.href=http://www.nirsoft.net/blog/2009/08/watching-current-metar-weather-reports.html#comment-form;><span style="text-transform:lowercase">1 Comments</span></a>
+
+      
+  <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=4763107821167105063" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+
+  <!-- End #comments -->
+
+
+</div></div>
+<!-- End #main -->
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+<div id="sidebar"><div id="sidebar2">
+  
+  
+  <!-- Begin #profile-container -->
+
+   
+  <!-- End #profile -->
+    
+        
+<table>
+<tr><td>
+<img src="http://www.nirsoft.net/nirsoft2.gif">
+</table>
+
+  <h2 class="sidebar-title">Links</h2>
+    <ul>
+    	<li><a href="http://www.nirsoft.net">NirSoft Main Page</a></li>
+    	<li><a href="http://www.nirsoft.net/utils">NirSoft Utilities</a></li>
+    	<li><a href="http://www.nirsoft.net/password_recovery_tools.html">Password Recovery Tools</a></li>
+    	<li><a href="http://www.nirsoft.net/network_tools.html">Network Tools</a></li>
+    	<li><a href="http://www.nirsoft.net/countryip">Country IP Addresses</a></li>
+  </ul>
+  
+
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://www.nirsoft.net/blog/2009/08/nirblog-moves-to-new-home.html">NirBlog moves to a new home</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/bluescreenview-now-also-support-64-bit.html">BlueScreenView now also support 64-bit MiniDump Fi...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/nirsoft-launcher-is-in-development.html">NirSoft Launcher is in development process</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/view-all-fonts-installed-in-windows.html">View all fonts installed in Windows.</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/allopass-continue-to-support.html">Allopass continue to support msnpass.info and msn-...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/getting-information-about-bsods-that.html">Getting information about BSODs that occurred in y...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/08/watching-current-metar-weather-reports.html">Watching current METAR weather reports in Google e...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/07/messenpass-with-alerts-in-only-2.html">MessenPass with alerts in only 2 Antivirus program...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/07/msnpassinfo-is-active-again-with-new.html">msnpass.info is active again with a new screenshot...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2009/07/instead-of-messenger-password-find-who.html">Instead of messenger password, find who loves you ...</a></li>
+     
+  </ul>
+    
+
+  <h2 class="sidebar-title">Archives</h2>
+    <ul class="archive-list">
+   	  
+    	<li><a href="http://www.nirsoft.net/blog/2008_09_01_archive.html">September 2008</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2008_10_01_archive.html">October 2008</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2008_11_01_archive.html">November 2008</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2008_12_01_archive.html">December 2008</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_01_01_archive.html">January 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_02_01_archive.html">February 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_03_01_archive.html">March 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_04_01_archive.html">April 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_05_01_archive.html">May 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_06_01_archive.html">June 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_07_01_archive.html">July 2009</a></li>
+	  
+    	<li><a href="http://www.nirsoft.net/blog/2009_08_01_archive.html">August 2009</a></li>
+	  
+
+  </ul>
+  
+
+      <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+      <p id="blogfeeds">
+    <a href="http://www.nirsoft.net/blog/atom.xml"><img src="/feed.png" border="0"></a>
+  
+</p>
+	<p id="addthis">  
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_pub  = "nirsofer";</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/button1-addthis.gif" width="125" height="16" border="0" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+</p>
+
+  <!--
+  <p>This is a paragraph of text that could go in the sidebar.</p>
+  -->
+  
+
+
+</div></div>
+<!-- End #sidebar -->
+
+
+</div>
+<!-- End #content -->
+
+
+
+<!-- Begin #footer -->
+<div id="footer"><hr />
+  <p><!--This is an optional footer. If you want text here, place it inside these tags, and remove this comment. -->&nbsp;</p>
+
+</div>
+<!-- End #footer -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+<script type="text/javascript" src="http://www.blogger.com/static/v1/common/js/3323309151-csitaillib.js"></script>
+<script>if (typeof(window.attachCsiOnload) != 'undefined' && window.attachCsiOnload != null) { window.attachCsiOnload('ext_blogspot'); }</script></body>
+</html>

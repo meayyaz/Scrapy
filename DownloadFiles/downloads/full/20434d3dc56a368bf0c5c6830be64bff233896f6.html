@@ -1,0 +1,249 @@
+<HTML>
+<HEAD>
+<TITLE>Painting a Gradient between 2 colors on a form</TITLE>
+<link rel="stylesheet" href="../main.css">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td>
+<a href="http://www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5286073190998405";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2007-09-06: B
+google_ad_channel = "1865289816";
+google_color_border = "D8E8F8";
+google_color_bg = "D8E8F8";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</table>
+
+
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="siteheader" width="138">
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menu1"><td nowrap><a href="http://www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/blog">Blog</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/freeware_links.html">Links</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/awards.html">Awards</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menu1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+</table>
+<br>
+<table border="0" cellpadding="3" width="100%">
+<tr class="menu2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/cmp/index.html">Components</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/code_samples.html">Code Samples</a><br>
+</td></tr>
+<tr class="menu2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-5286073190998405";
+/* Left Side New */
+google_ad_slot = "4094151768";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+
+
+
+</td>
+
+<td class="menutomain">
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" width1 = "100%" colspan="3">
+</td>
+<tr>
+<td style="width:7"></td>
+<td valign="top">
+
+
+
+
+<table border="0" class="vbsrccaption">
+<tr>
+<td>
+Painting a Gradient between 2 colors on a form
+</table>
+<p>
+
+<table class="vbsrcbg"><tr><td>
+<pre>
+<span class="vbremarks">
+'The following code snippet paints a gradient between 2 colors on the entire form.
+'It uses Win32 API in order to get the best performances.
+'You can change the colors of the gradient by changing the RGB values 
+'passed to PaintGradient function.
+'
+'Written by Nir Sofer
+'Web site: http://nirsoft.mirrorz.com
+</span>
+<span class="vbdeclares">
+Private Type RECT
+        Left As Long
+        Top As Long
+        Right As Long
+        Bottom As Long
+End Type
+
+Private Declare Function GetClientRect Lib &quot;user32&quot; _
+(ByVal hwnd As Long, lpRect As RECT) As Long
+Private Declare Function CreateSolidBrush Lib &quot;gdi32&quot; _
+(ByVal crColor As Long) As Long
+Private Declare Function SelectObject Lib &quot;gdi32&quot; _
+(ByVal hdc As Long, ByVal hObject As Long) As Long
+Private Declare Function DeleteObject Lib &quot;gdi32&quot; _
+(ByVal hObject As Long) As Long
+Private Declare Function FillRect Lib &quot;user32&quot; _
+(ByVal hdc As Long, lpRect As RECT, ByVal hBrush As Long) As Long
+Private Declare Function SetRect Lib &quot;user32&quot; _
+(lpRect As RECT, ByVal X1 As Long, ByVal Y1 As Long, ByVal X2 As Long, ByVal Y2 As Long) As Long
+</span>
+
+Private Function SafeDiv(X1 As Double, X2 As Double) As Double
+    If X2 = 0 Then SafeDiv = 0 Else SafeDiv = X1 / X2
+End Function
+
+Private Sub PaintGradient(frm As Form, Red1 As Integer, Green1 As Integer, Blue1 As Integer, _
+Red2 As Integer, Green2 As Integer, Blue2 As Integer)
+    Dim WinRect     As RECT
+    Dim ColorRect   As RECT
+    Dim Y           As Long
+    Dim hBrush      As Long
+    Dim hPrevBrush  As Long
+    Dim DivValue    As Double
+    Dim CurrRed     As Integer
+    Dim CurrGreen   As Integer
+    Dim CurrBlue    As Integer
+    
+    GetClientRect frm.hwnd, WinRect
+    For Y = WinRect.Top To WinRect.Bottom
+        DivValue = SafeDiv((WinRect.Bottom - WinRect.Top), (Y - WinRect.Top))
+        CurrRed = Red1 + SafeDiv((Red2 - Red1), DivValue)
+        CurrGreen = Green1 + SafeDiv((Green2 - Green1), DivValue)
+        CurrBlue = Blue1 + SafeDiv((Blue2 - Blue1), DivValue)
+        SetRect ColorRect, WinRect.Left, Y, WinRect.Right, Y + 1
+        hBrush = CreateSolidBrush(RGB(CurrRed, CurrGreen, CurrBlue))
+        hPrevBrush = SelectObject(frm.hdc, hBrush)
+        FillRect frm.hdc, ColorRect, hBrush
+        SelectObject frm.hdc, hPrevBrush
+        DeleteObject hBrush
+    Next
+End Sub
+
+Private Sub Form_Paint()
+    PaintGradient Me, 255, 128, 0, 128, 0, 255
+End Sub
+</pre>
+</table>
+
+<p>
+<a href="gradient.zip">Click here</a> to download the entire Visual Basic Project of this code snippet. <br>
+If you want to get more types of gradients you can try the <a href="http://sgrad.cjb.net" target="sgc">Super Gradient Control</a>.
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+
+</BODY>
+</HTML>

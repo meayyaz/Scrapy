@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+<head>
+<title>View log of free disk space on Windows 10</title>
+<meta name="keywords" content="view,free,disk,space,log,Windows 10" />
+<meta name="description" content="FreeSpaceLogView is a tool for Windows 10 that displays a log of free disk space on your system" />
+<link rel="stylesheet" href="../main.css" />
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/free_disk_space_log_view.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/free_disk_space_log_view.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+
+<meta property="og:title" content="View log of free disk space on Windows 10" />
+<meta property="og:description" content="FreeSpaceLogView is a tool for Windows 10 that displays a log of free disk space on your system." />
+<meta property="og:image" content="https://www.nirsoft.net/utils/freespacelogview.png" />
+<meta property="og:image:width" content="797" />
+<meta property="og:image:height" content="490" />
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" />
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+<table class="utilcaption">
+<tr><td><img src="freespacelogview_icon.png" />
+<td>FreeSpaceLogView v1.00
+<br/>
+Copyright (c) 2020 - 2021 Nir Sofer
+</td>
+</tr>
+</table>
+
+
+
+
+<p/>
+<h4 class="utilsubject">Description</h4>
+FreeSpaceLogView is a tool for Windows 10 that displays a log of free disk space on your system. This tool only works for NTFS formatted disks.
+For every log item, the following information is displayed: Log Time, Volume Name, Volume Guid, Lowest Free Space, Highest Free Space, Is Boot Volume (Yes/No).
+<br/>
+The free space log information is taken from the following event log channel: Microsoft-Windows-Ntfs/Operational
+<p/>
+FreeSpaceLogView allows you to get the disk free space information from your local computer, from remote computer on your network, and from external hard drive plugged to your computer. 
+
+<p/>
+
+<img src="freespacelogview.png" alt="Free Disk Space Log" />
+
+
+<p/>
+<h4 class="utilsubject">System Requirements</h4>
+This tool works only on Windows 10. Both 32-bit and 64-bit systems are supported. This tool doesn't work on older versions of Windows, because the operating system doesn't 
+record the free disk space information in the event log of Windows. 
+
+
+
+<p/>
+<h4 class="utilsubject">Start Using FreeSpaceLogView</h4>
+FreeSpaceLogView doesn't require any installation process or additional DLL files. In order to start using it, simply run the executable file - FreeSpaceLogView.exe 
+<br/>
+After running FreeSpaceLogView, the main window displays the log of free disk space on your local system. 
+If you want to view the information from remote computer on your network or from external hard drive, open the 'Choose Data Source' window (F7), and choose
+the desired data source to load.
+
+
+
+<p/>
+<h4 class="utilsubject">Command-Line Options</h4>
+<table class="mytable1">
+
+
+<tr>
+<td class="tdnowrap">
+/stext &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to a simple text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/stab &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to a tab-delimited text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/scomma &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to a  comma-delimited text file (csv).
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/shtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to HTML5 file (Horizontal).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sverhtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to HTML5 file (Vertical).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sxml &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to XML file.
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/sjson &lt;Filename&gt;
+</td>
+
+<td>
+Save the free space log records to JSON file.
+</td>
+</tr>
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Translating FreeSpaceLogView to other languages</h4>
+In order to translate FreeSpaceLogView to other language, follow the instructions below:
+<ol>
+<li>Run FreeSpaceLogView with /savelangfile parameter:
+<br/>
+FreeSpaceLogView.exe /savelangfile
+<br/>
+A file named FreeSpaceLogView_lng.ini will be created in the folder of FreeSpaceLogView utility.
+</li>
+<li>Open the created language file in Notepad or in any other text editor. 
+</li>
+
+<li>Translate all string entries to the desired language.
+Optionally, you can also add your name and/or a link to your Web site. 
+(TranslatorName and TranslatorURL values) If you add this information, it'll be 
+used in the 'About' window. 
+</li>
+ 
+<li>After you finish the translation, Run FreeSpaceLogView, and all translated 
+strings will be loaded from the language file.
+<br/>If you want to run FreeSpaceLogView without the translation, simply rename the language file, or move 
+it to another folder. 
+</li>
+
+</ol>
+
+
+
+
+<p/>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. 
+You are allowed to freely distribute this utility via CD-ROM, DVD,
+Internet, or in any other way, as long as you don't charge anything for this and you don't
+sell it or distribute it as a part of commercial product.  
+If you distribute this utility, you must include all files in
+the distribution package, without any modification !
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Disclaimer</h4>
+The software is provided &quot;AS IS&quot; without any warranty, either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose. The author will not be liable for any special, incidental,
+consequential or indirect damages due to loss of data or any other reason. 
+
+<p/>
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, 
+you can send a message to <a href="mailto:support@nirsoft.net">support@nirsoft.net</a>
+
+
+
+<p/>
+
+<table class="downloadline1">
+<tr><td>
+<a href="freespacelogview.zip">Download FreeSpaceLogView</a>
+</td>
+</tr>
+
+
+
+
+</table>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+FreeSpaceLogView is also available in other languages. In order to change the language of 
+FreeSpaceLogView, download the appropriate language zip file, extract the 'freespacelogview_lng.ini', 
+and put it in the same folder that you Installed FreeSpaceLogView utility.
+<p/>
+<table class="mytable1"><tr class="utiltableheader">
+<th>Language</th><th>Translated By</th><th>Date</th><th>Version</th></tr>
+
+<tr><td><a href="trans/freespacelogview_dutch.zip">Dutch</a></td><td>Jan Verheijen</td><td>20/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_french.zip">French</a></td><td>Largo</td><td>15/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_german.zip">German</a></td><td>
+<a href="https://www.wintotal.de/nirsoft-uebersetzungen/" target="trans">«Latino» auf WinTotal.de</a></td><td>13/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_greek.zip">Greek</a></td><td>
+<a href="https://www.geogeo.gr" target="trans">geogeo.gr</a></td><td>22/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_italian.zip">Italian</a></td><td>Styb</td><td>07/11/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_russian.zip">Russian</a></td><td>Dmitry Yerokhin</td><td>14/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_schinese.zip">Simplified Chinese</a></td><td>
+<a href="http://dickmoore.cn" target="trans">DickMoore</a></td><td>22/10/2021</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/freespacelogview_slovak.zip">Slovak</a></td><td>František Fico</td><td>26/10/2021</td><td>1.00</td></tr>
+
+</table>
+<p/>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+
+
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<TITLE>Creating a real console application in Visual Basic</TITLE>
+<link rel="stylesheet" href="../main.css">
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td colspan="4" class="siteheader">
+<img src="/nirsoft2.gif">
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="siteheader" width="50">
+
+<table border="0" cellpadding="3">
+<tr class="menu1"><td><a href="/utils/index.html">Utilities</a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/vb/index.html"><nobr>Visual Basic</nobr></a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/vc/index.html"><nobr>Visual C++</nobr></a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/cmp/index.html"><nobr>Components</nobr></a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/links.html">Links</a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/awards.html">Awards</a><br>
+</td></tr>
+<tr class="menu1"><td><a href="/index.html">About</a><br>
+</td></tr>
+
+</table>
+
+</td>
+
+<td width="5">&nbsp;
+</td>
+
+<td valign="top">
+
+
+
+
+<table border="0" class="vbsrccaption">
+<tr>
+<td>
+Creating a real console application in Visual Basic
+</table>
+<p>
+Some development tools, like Visual C++ and Delphi, allows the developer to easily create console applications. These tools provides specific methods and functions for writing to the console screen and their compiler also provides special option for creating console executable.   
+Unfortunately, Visual Basic doesn't support console applications. Even if you use the Win32 API for writing into the console screen, 
+Your application won't work, because <span class="special6"> the Visual Basic compiler always creates GUI application and it doesn't provide any compiler options for changing it to console application</span>. 
+<br>
+But... with a small trick, it's possible to bypass the limitation of the Visual Basic compiler: <br>
+I have developed a small utility that converts an Executable file (.exe) from GUI application mode to console application mode. 
+So, you can develop a console application in Visual Basic, create an executable file, and then, use my utility to convert the executable into a console application. 
+<br>
+My utility was developed in Visual Basic, and the source code is provided within the sample package. You can use it by opening the appmodechange project from Visual Basic IDE.
+<p>
+In order to create a console application in Visual Basic, you have to use Win32 API calls.
+<br>The following code snippet writes a few lines into the console screen, some of them are shown in different colors !
+<p>
+<table class="vbsrcbg"><tr><td>
+<pre>
+<span class="vbremarks">'Console Application Sample</span>
+<span class="vbremarks">'Written by Nir Sofer.</span>
+<span class="vbremarks">'</span>
+<span class="vbremarks">'Web site: http://nirsoft.mirrorz.com</span>
+<span class="vbremarks">'</span>
+<span class="vbremarks">'In order to create a console application from this code, 
+follow the instructions below:</span>
+<span class="vbremarks">'1. Make an executable file from this project.</span>
+<span class="vbremarks">'2. Run the &quot;Application Mode Changer&quot; utility and change the 
+mode of the executable file
+to &quot;Console Application&quot;.</span>
+
+<span class="vbdeclares">
+
+Public Declare Function GetStdHandle Lib &quot;kernel32&quot; _
+(ByVal nStdHandle As Long) As Long
+
+Private Declare Function WriteFile Lib &quot;kernel32&quot; _
+(ByVal hFile As Long, _
+lpBuffer As Any, _
+ByVal nNumberOfBytesToWrite As Long, _
+lpNumberOfBytesWritten As Long, _
+lpOverlapped As Any) As Long
+
+Public Const STD_OUTPUT_HANDLE = -11&
+
+Private Type COORD
+        x As Integer
+        y As Integer
+End Type
+
+Private Type SMALL_RECT
+        Left As Integer
+        Top As Integer
+        Right As Integer
+        Bottom As Integer
+End Type
+
+Private Type CONSOLE_SCREEN_BUFFER_INFO
+        dwSize As COORD
+        dwCursorPosition As COORD
+        wAttributes As Integer
+        srWindow As SMALL_RECT
+        dwMaximumWindowSize As COORD
+End Type
+Private Declare Function GetConsoleScreenBufferInfo Lib &quot;kernel32&quot; _
+(ByVal hConsoleOutput As Long, _
+lpConsoleScreenBufferInfo As CONSOLE_SCREEN_BUFFER_INFO) As Long
+
+Private Declare Function SetConsoleTextAttribute Lib &quot;kernel32&quot; _
+(ByVal hConsoleOutput As Long, ByVal wAttributes As Long) As Long
+
+Private Const FOREGROUND_BLUE = &H1     '  text color contains blue.
+Private Const FOREGROUND_GREEN = &H2     '  text color contains green.
+Private Const FOREGROUND_INTENSITY = &H8     '  text color is intensified.
+Private Const FOREGROUND_RED = &H4     '  text color contains red.
+
+
+</span>
+Private hOutput             As Long
+
+<span class="vbremarks">'The following function writes the content of sText variable into the console window:</span>
+Private Function WriteToConsole(sText As String) As Boolean
+    Dim lWritten            As Long
+    
+    If WriteFile(hOutput, ByVal sText, Len(sText), lWritten, ByVal 0) = 0 Then
+        WriteToConsole = False
+    Else
+        WriteToConsole = True
+    End If
+End Function
+
+Public Sub Main()
+    Dim scrbuf      As CONSOLE_SCREEN_BUFFER_INFO
+    
+    <span class="vbremarks">'Get the standard output handle</span>
+    hOutput = GetStdHandle(STD_OUTPUT_HANDLE)
+    GetConsoleScreenBufferInfo hOutput, scrbuf
+    WriteToConsole &quot;Console Application Example In Visual Basic.&quot; &amp; vbCrLf
+    WriteToConsole &quot;Written by Nir Sofer&quot; &amp; vbCrLf
+    WriteToConsole &quot;Web site: http://nirsoft.mirrorz.com&quot; &amp; vbCrLf &amp; vbCrLf
+    
+    <span class="vbremarks">'Change the text color to blue</span>
+    SetConsoleTextAttribute hOutput, FOREGROUND_BLUE Or FOREGROUND_INTENSITY
+    WriteToConsole &quot;Blue Color !!&quot; &amp; vbCrLf
+    
+    <span class="vbremarks">'Change the text color to yellow</span>
+    SetConsoleTextAttribute hOutput, FOREGROUND_RED Or _
+		FOREGROUND_GREEN Or FOREGROUND_INTENSITY
+    WriteToConsole &quot;Yellow Color !!&quot; &amp; vbCrLf
+    
+    <span class="vbremarks">'Restore the previous text attributes.</span>
+    SetConsoleTextAttribute hOutput, scrbuf.wAttributes
+    If Len(Command$) &lt;&gt; 0 Then
+        <span class="vbremarks">'Show the command line parameters:</span>
+        WriteToConsole vbCrLf &amp; &quot;Command Line Parameters: &quot; &amp; Command$ &amp; vbCrLf
+    End If
+End Sub
+
+</pre>
+</table>
+<p>
+After you create an executable file from this code, you have to use the <a href="appmodechange.html">Application Mode Changer</a> for changing the executable mode from GUI application to console application.
+<br>After you convert it to console mode, you'll get the following result: <br>
+<img src="console1.gif">
+<p>
+<table border="0" cellpadding="10" width="100%">
+<tr><td align="center"><a class="downloadline" href="console.zip">Download the projects and executables</a>
+<tr><td align="center"><a class="downloadline" href="appmodechange.html">View the source code of Application Mode Changer</a>
+
+</table>
+<p>
+ 
+</td>
+
+<td width="5">&nbsp;
+</td>
+
+
+</tr>
+
+</table>
+
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,302 @@
+<html>
+<head>
+<title>Bug in Outlook PST password protection</title>
+
+<link rel="stylesheet" href="../main.css">
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/articles/pst_password_bug.html" />
+<link rel="canonical" href="https://www.nirsoft.net/articles/pst_password_bug.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+<table border="0" class="misccaption">
+<tr><td>
+Bug in Outlook PST password protection
+</table>
+<p>
+
+When working on MS-Outlook with POP3 or IMAP accounts, all received and sent emails are saved in a Personal Folders (.pst) file.
+Microsoft allow the user to set a password on a .pst file, in order to protect the content of the emails, and 
+prevent from accessing them by other users. 
+<br>
+although commercial software that crack the password of pst files exist for years, many users don't know
+that password protection of pst files is very weak and can be cracked very easily, and may thing that their
+private emails are protected from viewing by other users.
+<br>
+In the following article, I'll give a small explanation about how the password is saved in the pst file, 
+as well as I'll demonstrate a funny bug with pst passwords.
+
+<p>
+<h4 class="utilsubject">How the password is saved in the pst file ?</h4>
+In fact... The password is not really saved in the pst file.
+Instead of saving the real password, Outlook creates a 32-bit hash value that represents the original password.
+The algorithm that is used to generate this number is just a CRC32 algorithm with a little modification.
+CRC32 is mostly used to verify data integrity, but from unknown reason, Microsoft decided to use it for password protection
+instead of using a strong hashing algorithm, like MD5 or SHA-1.
+<br>
+The bad thing about using a CRC32 algorithm for saving a password is the fact that for each 32-bit number,
+there are a lots matching passwords, which mean that if you set a password on your pst file, you can also
+open it with many other passwords that match the same CRC value.
+<br>
+For example, if you set the password '1234' to your pst file, you can also open it with the following passwords:
+'yZdHpA', 'hkNkwC', 'YUWqKD', 'FkbbpH', 'WZHAwJ', and much more...
+<br>
+Don't believe it ?  Just try it, and you'll find out that it's true !
+
+
+<p>
+<h4 class="utilsubject">The null password bug</h4>
+Outlook uses the 32-bit value that I mention above to determine whether to ask the user to type a password.
+If this value is other than zero, the user must type a password that matches the same CRC value in order to open the pst file.
+If this value is equal to zero, the user is allowed to open the pst file without typing any password.
+<br>
+But... What happens if you set a password to the pst file that matches to a zero CRC value ?
+This is exactly the bug that I'm talking about !!
+<br>
+If you set a password to the pst file that matches to a zero CRC value, Outlook will accept your password without
+complaints, but in the next time that you try to open the pst file, you won't need to type any password !
+
+<p>
+The following list contain passwords that generate a zero CRC value in Outlook, and thus if set one of these passwords to
+your pst file, Outlook won't ask you to type a password in the next time that you access the pst file:
+<ul>
+<li>eyzVS1
+<li>tHPuT3
+<li>5J8j84
+<li>EvIoh4
+<li>TGcLo6
+<li>JeX2N7
+<li>1Rj78C
+<li>nr9VuE
+<li>CNQp0J
+<li>pLMtUP
+<li>O0fc8Q
+<li>NaE3OT
+<li>ArTniW
+<li>z7s4mm
+<li>YUfCxp
+<li>yZUzCu
+<li>5kfzQx
+</ul>
+The above passwords list was generated by using my new pst password generator. This password generator is a part
+of my new pst cracker utility that was released during June 2006 - <a href="http://www.nirsoft.net/utils/pst_password.html" target="PstPassword">PstPassword</a>.
+
+
+
+
+<p>
+<h4 class="utilsubject">Steps to reproduce the bug in Outlook 2003</h4>
+<ol>
+<li>From the menu, select Tools -> E-mail Accounts
+<li>Select 'View or change existing e-mail accounts', and click Next.
+<li>Click 'New Outlook Data File'.
+<li>Select the type of storage, and then select a new pst filename.
+<li>In the pst creation dialog-box, type one of the passwords from the above &quot;bad&quot; passwords list.
+Don't check the &quot;Save this password is your password list&quot; option.
+<li>Click 'OK' and then 'Finish'.
+<li>Try to access the newly created 'Personal Folders'. At this stage, Outlook should ask you to type a password,
+but if you used one of the password from my list, Outlook will allow you to access the pst without a password.
+This is the bug !!
+
+</ol>
+
+<p>
+
+<table>
+<tr>
+<td>
+&nbsp;
+
+</table>
+<p>
+
+
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>

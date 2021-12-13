@@ -1,0 +1,362 @@
+<html>
+<head>
+<title>The Raw Text Edit Mode</title>
+<link rel="stylesheet" href="../main.css">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/raw_text_edit_mode.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/raw_text_edit_mode.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<img src="//www.nirsoft.net/banners/empty729x90.gif">
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+<a name="start"></a>
+<p>
+<h4 class="utilsubject">The Raw Text Edit Mode</h4>
+NK2Edit provides a special edit mode that allows you to view and edit the records of NK2 file as 
+a text file that looks like the .ini files of Windows.
+Every record begins with [record] header, followed by a sequence of lines with 'Property Number=Value' structure.
+The property number is written as 32-bit hexadecimal number, and the Value is written as string, number or Hex-Dump sequence, 
+depending on the type of the property.
+
+
+<p>
+<img src="nk2edit_text_mode.gif">
+<p>
+
+Here's the list of all major properties that you can find in the Raw Text Edit Mode:
+<p>
+
+<table border="1" cellpadding="5" bordercolor="#000000">
+<tr>
+<th>Property ID
+<th>Type
+<th>Name
+<th>Description
+
+<tr>
+<td>6001001f
+<td>String
+<td>Search String
+<td>
+Outlook uses this string for searching the right recipient when the user type
+the letters in the To/CC text-box. For example, if the value in this field is abcd, and the user
+type abcd in the recipients text box, this record will be displayed in the drop down.
+However, you should be aware that Outlook automatically put the email address in this field 
+when the user sends a message.
+
+<tr>
+<td>0c150003
+<td>Integer
+<td>Recipient Type
+<td>
+The type of the recipient. 1 = To, 2 = CC, 3 = BCC.
+
+<tr>
+<td>0fff0102
+<td>Binary
+<td>EntryID
+<td>
+Unique EntryID of this recipient, in binary format.
+Generally, you should not modify this value. 
+NK2Edit automatically generate this ID according to the other fields.
+
+<tr>
+<td>300b0102
+<td>Binary
+<td>Search Key
+<td>Contains a unique search key of this recipient, in binary format.
+Generally, you should not modify this value. 
+NK2Edit automatically generate this key according to the other fields.
+
+<tr>
+<td>0ffe0003
+<td>Integer
+<td>Object Type
+<td>
+The type of the recipient object.
+6 = Individual Recipient, 8 = Distribution List Recipient.
+
+
+<tr>
+<td>39000003
+<td>Integer
+<td>Display Type
+<td>
+The display type of the recipient.
+0 = Standard mail user, 1 = Distribution List, 5 = Private Distribution List, 6 = Remote User
+
+<tr>
+<td>3003001f
+<td>String
+<td>Email/Exchange Address
+<td>
+Contains the email address for SMTP records, and 
+MS-Exchange address for EX records.
+
+
+<tr>
+<td>3002001f
+<td>String
+<td>Address Type
+<td>
+Contains the address type of the record.
+SMTP for regular email address, EX for MS-Exchange address, FAX for fax address, 
+and MAPIPDL for private distribution list.
+
+<tr>
+<td>3001001f
+<td>String
+<td>Display Name
+<td>
+Contains the display name of the recipient.
+
+<tr>
+<td>5ff6001f
+<td>String
+<td>Recipient Display Name
+<td>
+The original display name of the recipient.
+This property usually contains the same value as 3001001f.
+
+<tr>
+<td>5ff70102
+<td>Binary
+<td>Recipient EntryID
+<td>
+The value of this property is usually identical to 0fff0102.
+
+
+<tr>
+<td>6003001f
+<td>String
+<td>Drop-Down Name
+<td>
+The value of this property is displayed in the AutoComplete drop-down,
+
+
+<tr>
+<td>39fe001f
+<td>String
+<td>SMTP Address
+<td>
+Contains the SMTP address of Exchange record.
+
+<tr>
+<td>60040003
+<td>Integer
+<td>Record Weight 
+<td>
+Contains the weight of the record, relative to the other records.
+Record with higher weight value get a better position in the records list.
+
+
+
+</table>
+
+
+<p>
+<h4 class="utilsubject">What can you do with this edit mode ?</h4>
+<ol>
+<li>Easily view the content of your NK2 files:
+NK2 files store the information in binary format that cannot be easily viewed in any text viewer or Hex viewer.
+This mode allows you to easily view all records and field values stored in your NK2 file.
+<li>Find and fix corrupted records or fields:
+If your NK2 file doesn't work well or doesn't work at all, this mode
+allows you to locate and fix records with unusual fields and values.
+
+<li>Search and replace in any other editor:
+With this mode, you can copy the entire text into the clipboard (Ctrl+A and then Ctrl+C) and then
+paste it into your favourite text editor. In the other editor, you can make changes with search and replace
+or any other feature that your editor provide. 
+After you made all your changes, simply paste back the text with all your changes (Ctrl+A and then Ctrl+V)
+<br>
+
+
+
+</ol>
+
+
+<p>
+<h4 class="utilsubject">Be Careful !</h4>
+The raw text edit mode is very powerful, because it allows you to make any change you like,
+but if you make any mistake, you can easily make the record you edit unreadable by Outlook, and even
+ruin the entire NK2 and make it unusable. 
+In order to avoid from any risk of losing your NK2 information, always backup your NK2 file before
+editing it in this mode. 
+
+
+
+<p>
+<a href="outlook_nk2_edit.html">Return to NK2Edit introduction page</a>
+<p>
+
+
+
+<a name="end"></a>
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>Using NK2Edit in mixed environment of computers running Outlook 32-bit and Outlook 64-bit</title>
+<link rel="stylesheet" href="../main.css">
+<meta name="keywords" content="edit,nk2,AutoComplete,32-bit,64-bit,Outlook">
+<meta name="description" content="Using NK2Edit in mixed environment of computers running Outlook 32-bit and Outlook 64-bit">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/using_nk2edit_mixed_outlook_32bit_64bit.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/using_nk2edit_mixed_outlook_32bit_64bit.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<img src="//www.nirsoft.net/banners/empty729x90.gif">
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+<a name="start"></a>
+
+<p>
+<h4 class="utilsubject">Using NK2Edit in mixed environment of computers running Outlook 32-bit and Outlook 64-bit</h4>
+
+Due to limitations of the programming interfaces provided by Microsoft Outlook, some of the features of NK2Edit, like importing records from the address book, 
+requires to run the correct build of NK2Edit according to the installed build of Outlook. NK2Edit 32-bit for 32-bit version of Outlook, and NK2Edit 64-bit for 64-bit version of Outlook.
+<p>
+In order to make easier life for organizations with mixed environment of computers running Outlook 32-bit and computer running Outlook 64-bit, version 2.70 of NK2Edit introduces new package
+containing both 32-bit and 64-bit executables, and a third executable file that runs the correct build according to the installed build of Outlook.
+
+<p>
+The new package contains the following executable files:
+<ul>
+<li>nk2edit_32_bit.exe - 32-bit executable of NK2Edit
+<li>nk2edit_64_bit.exe - 64-bit executable of NK2Edit
+<li>NK2Edit.exe - Small executable file that checks the installed build of Outlook in the Registry and automatically executes the needed version of NK2Edit -  nk2edit_32_bit.exe or nk2edit_64_bit.exe
+</ul>
+
+Here's the instructions for using this mixed 32-bit/64-bit package:
+<ul>
+<li>You must copy all 3 executables to the same folder.
+<li>You should only directly run NK2Edit.exe and allow it to execute the correct build of NK2Edit (nk2edit_32_bit.exe or nk2edit_64_bit.exe).
+<li>You can freely run NK2Edit.exe with any command-line option you need, and it'll automatically transfer all
+command-line options to the executable that it runs (nk2edit_32_bit.exe or nk2edit_64_bit.exe)
+</ul>
+
+
+
+
+
+
+
+
+<p>
+<a href="outlook_nk2_edit.html">Return to NK2Edit introduction page</a>
+<p>
+
+
+
+
+
+<table>
+<tr>
+<td>
+
+</table>
+
+
+<a name="end"></a>
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>
+

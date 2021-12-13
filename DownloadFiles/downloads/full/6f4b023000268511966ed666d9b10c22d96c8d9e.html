@@ -1,0 +1,984 @@
+<html>
+<head>
+<title>NK2Edit Command Line Options (Edit Outlook AutoComplete Files)</title>
+<link rel="stylesheet" href="../main.css">
+<meta name="keywords" content="edit,nk2,command,line,merge,delete,remove,script,AutoComplete">
+<meta name="description" content="How to edit / merge / modify the AutoComplete files of Outlook from command-line">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/nk2edit_command_line_options.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/nk2edit_command_line_options.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<img src="//www.nirsoft.net/banners/empty729x90.gif">
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+<a name="start"></a>
+
+<p>
+<h4 class="utilsubject">NK2Edit Command-Line Options</h4>
+
+In the following section you can find the list of all command-line options available 
+in <a href="outlook_nk2_edit.html">NK2Edit utility</a>:
+<p>
+
+
+<table border="1" cellpadding="5" bordercolor="#000000">
+
+
+
+<tr><td nowrap>
+/nk2file &lt;Filename&gt;
+<td>
+Start NK2Edit with the specified .NK2 filename.
+If you don't use this command-line option, the .NK2 file of the default Outlook profile is loaded.
+
+<tr><td nowrap>
+/nk2_to_text &lt;NK2 Filename&gt; &lt;Text Filename&gt;
+<td>
+Convert NK2 file into a raw text file that can be edited with any Unicode text editor.
+After editing the file, you can convert it back into a valid NK2 file by using /text_to_nk2 command-line option.
+
+<tr><td nowrap>
+/text_to_nk2 &lt;Text Filename&gt; &lt;NK2 Filename&gt;
+<td>
+convert a raw text file back into a valid NK2 file.
+
+
+<tr><td nowrap>
+/import_full_nk2 &lt;NK2 Filename&gt;
+<td>
+Imports all records of the specified nk2 file into the AutoComplete file of the default Outlook profile.
+Be aware that this action overwrites all the existing AutoComplete records with the records of the specified nk2 file.
+
+
+<tr><td nowrap>
+/export_to_message_store &lt;.dat AutoComplete Filename&gt;
+<td>
+This command-line option is only relevant for Outlook 2010/2013 and possibly future versions of Outlook.
+Starting from Outlook 2010, the AutoComplete data is stored in 2 different locations: Inside a simple AutoComplete file on the local disk, like it was in all previous versions of Outlook,
+and inside the message store where all Outlook data is stored. In MS-Exchange profiles, a copy of the AutoComplete data is stored in the remote Exchange server.
+In profiles based on .pst file, the AutoComplete data is stored in the .pst file.
+
+In some circumstances, the copy of the AutoComplete data stored in the message store of Exchange Server 2010 may overwrite the changes you made with NK2Edit.
+
+This command-line option allows you to export the AutoComplete file into the message store of the default Outlook profile,
+so the copy of the AutoComplete data stored in the MS-Exchange server will not overwrite your changes.
+
+<p>
+Example:
+<br>
+NK2Edit.exe /export_to_message_store $default
+
+<tr><td nowrap>
+/AutoExportToMessageStore &lt;0 | 1&gt;
+<td>
+Specifies whether to automatically export the AutoComplete data into the message store of the default Outlook profile, every time that the AutoComplete is saved. 0 = No, 1 = Yes.
+You can use this command-line option together with /script and all other command-line options.
+It's highly recommended to use '/AutoExportToMessageStore 1' if you have Outlook 2010 or greater version.
+<br>
+Be aware that setting AutoExportToMessageStore to 1 only works when you save the default AutoComplete file.
+
+
+<tr><td nowrap>
+/import_from_message_store &lt;AutoComplete Filename&gt;
+<td>
+Saves the AutoComplete data stored inside the message store (PST file or Exchange server) of the current Outlook profile to the specified file.
+(This option is the opposite of /export_to_message_store )
+
+
+<p>
+Example:
+<br>
+NK2Edit.exe /import_from_message_store &quot;c:\temp\import1.dat&quot;
+
+
+
+
+
+<tr><td nowrap>
+/WarnIfOutlookRunning
+<td>
+You can use this command-line switch with /script , /script_express , and other command-line options  to warn the user if Outlook is running. 
+
+
+<tr><td nowrap>
+/SetOutlookMaxRecords &lt;Maximum Records&gt;
+<td>
+ This option allows you to easily change the maximum numbers of AutoComplete records allowed by Outlook. NK2Edit automatically detects the current installed version of Outlook and updates the correct Registry value. 
+ 
+
+
+<tr><td nowrap>
+/CompleteMessage &lt;Message Text&gt;
+<td>
+Instructs NK2Edit to display a message to the user when a command-line action is completed, for example:
+<br>
+NK2Edit.exe /CompleteMessage &quot;Finished executing the script of NK2Edit&quot; /LogFile &quot;express_log.txt&quot; /script_express $default 'If AddressType equal &quot;EX&quot; EXToSMTP' 'If Domain Equal &quot;gmail.com&quot; Delete' 
+
+<tr><td nowrap>
+/SkipCommandLineNoProfiles 
+<td>
+If it's set to 1, then the /script, /script_express, and /export_to_message_store commands will not 
+do anything if there are no Outlook profiles on the computer you run it, for example:
+<br>
+NK2Edit.exe /SkipCommandLineNoProfiles 1 /LogFile &quot;express_log.txt&quot; /script_express $default 'If AddressType equal &quot;EX&quot; EXToSMTP' 'If Domain Equal &quot;gmail.com&quot; Delete'
+
+
+
+<tr><td nowrap>
+/TimestampBackup
+<td>
+You can use this command-line switch with /script , /script_express , and other command-line options to create a separated backup every time that the command-line is executed. The backup filename is generated with a timestamp, for example: 1.nk2.20130813111927.NK2Edit.bak 
+
+
+
+
+<tr><td nowrap>
+/nofirstbackup
+<td>
+By default, /text_to_nk2 and /script options automatically backup the nk2 if it's the first overwrite made by NK2Edit.
+If you don't want to create a backup, use /nofirstbackup parameter.
+
+<tr><td nowrap>
+/nobackup
+<td>
+By default, /text_to_nk2 and /script options automatically backup the nk2 file on every save, into a filename with
+.NK2Edit.Cmd.bak extension. If you don't want to create this backup, use /nobackup parameter.
+
+<tr><td nowrap>
+/script &lt;Script Filename&gt; &lt;NK2 Source&gt; &lt;NK2 Destination&gt; 
+<td>
+Allows you to run a simple script that can make changes, like adding new NK2 records, replacing values in existing records, or deleting unwanted records without
+displaying any user interface. The  &lt;Script Filename&gt;  parameter specifies the filename contains the script.
+The &lt;NK2 Source&gt; is the NK2 filename to load, and the &lt;NK2 Destination&gt; is the NK2 file to save your changes.
+If &lt;NK2 Destination&gt;  is not specified, your changes will overwrite the filename specified in &lt;NK2 Source&gt; parameter.
+<p>
+For more information about scripting with NK2Edit, read <a href="edit_nk2_script.html">this page</a>.
+
+
+<tr><td nowrap>
+/script_express &lt;NK2 File&gt;  'Script Line 1' 'Script Line 2' 'Script Line 3' ...
+<td>
+Allows you to run a simple script, like /script , but without using external script file.
+
+<p>
+For more information about scripting with NK2Edit, read <a href="edit_nk2_script.html">this page</a>.
+
+
+
+<tr><td nowrap>
+/ScriptInput &lt;Input Filename&gt;
+<td>
+Allows you to create a script with parameters, and the parameter values are loaded
+from the specified input file. The input file is comma-delimited (csv) or tab-delimited file.
+In the script file, a parameter is specified as *X. *0 for the first parameter, *1 for the
+second paramter, *2 for the third parameter, and so on (up to 10 parameters)
+<p>
+Example for script line with parameters:
+<br>
+if Email Equal &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=*0&quot; set Email &quot;/o=Domain/ou=First Administrative Group/cn=Recipients/cn=*1&quot; AutoFill
+
+<p>
+Example for the input filename:
+<br>user01, newuser01
+<br>user02, newuser02
+<br>user03, newuser03
+<br>user04, newuser04
+
+<p>
+If you run the above script line with the above input file, 
+/o=Domain/ou=First Administrative Group/cn=Recipients/cn=user01 will be 
+replaced with /o=Domain/ou=First Administrative Group/cn=Recipients/cn=newuser01 and 
+so on..
+<p>
+You can create the input file as Ascii file or Unicode file.
+
+<tr><td nowrap>
+/copy_default &lt;Destination File&gt; 
+<td>
+(Available only in licensed version)
+<p>
+Allows you to easily copy the NK2 file of the default profile into the specified destination filename.
+The default NK2 filename may be different from one computer to another, depending on the profile name and Outlook version, so
+this option provide you an easily way to backup/copy the NK2 file into another location. 
+<p>
+You can use this command-line option to collect the NK2 files from all computers on your network, by 
+using it in the logon script of Windows, for example:
+<br>
+NK2Edit.exe /copy_default &quot;z:\nk2files\%computername%.nk2&quot;
+<br>
+NK2Edit.exe /copy_default &quot;z:\nk2files\%username%.nk2&quot;
+<p>
+
+
+<tr><td nowrap>
+/RestoreBackup {Backup File Extension}
+<td>
+Restores the last backup made by NK2Edit on the default AutoComplete File.
+By default, this command restores the backup made by NK2Edit scripts, with .NK2Edit.Cmd.bak extension.
+<br>
+Optionally you can specify .NK2Edit.bak extension (backup made from user interface) or NK2Edit.First.bak extension (First backup made by NK2Edit) if you want to restore other type of backup, for example:
+<br>
+NK2Edit /RestoreBackup .NK2Edit.bak 
+
+
+
+<tr><td>
+/export_to_contacts &lt;Source NK2 File&gt;
+<td>
+(Available only in licensed version)
+<p>
+Allows you to export all emails stored inside the specified NK2 directly into the contacts of Outlook.
+If an email already exist, it won't be added again, in order avoid from duplicate contacts.
+<br>
+In &lt;Source NK2 File&gt; - you can also specify $default if you want to use the NK2 of the 
+default Outlook profile.
+
+<p>
+Example:
+<ul>
+<li>NK2Edit.exe /export_to_contacts &quot;f:\temp\myfile.nk2&quot; 
+<li>NK2Edit.exe /export_to_contacts $default
+</ul>
+
+
+<tr><td>
+/generate_new_nk2 &lt;Destination NK2 File&gt; &lt;Number Of Days&gt; &lt;Max Emails&gt; &lt;Sent Messages&gt; &lt;Received Messages&gt;
+<td>
+(Available only in licensed version)
+<p>
+Allows you to generate a completely new NK2 file from the email addresses found in your mailbox.
+When using this command-line option, NK2Edit scans the messages inside your mailbox, collects the email addresses,
+and then generates a completely new NK2 file with all email addresses found in the mailbox scan process.
+
+<p>
+
+Here's the description of the parameters:
+<ul>
+<li>Destination NK2 File: The NK2 file to save the collected emails list. If you specify $default,
+the NK2 file of the default Outlook profile will be overwritten.
+<li>Number Of Days: Specify the number of days to scan backward from the current date.
+For example: If you specify 60 in this parameter, NK2Edit will scan the email messages created in the last 60 days.
+<li>Max Emails: Maximum number of email addresses to collect. Be aware that the default maximum number of
+records in NK2 file is 1000 for Outlook 2003 and 2000 for Outlook 2007/2010. So it's recommended to keep 
+this parameter value below these limits.
+<li>Sent Messages: Specifies whether to scan the email addresses in the messages you sent.
+1 = Yes, 0 = No.
+<li>Received Messages: Specifies whether to scan the email addresses in the messages you received.
+1 = Yes, 0 = No. It's recommended to set this parameter value to 0 in most cases, because when
+you set it to 1, email addresses of spam messages might be added into the created NK2 file.
+</ul>
+
+<p>
+Example:
+<ul>
+<li>Scan the email addresses of messages sent in the last 60 days, and stop the scan process after
+finding 500 email addresses. Save the found email addresses into myfile.nk2
+<br>
+NK2Edit.exe /generate_new_nk2 &quot;f:\temp\myfile.nk2&quot; 60 500 1 0
+  
+</ul>
+
+<p>
+Notice: For using this command-line option with 64-bit version of Outlook 2010, you must use the x64 version of NK2Edit.
+In all other cases, you should use the 32-bit version of NK2Edit.
+<p>
+
+
+<tr><td>
+/import_address_book &lt;NK2 Filename&gt; &lt;Address Book Name&gt; &lt;Address Type&gt; &lt;MaxRecords&gt;
+<td>
+(Available only in licensed version)
+<p>
+Allows you to import the addresses stored inside the Contacts/Address Book of Outlook directly into your NK2 file.
+
+<p> 
+Here's the description of the parameters:
+<ul>
+<li>NK2 Filename: The NK2 file to import the addresses. If the file already exists,
+the email addresses from the contacts/address book will be added into the existing NK2 file. 
+If the email addresses already exist in the NK2 file, they'll be merged with the address book emails according to the merge mode defined in the config file.
+
+If the specified NK2 file doesn't exist, a completely new NK2 file with all the contacts addresses will be created.
+<br>
+You can also specify $default for this parameter if you want to use the NK2 file of the default Outlook profile.
+<p>
+<li>Address Book Name: The name of the address book to import. You must specify the exact name, as displayed in the address book window of Outlook:
+<br>
+<img src="outlook_address_book_names.png">
+<br>
+For non-Exchange Outlook profiles, this parameter should be &quot;Contacts&quot;, which means that the email addresses from the Contacts folder of Outlook will be imported into the NK2 file.
+<br>
+For Exchange profiles, you can also specify other address books, like &quot;Global Address List&quot;, &quot;Personal Address Book&quot;, &quot;All Users&quot;, and a few others.
+
+<li>Address Type:
+Specifies the type of addresses to import.
+You can specify SMTP (for SMTP addresses), EX (for Exchange addresses), or All (for both SMTP and EX addresses).
+<br>
+You can also specify multiple address types delimited by '+' character, for example: MAPIPDL+EX+SMTP
+
+
+<li>MaxRecords: Maximum number of records that will be added to the NK2 file.
+It's recommended to set this value to the default of Outlook, which is 1000 for Outlook 2003, and 2000 to Outlook 2007/2010.
+
+
+</ul>
+
+<p>
+
+<p>
+Examples:
+<ul>
+<li>Add the SMTP addresses from the Contacts of Outlook into the NK2 file of the default Outlook profile:
+<br>
+NK2Edit.exe /import_address_book $default &quot;Contacts&quot; &quot;SMTP&quot; 2000
+
+<li>Add all addresses from the 'Personal Address Book' of Outlook (in Exchange profile) into personal.nk2 file.
+<br>
+NK2Edit.exe /import_address_book personal.nk2 &quot;Personal Address Book&quot; &quot;All&quot; 2000
+
+<li>Add EX, SMTP, and MAPIPDL addresses from 'NirSoft Address Book' into the AutoComplete file of the default Outlook profile:
+<br>
+NK2Edit.exe /import_address_book $default &quot;NirSoft Address Book&quot; &quot;MAPIPDL+EX+SMTP&quot; 2000
+
+</ul>
+
+<p>
+
+Notice: For using this command-line option with 64-bit version of Outlook 2010, you must use the x64 version of NK2Edit. In all other cases, you should use the 32-bit version of NK2Edit. 
+<p>
+
+
+<tr><td>
+/sync_address_book &lt;NK2 Filename&gt; &lt;Address Book Name&gt; &lt;Address Type&gt; &lt;MaxRecords&gt;
+<td>
+(Available only in licensed version)
+<p>
+This command line option is very similar to /import_address_book , but with
+one additional action: /sync_address_book also deletes from the NK2 file all addresses that cannot be
+found inside the specified address book/contacts list.
+So if a contact was removed from the address book, it'll also be removed from the NK2 file.
+Be aware that only the records with the specified Address Type will be removed from the NK2 file.
+For example, if you specify 'Ex' as the address type, all Exchange emails that cannot be found
+in the address book will be removed, but the SMTP addresses won't be deleted.
+
+<p>
+<p>
+Examples:
+<ul>
+<li>Synchronize the Exchange addresses in the NK2 file with the Global Address List of Outlook/Exchange,
+but leave all SMTP records without change.
+<br>
+NK2Edit.exe /sync_address_book $default &quot;Global Address List&quot; &quot;EX&quot; 2000
+
+</ul>
+
+  
+
+
+
+
+
+<tr><td>
+/import_csv_file &lt;NK2 Filename&gt; &lt;CSV File&gt; &lt;Merge Mode&gt; 
+<td>
+(Available only in licensed version)
+<p>
+Allows you to import addresses from a simple comma-delimited (csv) text file.
+For more information about the structure of this file, read this page: <a href="import_nk2_addresses_csv_file.html">Import NK2 addresses from a simple comma-delimited (csv) text file</a>
+
+<p> 
+Here's the description of the parameters:
+<ul>
+<li>NK2 Filename: The NK2 file to import the addresses. If the file already exists,
+the contacts in the specified .csv file will be merged into the nk2 file, according to the
+specified merge mode.
+If the file doesn't exist, a new NK2 file will be created.
+You can also specify $default in order to use the NK2 file of the default Outlook profile.
+
+<li>CSV File: The .csv file containing the names/emails information.
+
+<li>Merge Mode: Specify one of the following values:
+    <ul>
+	<li>1 - Allow duplicate records
+	<li>2 - (Recommended) If email already exist, replace it with the new one.
+	<li>3 - If email already exist, don't add the record.
+	</ul>
+	
+</ul>
+
+<p>
+Examples:
+<ul>
+<li>NK2Edit.exe /import_csv_file $default &quot;c:\files\users.csv&quot; 3
+<li>NK2Edit.exe /import_csv_file &quot;c:\temp\1.nk2&quot; &quot;c:\files\users.csv&quot; 2
+</ul>
+
+
+
+
+<tr><td>
+/import_contacts_file &lt;NK2 Filename&gt; &lt;Contacts File&gt; &lt;Merge Mode&gt; 
+<td>
+(Available only in licensed version)
+<p>
+Allows you to import addresses from the contacts .csv file of Microsoft Outlook into your .NK2 file.
+You can create this contacts .csv file by using the export feature of Outlook.
+Others email software and services, like Gmail and Yahoo, also allows you to export 
+the contacts into a .csv file that is compatible with Microsoft Outlook, so you can also use this
+command-line option to import contacts of Gmail/Yahoo into your NK2 file.
+ 
+<p> 
+Here's the description of the parameters:
+<ul>
+<li>NK2 Filename: The NK2 file to import the addresses. If the file already exists,
+the contacts in the specified .csv file will be merged into the nk2 file, according to the
+specified merge mode.
+If the file doesn't exist, a new NK2 file will be created.
+You can also specify $default in order to use the NK2 file of the default Outlook profile.
+
+<li>Contacts File: The .csv file contains the contacts that you wish to import.
+This file must be compatible with the contacts export feature of Microsoft Outlook.
+
+<li>Merge Mode: Specify one of the following values:
+    <ul>
+	<li>1 - Allow duplicate records
+	<li>2 - (Recommended) If email already exist, replace it with the new one.
+	<li>3 - If email already exist, don't add the record.
+	</ul>
+	
+</ul>
+
+<p>
+Examples:
+<ul>
+<li>NK2Edit.exe /import_contacts_file $default &quot;c:\contacts\mycontacts.csv&quot; 3
+<li>NK2Edit.exe /import_contacts_file &quot;c:\temp\1.nk2&quot; &quot;c:\contacts\gmail_contacts.csv&quot; 2
+</ul>
+
+
+
+<tr><td>
+/logon_profile &lt;Outlook Profile Name&gt;
+<td>
+<p>
+This command-line parameter tells NK2Edit to use the specified Outlook profile for
+any Contacts/Mailbox scan action, instead of using the default profile.
+<br>
+You can use this command-line parameter together with  /import_address_book , /export_to_contacts, and /generate_new_nk2
+command-line options, if you want to make the action with another Outlook profile.
+For example, if you want to import the contacts located inside Outlook2 profile into your default NK2 file:
+<br>
+NK2Edit.exe /import_address_book $default &quot;Contacts&quot; &quot;SMTP&quot; 2000 /logon_profile &quot;Outlook2&quot;
+
+<p>
+
+
+<tr><td>
+/merge_files &lt;Destination File&gt; &lt;Source File 1&gt; &lt;Source File 2&gt; &lt;Merge Mode&gt; &lt;MaxRecords&gt; &lt;Weight Mode&gt;  
+<td>
+(Available only in licensed version)
+<p>
+Allows you to merge 2 NK2 files into one from command-line.
+The file you specify in &lt;Source File 2&gt; is merged into &lt;Source File 1&gt; and then
+the result is saved into the file your specify in &lt;Destination File&gt;.
+If &lt;Source File 1&gt; or &lt;Source File 2&gt; is specified as an empty string (&quot;&quot;),
+the  &lt;Destination File&gt; will be used as a source.
+<p>
+
+Here's the description of the parameters:
+<ul>
+<li>Destination File: The .nk2 file to save the final result.
+<li>Source File 1 and Source File 2: The 2 NK2 files to merge.
+The file in 'Source File 2' is merged into the file specified in 'Source File 1'.
+You can specify $default if you want to use the NK2 file of the default profile as a source.
+You can specify empty string (&quot;&quot;) if you want to use the destination file as a source.
+<li>Merge Mode: Specify one of the following values:
+    <ul>
+	<li>1 - Allow duplicate records
+	<li>2 - (Recommended) If email already exist, replace it with the new one.
+	<li>3 - If email already exist, don't add the record.
+	</ul>
+
+<li>MaxRecords: Maximum number of records that will be added to the NK2 file.
+It's recommended to set this value to the default of Outlook, which is 1000 for Outlook 2003, and 2000 to Outlook 2007/2010.
+
+<li>Weight Mode: 
+Determines how to handle the Weight value and records order after the files are merged.
+You can specify one of the following values:
+     <ul>
+	 <li>0 - Don't change anything.
+	 <li>1 - Set the Weight value of all records to 1 (initial value).
+	 <li>2 - (Recommended) Sort the records according to the Weight value of the merged records.
+	 </ul>
+
+</ul>
+ 
+
+<p>
+Examples:
+<ul>
+<li>Merge file2.nk2 into file1.nk2 with maximum limitation of 2000 records.
+<br>
+NK2Edit.exe /merge_files &quot;f:\temp\file1.nk2&quot; &quot;&quot; &quot;f:\temp\file2.nk2&quot; 2 2000 2
+
+<li>Merge the NK2 file of the default profile into merged.nk2, without records limitation (MaxRecords = 0).
+You can put this line in a logon script and create a large NK2 file which contains the NK2 records of all users...
+<br>
+NK2Edit.exe /merge_files &quot;z:\nk2data\merged.nk2&quot; &quot;&quot; $default 2 0 2
+
+<li>Merge existing nk2 file with important records into the NK2 file of the default profile.
+<br>
+NK2Edit.exe /merge_files $default &quot;&quot; &quot;z:\records.nk2&quot; 2 1000 2
+
+<li>Merge 1.nk2 into 2.nk2 and then save the result into 3.nk2
+<br>
+NK2Edit.exe /merge_files &quot;3.nk2&quot; &quot;2.nk2&quot; &quot;1.nk2&quot; 2 1000 2
+
+
+</ul>
+ 
+ 
+ <tr><td nowrap>
+/ccenterfile &lt;Filename&gt;
+<td>
+Specifies the Control Center information file (nk2info.dat) to load into the Control Center.
+ 
+<tr><td nowrap>
+/ccenter
+<td>
+Export the Control center table into a csv/html/xml file, without displaying any user interface.
+This parameter should be used with one of the export command-line option: /stext ,  /stab, /scomma , /stabular , /shtml , /sverhtml , /sxml
+
+<br>
+For example:
+<br>
+NK2Edit.exe /ccenter /shtml &quot;c:\temp\ccenter.html&quot;
+<br>
+NK2Edit.exe /ccenter /shtml &quot;c:\temp\ccenter.html&quot; /sort &quot;Records Count&quot;
+<br>
+NK2Edit.exe /ccenter /scomma &quot;c:\temp\ccenter.csv&quot; /sort &quot;Records Count&quot; /ccenterfile &quot;f:\temp\nk2info.dat&quot;
+
+<p>
+
+
+<tr><td nowrap>
+/open_control_center 
+<td>
+Opens the NK2 Control Center window, in addition to the main NK2 editor window.
+
+
+<tr><td nowrap>
+/load_config &lt;Filename&gt;
+<td>
+When you use this command-line option,
+NK2Edit will load the configuration from the specified filename, instead of using the default nk2edit.cfg located
+in the same folder of nk2edit.exe
+<br>
+When you exit from NK2Edit, the configuration will be saved to the same filename that you specified.
+
+<p>
+Example:
+<br>
+NK2Edit.exe /load_config &quot;c:\myconfig\1.cfg&quot;
+
+
+<tr><td nowrap>
+/add_nk2_associate
+<td>
+Associate the .nk2 extension with NK2Edit.
+
+<tr><td nowrap>
+/remove_nk2_associate
+<td>
+Remove the .nk2 association with NK2Edit.
+
+
+<tr><td nowrap>
+/LogFile &lt;Log Filename&gt;
+<td>
+This command-line option can be used with /script , /import_address_book , /export_to_contacts, /sync_address_book, /generate_new_nk2, /import_csv_file, and  other
+command-line options.
+It creates a log file with information about any action made by NK2Edit and information about error 
+occurred during the process.
+
+<p>
+Examples:
+<br>
+nk2edit.exe /logfile &quot;import_address_book_log.txt&quot; /import_address_book &quot;contacts.nk2&quot; &quot;Contacts&quot; &quot;All&quot; 2000
+<br>
+NK2Edit.exe /logfile &quot;export_to_contacts_log.txt&quot; /export_to_contacts $default
+<br>
+NK2Edit.exe /logfile &quot;generate_new_nk2_log.txt&quot; /generate_new_nk2 &quot;generate_new.nk2&quot; 500 500 1 0 
+ 
+ 
+<tr><td nowrap>
+/LogFileAppend &lt;Log Filename&gt;
+<td>
+This command-line option is similar to the /LogFile command-line option.
+As opposed to the /LogFile command-line option that overwrites the log file if it already exists, this 
+command-line options appends the new log lines to the end of the existing file.
+
+<p>
+Examples:
+<br>
+nk2edit.exe /LogFileAppend &quot;import_address_book_log.txt&quot; /import_address_book &quot;contacts.nk2&quot; &quot;Contacts&quot; &quot;All&quot; 1000
+<br>
+NK2Edit.exe /LogFileAppend &quot;export_to_contacts_log.txt&quot; /export_to_contacts $default
+<br>
+NK2Edit.exe /LogFileAppend &quot;generate_new_nk2_log.txt&quot; /generate_new_nk2 &quot;generate_new.nk2&quot; 200 200 1 0 
+
+ 
+ 
+<tr><td nowrap>
+/CurrDirExe
+<td>
+Changes the current directory used for all other command-line options.
+<br>
+By default, when you specify a filename without a path (For example: NK2Edit.exe /script &quot;myscript.txt&quot; $default &quot;&quot;),
+NK2Edit searches the file in the current directory returned by Windows operating system. In most cases, the current directory is where the .exe
+file of NK2Edit is located, but in some other cases (For example, when running NK2Edit from RunOnce Registry key), the current directory might be different.
+<br>
+If /CurrDirExe is specified, NK2Edit will search the file in the same folder where NK2Edit.exe is located, even if the current directory of 
+Windows operating system is different.
+
+<p>
+Example:
+<br>
+nk2edit.exe /CurrDirExe /script &quot;myscript.txt&quot; $default &quot;&quot;
+
+<p>
+
+In the above example, myscript.txt will be loaded from the folder of nk2edit.exe, even if the current directory of Windows points to another location.
+
+ 
+<tr><td nowrap>
+/stext &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into a simple text file.
+
+<tr><td nowrap>
+/stab &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into a tab-delimited text file.
+
+<tr><td nowrap>
+/scomma &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into a comma-delimited text file.
+
+
+<tr><td nowrap>
+/stabular &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into a tabular text file.
+
+<tr><td nowrap>
+/shtml &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into HTML file (Horizontal).
+
+<tr><td nowrap>
+/sverhtml &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into HTML file (Vertical).
+
+<tr><td nowrap>
+/sxml &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries to XML file.
+
+<tr><td nowrap>
+/soutlook &lt;Filename&gt;
+<td>Export the list of all AutoComplete entries into a tab-delimited text file that can be used to import
+the emails/names list into the contacts of Outlook.
+
+<tr><td nowrap>
+/ssimplecsv &lt;Filename&gt;
+<td>
+Export the list of all AutoComplete entries into a simple comma-delimited file (csv) containing
+only the display name, email address, and address type.
+You can use the created file with <a href="import_nk2_addresses_csv_file.html">'Add Records From Simple csv File' option</a>
+to import the addresses into another NK2 file. 
+
+<tr><td nowrap>
+/sort &lt;column&gt;
+<td>
+This command-line option can be used with other save options for sorting by the desired column.
+If you don't specify this option, the list is sorted according to the last sort that you made from the user interface.
+The &lt;column&gt; parameter can specify the column index (0 for the first column, 1 for the second column, and so on) or
+the name of the column, like &quot;Email&quot; and &quot;Display Name&quot;.
+You can specify the '~' prefix character (e.g: &quot;~Display Name&quot;) if you want to sort in descending order.
+You can put multiple /sort in the command-line if you want to sort by multiple columns.
+<p>
+Examples:
+<br>nk2edit.exe /shtml &quot;f:\temp\nk2.html&quot; /sort 2 /sort ~1
+<br>nk2edit.exe /shtml &quot;f:\temp\nk2.html&quot; /sort &quot;~Type&quot; /sort &quot;Email&quot;
+
+<tr><td nowrap>
+/nosort 
+<td>
+When you specify this command-line option, the list will be saved without any sorting.
+
+
+
+
+</table>
+
+
+<p>
+<h4 class="utilsubject">More Command-Line Options</h4>
+The following command-line options can be used to override the configuration loaded from the nk2edit.cfg file:
+
+<table border="1" cellpadding="5" bordercolor="#000000">
+
+
+<tr><td nowrap>
+/AutoBackupOnFirstSave &lt;0 | 1&gt;
+<td>
+Automatically Backup On First Save. 0 = No, 1 = Yes.
+
+<tr><td nowrap>
+/OverwriteQuestion &lt;0 | 1&gt;
+<td>
+Overwrite Question Before Every Save. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/DeleteQuestion &lt;0 | 1&gt;
+<td>
+Ask Before Any Delete. 0 = No, 1 = Yes.
+
+
+
+<tr><td nowrap>
+/DiscardChangesQuestion &lt;0 | 1&gt;
+<td>
+Ask Before Discard Changes. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/ShowErrorMessagesOnOpen &lt;0 | 1&gt;
+<td>
+Error Messages On File Open. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/AddExportHeaderLine &lt;0 | 1&gt;
+<td>
+Add Header Line To CSV/Tab-Delimited File. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/UseAddressBookDefaultProfile &lt;0 | 1&gt;
+<td>
+Use Address Book Of Default Profile. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/MarkDuplicateRecords &lt;0 | 1&gt;
+<td>
+Mark Duplicate Records. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/UseSaveQuestion &lt;0 | 1&gt;
+<td>
+Save Question Instead of Discard Question. 0 = No, 1 = Yes.
+
+
+<tr><td nowrap>
+/EditMode &lt;1 | 2&gt;
+<td>
+Edit Mode.
+<p>
+1 = Raw Text Edit Mode, 2 = Table Edit Mode
+
+<tr><td nowrap>
+/MergeMode &lt;1 | 2 | 3&gt;
+<td>
+Merge Mode.
+<p>
+
+1 = Always Add New Records, 2 = If Email Exists - Overwrite, 3 = If Email Exists - Don't Add.
+
+<tr><td nowrap>
+/ExportCharEncoding  &lt;0 | 1 | 2 | 3&gt;
+<td>
+Specifies the characters encoding that will be used in the following export command-line options:
+/scomma , /stext , /shtml , /sverhtml , /sxml , /stab , /stabular , /soutlook , /ssimplecsv
+
+<p>
+0 = Default, 1 = UTF-8, 2 = UTF-16, 3 = Ascii
+
+
+
+</table>
+
+
+<p>
+<b><a href="outlook_nk2_edit.html">Return to NK2Edit introduction page</a></b>
+<p>
+
+<a name="end"></a>
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>
+

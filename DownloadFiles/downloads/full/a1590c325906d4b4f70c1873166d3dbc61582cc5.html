@@ -1,0 +1,961 @@
+<HTML>
+<HEAD>
+<TITLE>IECookiesView: Cookies viewer for Internet Explorer</TITLE>
+<meta name="keywords" content="cookies,cookie,manager,ie,internet explorer,view,delete,modify,edit,save,html,freeware">
+<meta name="description" content="Advanced cookies manager for Internet Explorer">
+<link rel="stylesheet" href="../main.css">
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/internet_explorer_cookies_view.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/internet_explorer_cookies_view.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+</HEAD>
+<BODY leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+
+<table border="0" class="utilcaption">
+<tr><td><img src="iecookies_icon.gif">
+<td>
+IECookiesView v1.79<br>
+Copyright (c) 2002 - 2017 Nir Sofer<br>
+</table>
+
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" async="async" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=nirsofer"></script>
+<!-- AddThis Button END -->
+
+
+
+<p>
+<h4 class="utilsubject">Related Utilities</h4>
+<ul>
+<li><a href="edge_cookies_view.html">EdgeCookiesView -  View cookies of Microsoft Edge Web browser</a> 
+<li><a href="chrome_cookies_view.html">ChromeCookiesView - View/delete cookies of Chrome Web browser</a> 
+</ul>
+
+
+
+<a name="description"></a>
+<h4 class="utilsubject">Description</h4>
+IECookiesView is a small utility that displays the details of all cookies that Internet Explorer 
+stores on your computer. 
+
+<br>
+In addition, It allows you to do the following actions: 
+<ul>
+<li>Sort the cookies list by any column you want, by clicking the column header. A second click sorts the column in descending order. 
+<li>Find a cookie in the list by specifying the name of the Web site. 
+<li>Select and delete the unwanted cookies.
+<li>Save the cookies to a readable text file.
+<li>Copy cookie information into the clipboard.
+<li>Automatically refresh the cookies list when a Web site sends you a cookie.
+<li>Display the cookies of other users and from other computers.
+<li>Open the IECookiesView utility directly from Internet Explorer toolbar.
+<li>Change the content of a cookie !
+<li>Export your cookies to Netscape/Mozilla cookies file. 
+<li>Block specific Web sites from using cookies through the cookies blocking mechanism of Internet Explorer 6.0.
+</ul>
+<p>
+<img src="iecv1.gif">
+<p>
+<a name="advantages"></a>
+<h4 class="utilsubject">Advantages of this utility</h4>
+
+<ul>
+<li> This utility is completely freeware ! You don't have to pay anything in order to continue using it.
+<li> The utility is a standalone executable. it doesn't require any additional DLLs, and installation is not required.
+<li> The executable (iecv.exe) is small and compact. Only 55KB !
+<li> If you have a network, you can watch the cookies of other computers, as long as you have a read permission on the cookies folder of other computers.  
+<li> On Windows NT/2000/XP, You can watch the cookies of other users on the same computer, as long as you have the right access permissions on the cookies folders. 
+</ul>
+
+<p>
+
+<a name="sysreq"></a>
+<h4 class="utilsubject">System Requirements</h4>
+<ul>
+<li>Windows operating system: Windows 95/98/ME, Windows NT, Windows 2000, Windows XP or Windows Vista.
+<li>Internet Explorer, Versions 4.0 - 9.0
+<li>There is only limited support for Internet Explorer 10.0, due to a change in the way that cookies index information is stored.
+</ul>
+
+
+<a name="license"></a>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. You can freely use and distribute it.
+If you distribute this utility, you must include all files in the distribution package including the readme.txt, without any modification !
+
+<p>
+<h4 class="utilsubject">Disclaimer</h4>
+The software is provided "AS IS" without any warranty, either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose. The author will not be liable for any special, incidental,
+consequential or indirect damages due to loss of data or any other reason. 
+
+<p>
+<h4 class="utilsubject">Notice for Windows 7/Vista users</h4>
+Windows 7 and Windows Vista has 2 cookies folders:
+<ul>
+<li>C:\Users\[User Name]\AppData\Roaming\Microsoft\Windows\Cookies
+<li>C:\Users\[User Name]\AppData\Roaming\Microsoft\Windows\Cookies\Low
+</ul>
+Depending on your UAC configuration, Windows may use the first folder or the second one.
+Sometimes, IECookiesView choose the wrong cookies folder, so if you see that the cookies are not updated, 
+you should manually choose the other cookies folder.
+ 
+
+<p>
+<a name="versions_history"></a>
+<h4 class="utilsubject">Versions History</h4>
+<table border="1" cellpadding="6" bordercolor="#000000">
+<tr class="utiltableheader"><th>Version<th>Date<th>Description
+
+<tr>
+<td>1.79
+<td>11/02/2017
+<td>
+<ul>
+<li>Fixed to read cookie files with .cookie extension (IE11 - version 11.576.14393.0).
+
+</ul>
+
+
+<tr>
+<td>1.78
+<td>01/02/2017
+<td>
+<ul>
+<li>Fixed issue: IECookiesView failed to read cookies properly on IE10/IE11 with Windows 7 if the cookies folder had an old index.dat file from
+previous versions of IE.
+
+</ul>
+
+
+<tr>
+<td>1.77
+<td>18/07/2014
+<td>
+<ul>
+<li>Fixed issue: IECookiesView displayed the date/time values of IE10/IE11 in GMT instead of local time.
+<li>Fixed to display date/time values according to daylight saving time settings. 
+</ul>
+
+
+<tr>
+<td>1.76
+<td>02/05/2014
+<td>
+<ul>
+<li>Fixed to remember the last selection on IE10/IE11.
+</ul>
+
+
+<tr>
+<td>1.75
+<td>06/04/2013
+<td>
+<ul>
+<li>Added limited support for Internet Explorer 10.0.
+On IE10, the cookies index file (index.dat), which stores information about every cookie file, is no longer used.
+Instead, the information is stored in .edb database which is locked for reading/writing by another process.
+
+Due to this change, when reading the cookies of IE10, the upper pane displays only partial information and some of the other features may not work properly.
+
+</ul>
+
+
+
+<tr>
+<td>1.74
+<td>24/03/2009
+<td>
+<ul>
+<li>Added more accelerator keys.
+</ul>
+
+
+
+<tr>
+<td>1.73
+<td>29/09/2008
+<td>
+<ul>
+<li>On Vista, IECookiesView now automatically goes into 'Low' subfolder if the base cookies folder is empty.
+</ul>
+
+<tr>
+<td>1.72
+<td>15/07/2008
+<td>
+<ul>
+<li>Fixed bug: The dates displayed in system locale, instead of user locale. 
+</ul>
+
+<tr>
+<td>1.71
+<td>21/12/2007
+<td>
+<ul>
+<li> The configuration is now saved to a file, instead of the Registry.
+</ul>
+
+<tr>
+<td>1.70
+<td>20/10/2004
+<td>
+<ul>
+<li>Added support for translating to other languages.
+<li>New accelerator keys added. 
+<li>New option: Check Index File Header.
+If this option is unchecked, an error message won't be displayed if the cookies index file 
+is corrupted.
+<li>Ads related domains list (ads.txt)- 
+The list of domains that IECookies use to identify advertising related cookies.
+This file is located in the same folder of IECookiesView, and you can freely add/remove
+domains to this list.
+<li>New column: Record Number. 
+<li>Added contents to the help file.
+</ul>
+
+<tr>
+<td>1.60
+<td>10/03/2004
+<td>
+<ul>
+<li>Automatically Save Selections: Allows you to automatically save your cookies selections
+when you exit from IECookiesView, and then load it again in the next time that you use IECookiesView.
+<li>New Delete/Destroy options: Allows you to delete all your cookies, except the cookies that you select.
+<li>Export cookies to Netscape/Mozilla cookies file.
+<li>'Beep On Change' option - Beep each time that there is a change in cookies. (In Auto Refresh mode)
+<li>All dialog-boxes are now automatically centered.
+
+</ul>
+
+<tr>
+<td>1.50
+<td>28/03/2003
+<td>
+<ul>
+	<li> Cookies Blocking/Allowing in version 6 of Internet Explorer
+	<li> Remember checked items after choosing other columns.
+	<li> New command-line options: /inst, /uninst, /user
+	<li> Sort by selection.
+	<li> Select by Domain/Site.
+	<li> The size of the executable was decreased to 80K.
+	<li> Save as tab-delimited file.
+	<li> Save / Load Selection.
+</ul>
+
+<tr>
+<td>1.40
+<td>12/01/2003
+<td>
+<ul>
+	<li>A new user interface for selecting cookies.
+	<li>Destroying a cookie: allows you to delete the cookie including the reference in the cookies index file (index.dat).
+	<li>A counter is shown on the status bar while loading the cookies.
+	<li>Fixed problem: After finding a cookie, the focus is not lost.  
+</ul>
+
+<tr>
+<td>1.30
+<td>30/10/2002
+<td>
+<ul>
+	<li> New column in the bottom sub-window: "Created In" - Tells you whether the cookie was created in the Web Server or in the client (Internet Explorer with JScript/VBScript).
+	<li> Improvement in identification of advertising related cookies (Ad column).
+	<li> New option: open the highlighted cookie file in Wordpad.
+	<li> After a cookie deletion: the focus is returned to the right place.
+	<li> Ability to change the cookie's content.
+	<li> Fixed bug: In previous version, the 'Secure' field in the bottom sub-window displayed wrong values in some circumstances.
+	<li> Each time you run IECookiesView, the cookies that has been modified and accessed since the last run, are marked in yellow and green colors.
+	<li> Improvement in user interface (Especially in tab orders).
+	<li> Improvement in domain parsing. (The domain column in the top sub-window)
+	<li> Open cookies folder in Explorer.
+	<li> Fixed Problem with the 'Tracks Eraser' utility: IECookies will allow you to view the cookies even if the index.dat file is corrupted.
+	<li> Pop-up menu in the bottom sub-window. 
+</ul>
+
+<tr>
+<td>1.20
+<td>05/08/2002
+<td>
+<ul>
+	<li> Pop-up menu in the top sub-window.
+	<li> Automatically remember your last settings (windows size, split location, column settings, and more...)  
+	<li> New option: open the highlighted cookie file in Notepad.
+	<li> Installation options in File menu.
+	<li> Choose Columns option in View menu: allows you to select the columns that you want to see in the top sub-window. (Like in Explorer of Windows 2000/XP)  
+	<li> "Obsolete Cookie Files" in View menu: allows you to view the cookies that are not listed in index.dat 
+	<li> New column in the top sub-window: "Ad" column - Automatically identifies advertising related cookies.
+	<li> New column in the top sub-window: "Domain" column - Shows the domain name of the cookies file.
+</ul>
+
+<tr>
+<td>1.10
+<td>26/06/2002
+<td>
+<ul>
+	<li> Windows 2000-style sort arrows in the columns headers. 
+	<li> New icons in the bottom window: expired cookies are shown with red icon.
+	<li> Copy cookies information into the clipboard. 
+	<li> View Duplicate references in index.dat
+	<li> Status column in the top sub-window.
+	<li> Default button in "Select Cookies Folder" dialog-box.
+	<li> Cookie property page.
+	<li> Adding a cookies button into the toolbar of Internet Explorer
+	<li> Open Internet Explorer window and connect the Web site of the highlighted cookie file.
+	<li> A little improvement in performances of cookies loading.
+	<li> /dir: command-line option: Run the IECookiesView utility with another cookies folder
+	<li> /mi command-line option. 
+	<li> Some changes and fixed bugs in modified/accessed/created dates.
+	<li> Fixed bug: In previous version, the default cookies directory for windows 95 was x:\windows\profiles\user-name\cookies instead of x:\windows\cookies.
+	<li> Fixed bug: In previous version, if you switched to "Auto Refresh" mode, and than
+	canceled it, by selecting it again from the menu, the window was continuing to automatically
+	refresh the cookies list, even if the "Auto Refresh" in the menu was unchecked. This bug is fixed on version 1.10
+	<li>Fixed bug: Error message when trying to load cookies from remote computer by using a UNC path (\\computer\folder)
+</ul>
+
+<tr>
+<td>1.00
+<td>06/06/2002
+<td>First Release
+
+</table>
+
+<p>
+<a name="start_using"></a>
+<h4 class="utilsubject">Start using the IECookiesView utility</h4>
+This utility is a standalone executable, and it doesn't require any installation process or 
+additional DLLs. In order to start using it, simply run the executable (iecv.exe)
+from any folder you want. If you have a network, you can put the executable on the server, allowing all the 
+workstations on the network to use this utility... And remember: No additional DLLs are required. As long as you have Internet Explorer (Version 4.0 and above) on your computer, it'll work !
+<p>
+If you want to create a shortcut to IECookiesView utility or to add a cookies button to Internet Explorer toolbar, you can easily do it by selecting the "Installation Options" option from the File menu.
+<p>
+If you have a previous version of IECookiesView, you can just overwrite the previous executable (iecv.exe), and start using the new one.
+<p>
+<h4 class="utilsubject">Uninstall IECookiesView</h4>
+The IECookiesView utility doesn't provide an uninstall module, but in most cases, you can remove it from your computer simply by deleting the files of IECookiesView (iecv.exe and iecv.chm).
+However, if you added a cookies icon into the toolbar of Internet Explorer (by using the "Installation Options" or /inst command-line option), you should remove it before you delete the IECookiesView utility.
+<br>
+There are 3 different ways to remove the cookies icon from the toolbar of Internet Explorer: (You have to use only one of them)
+<ul>
+<li>In the 'File' menu, select "Installation Options", verify that all 3 options are unchecked, and press the 'Ok' button.
+<li>Run IECookiesView with /uninst command-line option (iecv.exe /uninst)
+<li>In Internet Explorer application: Right-click on the main toolbar of Internet Explorer, and from the popup menu, select "Customize". In the "Customize Toolbar" window, remove the cookies icon from list of toolbar buttons.
+</ul>  
+<p>
+The first and the second options also remove the shortcuts to IECookiesView in the desktop and in the start-menu.
+<p>
+
+<a name="main_window"></a>
+<h4 class="utilsubject">The main window</h4>
+The main window of IECookiesView contains two sub-windows: 
+The top sub-window displays the list of all cookies files and their details. When you select (highlight) a cookies file in
+the top sub-window, its cookies are shown in the bottom sub-window. Each cookies file has at least one cookie line in the bottom sub-window, unless it's deleted or corrupted.
+You can increase and decrease the size of both windows by dragging the splitter to the right direction.
+
+
+<a name="top_subwindow"></a>
+<h4 class="utilsubject">The top sub-window</h4>
+The top sub-window displays the details of each cookies file in 11 different columns. <br>
+You can add, remove, or change the location of a column, by using the "Choose columns" option in the View menu.<br>
+The following table provides basic information about each available column: <br>
+<table border="1" cellpadding="6" bordercolor="#000000">
+<tr class="utiltableheader"><th> <nobr>Column Name</nobr> <th>Description
+<tr ><td>Web site <td> The Web site that use this cookies file.
+<tr><td>Hits <td> Number of times that the cookies file was accessed by the Web site. This value is increased by one in each time that the Web site receives information from the cookies file.
+<tr><td>Accessed Date <td>The last time that the cookies file was accessed by the Web site.
+<tr><td>Modified Date <td>The last time that the cookies file was modified by the Web site.
+<tr><td>Created Date <td>The time that the cookies file was originally created.
+<tr><td>Size <td> The size of the cookies file (in bytes)
+<tr><td>User <td> The logged-on user that accepted the cookie. For this column, there is a different between Windows 95/98/ME and Windows NT/2000/XP: <br>
+				  <ul>
+					<li><span class="special2">In Windows NT/2000/XP:</span>
+					Each user has a separated cookies folder, so the value in this column is always identical for all cookies. 
+					<li><span class="special2">In Windows 95/98/ME:</span> 
+					Unless you explicitly create new user profiles, all users share the same cookies folder (in c:\windows\cookies), and thus you can watch the cookies of all users on the system.
+				  </ul>
+
+<tr><td>Filename <td> the filename of this cookie in the cookies folder.
+
+<tr><td>Status <td>The status of the cookies file. It can be one of the following statuses:
+			<ul>
+				<li><span class="special2">Active: </span>The cookies file is active.  
+				<li><span class="special2">Deleted: </span>The cookies file was deleted. Deleted cookies files will be shown only if "Deleted Cookies Files" in the View menu is checked.
+				<li><span class="special2">Duplicate: </span>The record is a duplicate reference to the same cookies file. Duplicate references in the cookies index file are shown only if "Duplicate Records" in the View menu is checked.
+			</ul> 
+
+
+<tr><td>Ad <td>This column can help to identify unwanted advertising related cookies. <br>
+		This column can contain one of the following values:
+		<ul>
+		<li><span class="special2">Yes: </span>The cookie file was created by a known advertising Web site. 
+		IECookiesView uses the domains list in ads.txt for identifying the advertising related cookies.
+		<li><span class="special2">Suspect: </span>The Web site that created this cookie file is possibly related to advertising. 
+		IECookiesView identifies suspect Web sites by parsing the URL of the Web site. 
+		<li><span class="special2">Unknown: </span>IECookiesView cannot determine whether the cookie file was created by an advertising Web site. 
+		</ul> 
+<tr><td>Domain <td>In many cases, one Web site might create cookies with different host names. 
+		For example: yahoo.com might send you cookies with the following host names: groups.yahoo.com, local.yahoo.com, store.yahoo.com and more...<br>
+		This column displays the domain name of the Web site, by extracting it from the Web site name. 
+		If you sort the cookies list by this column, you can easily view all cookies of a specific Web site (e.g.: All cookies files of yahoo.com will be displayed in one chunk)
+		<br>
+		
+		 
+<tr><td>Record Number <td>
+Displays the record number inside the cookies index file (index.dat)
+
+</table>
+<p>
+When you click on a column header, the cookies files list is sorted by the clicked column. A second click sorts the column in descending order.
+<p>
+<a name="bottom_subwindow"></a>
+<h4 class="utilsubject">The bottom sub-window</h4>
+The bottom sub-window displays the details of the highlighted cookies file in 6 different columns: <br>
+<table border="1" cellpadding="6" bordercolor="#000000">
+<tr class="utiltableheader"><th> <nobr>Column Name</nobr> <th>Description
+<tr><td>Key<td> The name of the cookie
+<tr><td>Value<td> The value of the cookie
+<tr><td>Domain<td> The domain name. It usually the same as the Web site in the top sub-window.
+<tr><td>Secure<td> Specifies whether the cookie is secure.
+<tr><td>Expiration Date<td>the expiration date of the cookie.
+<tr><td>Modified Date<td>The last time that the cookie was modified by the Web site.
+<tr><td>Created In<td>Specifies where the cookie was created:
+<ul>
+	<li><span class="special2">Server: </span>The cookie was sent to the client by the Web Server.
+	<li><span class="special2">Client: </span>The cookie was created in the client (Internet Explorer) by using JavaScript or VBScript.
+</ul>
+</table>
+<p>
+When you click on a column header, the cookies list is sorted by the clicked column. A second click sorts the column in descending order.
+<br>
+Each line in the bottom sub-window contains an icon that indicates whether the cookie is expired or not. 
+If a cookie is expired, a red icon will be displayed. otherwise, a green icon will be displayed. 
+The expiration status is determined by comparing the expiration date of the cookie with the current local time of your computer.
+When a cookie is expired (red icon), the Web site cannot use it anymore, unless it sends a new cookie, with a new expiration date.
+<p>
+
+
+
+<a name="menu_bar"></a>
+<h4 class="utilsubject">The menu bar</h4>
+The following options are available in the menu bar:
+<ul>
+<li><span class="special8">File</span>
+	<ul>
+	<li><span class="special2">Change User: </span>Allows you to display the cookies of another user profile. 
+		This option is not available on Windows 95/98/ME, unless you explicitly add new user profiles from Control Panel. 
+	<li><span class="special2">Select Cookies Folder: </span>Allows you to display the cookies from another cookies folder. You can also select a cookies folder from another computer in a network.
+	<li><span class="special2">Open Cookies Folder In Explorer: </span>Open Explorer window with the current cookies folder.
+	<li><span class="special2">Installation Options: </span>Allows you to add or remove the following items: shortcut to IECookiesView on the desktop, shortcut to IECookiesView in the start menu, and the cookies button in the Internet Explorer toolbar.
+	<li><span class="special2">Open Web site: </span>Open Internet Explorer window and connect the Web site of the highlighted cookie file.  
+	<li><span class="special2">Open With Notepad: </span>Open the highlighted cookie file in Notepad.
+	<li><span class="special2">Open With Wordpad: </span>Open the highlighted cookie file in Wordpad.
+	<li><span class="special2">Save Current Selections: </span>Save the information about currently selected cookies files into a file. Later, you can select again the same cookies files, by loading the selections file.
+	<li><span class="special2">Load Selections File: </span>Select the cookies files, by using the information in a previously saved selections file. 
+	<li><span class="special2">Save Selected cookies Files: </span>Save the selected cookies files (in the top sub-window) into a readable text file or a tab-delimited text file.
+	<li><span class="special2">Export To Netscape/Mozilla File: </span>Export the selected cookies files (in the top sub-window) into a Netscape/Mozilla cookies file.
+	<li><span class="special2">Exit: </span>Exit from IECookiesView utility.
+	</ul>
+<li><span class="special8">Edit</span>
+	<ul>
+	<li><span class="special2">Copy Selected Cookies Files: </span>Copy the information about the selected cookies files into the clipboard. You can paste the copied information into Notepad, or any other text editor.
+	<li><span class="special2">Select By Domain or Web Site: </span>Select all cookies files created by specific domains or Web sites.  
+	<li><span class="special2">Select highlighted Items: </span>Select all items that are highlighted with blue color.  
+	<li><span class="special2">Deselect highlighted Items: </span>Deselect all items that are highlighted with blue color.
+	<li><span class="special2">Select All Items: </span>Select all cookies files in the top sub-window.
+	<li><span class="special2">Deselect All Items: </span>Deselect all cookies files in the top sub-window.
+	<li><span class="special2">Delete Selected Cookies Files: </span>Delete all selected cookies files. 
+	<li><span class="special2">Destroy Selected Cookies Files: </span>Delete all selected cookies files and the references to them in the cookies index file (index.dat). 
+	<li><span class="special2">Delete All Except The Selected Cookies:</span>Delete all your cookies files ,except the cookies that are currently selected.
+	<li><span class="special2">Destroy All Except The Selected Cookies:</span>Delete all your cookies and the references to them in the cookies index file ,except the cookies that are currently selected.
+	<li><span class="special2">Update Selected Cookies Files: </span>Update the information of the cookie file in the cookies index file (index.dat). You use this option if you modify a cookie file with external editor (like Notepad), and you want to force IE to use the modified file.
+	<li><span class="special2">Cookies Blocking Options  (IE6 Only !): </span>Block/Allow the selected cookies in Internet Explorer. For more details, read <a href="#blockie6">here</a>
+	<li><span class="special2">Find: </span>Find Cookies by specifying the domain of the Web site.
+	<li><span class="special2">Edit The Cookie's Content: </span>Allows you to edit the content of the highlighted cookie in the bottom sub-window.
+	</ul>
+
+<li><span class="special8">View</span>
+	<ul>
+	<li><span class="special2">Deleted cookies Files: </span>When you delete a cookies file, 
+		the sensitive data of the cookie is deleted, but the reference to the deleted cookies file is remained in the cookies index file (index.dat).
+		If this menu item is checked, the deleted cookies files are listed in the top sub-window. 
+	<li><span class="special2">Duplicate Records: </span>In some circumstances, duplicate references to the same cookies file are created in the cookies index file (index.dat) <br>
+			By default, IECookiesView displays only the latest reference of each cookies file, and hide all other duplicate references. 
+			You can view the duplicate references by selecting the "Duplicate Records" from the View menu. 
+			Be aware that duplicate records might contain wrong and obsolete information about the number of hits and accessed/created dates. 
+			<br>
+			The duplicate records are always marked with a special icon, and their status is always "Duplicate".	
+	<li><span class="special2">Obsolete Cookie Files: </span>In some circumstances, there are some obsolete cookie files in the cookies folder that Internet Explorer doesn't use them anymore, as well as they are not listed in the cookies index file (index.dat).
+	By default, IECookiesView doesn't display the obsolete cookie files. 
+	When you select the above option, All cookie files will be displayed, even if they are not listed in the cookies index file (index.dat)
+	
+	<p><span class="special7">Notice:</span> 
+	<ul>
+	<li> When you select this option, the other view options ("Deleted cookies Files" and "Duplicate Records") are automatically disabled. <br>
+		 i.e.: IECookiesView cannot display the obsolete cookies, together with duplicate records or with deleted cookies Files. 
+	<li> Some details of the obsolete cookie files are not shown as in regular cookie files, because the information is usually extracted from the cookies index file. <br>
+		 Also, the Web site name of obsolete cookie files is usually truncated or corrupted. 
+	<li> This option might slow the cookies loading process, especially in Windows 95/98.    
+	</ul>
+	<p>
+	
+	<li><span class="special2">Mark Modified Cookies: </span>If this option is selected, IECookiesView marks in green all the cookies files that has been modified or created since the last run of IECookiesView. You can clear these marks by using the 'Reset All Marks' option.
+	<li><span class="special2">Mark Accessed Cookies: </span>If this option is selected, IECookiesView marks in yellow all the cookies files that has been accessed since the last run of IECookiesView. You can clear these marks by using the 'Reset All Marks' option.
+	<li><span class="special2">Reset All Marks: </span>Reset all current marks of both last modified cookies and last accessed cookies. If cookies are modified or accessed while the IECookiesView is open, the cookies will be marked accordingly with yellow or green color.
+	
+	<li><span class="special2">Refresh Now: </span>Refresh the cookies list immediately.
+	<li><span class="special2">Sort By Selection: </span>Temporarily moves all selected cookies files to the top of the list. This option is useful if you want to view all the selected cookies files in one chunk.
+	<li><span class="special2">Choose Columns: </span>You can use this option for adding, removing, and changing the order of the columns in the top sub-window.
+	<li><span class="special2">Cookie Properties: </span>Shows the properties window of the current highlighted cookie in the bottom sub-window.
+	</ul>
+
+<li><span class="special8">Options</span>
+	<ul>
+
+	<li><span class="special2">Auto Refresh: </span>If this menu item is checked, the top sub-window will be automatically 
+		refreshed when a change in the cookies folder is detected. If a Web site sends you a new cookie while this menu item is checked, 
+		it'll be updated in the IECookiesView window after a few seconds. 
+		In order to easily view the latest changes in cookies, click the header of "Accessed Date" column, and the latest changes will be shown in the bottom of the cookie files list.
+	
+	<li><span class="special2">Beep On Change: </span>If this menu item is checked, a beep is sounded each time that there is a change in your cookies. (Only when in 'Auto Refresh' mode)
+	<li><span class="special2">Automatically Save Selections: </span>If this menu item is checked, your cookies selections are automatically saved, and loaded each time that you run IECokiesView.
+	The selections file is saved as 'cookies.ivs' under you cookies folder.
+	<li><span class="special2">Always On Top: </span>If this menu item is checked, the main window is always on top of all other windows. 
+	<li><span class="special2">Check Index File Header:</span>
+	If this option is checked, IECookiesView Displays an error message if the header of the cookies index file is corrupted.
+        This 'corrupted file' problem might occur if you use a 'system cleaning' tool that delete the header of the cookies index file.
+
+	</ul>
+</ul>
+<p>
+Some menu commands can also be activated by using the toolbar, or by pressing the right combination of 
+accelerator keys. For example: you can press the F5 key in order to refresh the top sub-window. 
+<br>
+You can also use the pop-up menu, by right-clicking on the top sub-window.
+<p>
+
+<a name="ie_toolbar"></a>
+<h4 class="utilsubject">Adding a cookies button into the toolbar of Internet Explorer</h4>
+IECookiesView allows you to add a cookies button into the Internet Explorer toolbar.
+When you click the cookies button, the IECookiesView utility will be shown on the screen.
+You can add and remove the cookies button in the Internet Explorer toolbar, by using the "Installation Options" in the File menu.
+In order to add the cookies button, check the following option in the Installation Options window: "Show a cookies button in the Internet Explorer toolbar"
+
+<p>
+<b>Limitations:</b><br>
+<ul>
+<li>When you add or remove the cookies button, the change will be shown only in the next time that you'll open a new window of Internet Explorer. You won't see the change in the current opened Internet Explorer windows.  
+<li>The cookies button is added only for the current logged-on user.
+<li>This option is available only for Internet Explorer 5.0 and above.
+</ul>
+<br>
+<img src="ietoolbar.gif">
+
+<p>
+<a name="props_win"></a>
+<h4 class="utilsubject">The cookie properties window</h4>
+When you want to focus on a specific cookie, you can double-click the desired cookie in the
+bottom sub-window and enter into the "Cookie Properties" window. <br>
+The "Cookie Properties" windows displays all information about the cookie, and 2 additional special fields: <br>  
+<ul>
+	<li><span class="special2">IP Address: </span>
+		Some web sites stores your IP address as a part of the cookie value. For example: If the value is 50.60.70.80.738234783.472348237, the IP address is 50.60.70.80<br>
+		If IECookiesView recognizes the IP address in the cookie value, it'll be shown in IP address field. Otherwise, this field will be remained empty.	
+	<li><span class="special2">Sub-Values: </span>
+		Some cookies stores more than one key-value pair in the same cookie. The multiple key-value pairs are usually stored in the following syntax: Key1=Value1&Key2=Value2&Key3=Value3...  <br> 
+		When this syntax is recognized by IECookiesView, the key-value pairs will be shown in the Sub-Values table.
+</ul>
+<p>
+<img src="iecv_cprops.gif">
+<p>
+<a name="cookie_edit"></a>
+<h4 class="utilsubject">Editing the content of a cookie</h4>
+Starting from version 1.3, IECookies allows you to modify the content of a single cookie. 
+You can change the key/value pair, the domain, the secure flag, and the expire/modified dates. <br>
+In order make a change in a cookie, follow the instructions below: 
+<ol>
+<li> Close <u>All</u> windows of Internet Explorer. 
+<li> In IECookiesView, press the F5 key to refresh the list of cookies files. 
+This action will insure that you have the latest snapshot of cookies from the cookies index file (index.dat).
+<li> In the top sub-window, highlight the cookies file that you want to modify.
+<li> In the bottom sub-window, highlight the cookie that you want to modify.
+<li> Select the "Edit The Cookie's Content" item from the Edit menu or from the pop-up menu of the bottom sub-window.
+<li> In the editing dialog, change the values according to your needs, and press "Modify Cookie" button.
+<li> You'll be asked if you want to modify the cookie. Choose 'Yes', and your changes will be saved to the cookies file. 
+<li> You can continue to modify other cookies as much as you need, but <u>don't use the Internet Explorer browser until you finish the cookies modifications</u>.
+</ol>
+<p>
+<img src="iecv_edit.gif">
+<p>
+<a name="blockie6"></a>
+<h4 class="utilsubject">Blocking/Allowing of cookies in IE6</h4>
+Starting from version 6.0, Internet Explorer give you more control over cookies, and allows you to block the cookies of specific Web sites, or even block all web sites from sending cookies, except a few specific Web sites. 
+<br>
+The IECookiesView utility allows you to block and enable the cookies of specific Web sites by using the cookies blocking mechanism of Internet Explorer.    
+All the cookies blocking options are available under the "Cookies Blocking Options" in the Edit menu.
+These options are enabled only if version 6.0 of Internet Explorer is installed on you computer.
+<br>
+The following options are available in the "Cookies Blocking Options" sub-menu:
+<br>
+<ul>
+	<li><span class="special2">Block Selected Cookies: </span>
+	Block the Web sites that created the selected cookies files. The cookies of these Web sites will not be accessible anymore, and additional cookies of these Web sites will not be accepted by Internet Explorer.  
+	<li><span class="special2">Allow Selected Cookies: </span>
+	Allow the Web sites that created the selected cookies files to use and create cookies. This option is useful if you want to block the cookies from all Web sites (By using the advanced privacy settings of IE), except a few cookies that you have to keep. 
+	<li><span class="special2">Remove Blocking/Allowing: </span>
+	Remove the Web sites that created the selected cookies files from the Blocking/Allowing list of Internet Explorer.
+	<li><span class="special2">Internet Privacy Options: </span>
+	Display and edit the privacy settings of Internet Explorer.
+</ul>
+<p>
+
+<h4 class="utilsubject">Selecting cookies of specific domains or Web sites</h4>
+If you want to handle together all cookies created by specific Web sites or domains, you can use the "Select By Domain or Web Site" option from the Edit menu.
+<p>
+<img src="selectby.gif">
+<p>
+You can select multiple domains at once, as shown in the above screenshot. After you press the "Ok" button, all cookies of the desired domains/sites are automatically selected.
+If you want to see all the selected sites in one chunk, check the "Sort by selection" check-box.
+<p>
+<h4 class="utilsubject">Saving and loading selections of cookies</h4>
+IECookiesView allows you to save the list of current selected cookies into a file, and then load the cookies selections again when you need it.
+In order to save the list of current selected cookies, use the "Save Current Selections" in the File menu.
+In order to load back the cookies selections, use the "Load Selections File" in the File menu.
+<br>
+Starting from version 1.60, IECookiesView automatically saves you last cookies selection, and
+loads it each time that you run IECookiesView. The selections file is saved as 'cookies.ivs' under your cookies folder.
+If you don't want that your cookies selections will be saved automatically, you can simply uncheck the 'Automatically Save Selections' under the View menu.
+ 
+<p>
+
+<a name="marked_cookies"></a>
+<h4 class="utilsubject">Marked cookies</h4>
+Each time you run IECookiesView, the cookies that has been modified and accessed since the last run, are marked in yellow and green colors. 
+The latest accessed cookies are marked with yellow color, and the latest modified/created cookies are marked with green color.
+You can clear all current marks by selecting the "Reset All Marks" item from the View menu. After you reset the marks, If cookies are modified or accessed again, they will be marked accordingly.
+If you want to totally stop the cookies marking, uncheck the "Mark Modified Cookies" and the "Mark Accessed Cookies" items in the View Menu.
+
+<p>
+<a name="del_cookies"></a>
+<h4 class="utilsubject">Deleting and destroying cookies</h4>
+IECookiesView provides 2 methods to delete your cookies:
+<ol>
+  <li><span class="special2">Delete Cookies Files:</span> When you delete a cookie with this method, the cookie file is deleted, but a dead reference to this cookie is remained in the cookies index file. (index.dat)
+  <li><span class="special2">Destroy Cookies Files:</span> When you destroy a cookie:
+  <ul>
+    <li> The cookie file is filled with null characters, in order to prevent the restoring of the file in the future.
+    <li> The cookie file is deleted.
+    <li> The reference to the deleted cookie file in the cookies index file is filled with null characters.
+  </ul>
+</ol>
+<p>
+In most cases, you should use the first method to the delete your cookies. 
+However, if you want to completely remove all traces of your cookies, you should carefully use the second method (destroy cookies). <br>
+Before using the "destroy" option, you must close all windows of Internet Explorer, and then refresh the cookies list (F5) in order to get the latest snapshot of the cookies in your system. 
+<p>
+
+
+<p>
+<a name="translating"></a>
+<h4 class="utilsubject">Translating IECookiesView to other languages</h4>
+In order to translate IECookiesView to other language, follow the instructions below:
+<ol>
+<li>Run IECookiesView with /savelangfile parameter:
+<br>
+iecv.exe /savelangfile
+<br>
+A file named iecv_lng.ini will be created in the folder of IECookiesView utility.
+<li>Open the created language file in Notepad or in any other text editor. 
+<li>Translate all string entries to the desired language.
+Optionally, you can also add your name and/or a link to your Web site. 
+(TranslatorName and TranslatorURL values) If you add this information, it'll be 
+used in the 'About' window. 
+ 
+<li>After you finish the translation, Run IECookiesView, and all translated 
+strings will be loaded from the language file.
+<br>If you want to run IECookiesView without the translation, simply rename the language file, or move 
+it to another folder. 
+
+</ol>
+
+<a name="command_line"></a>
+<h4 class="utilsubject">Command-Line Options</h4>
+
+<table border="1" cellpadding="6" bordercolor="#000000">
+<tr class="utiltableheader"><th>Command<th>Description
+<tr>
+<td>/mi
+<td>
+If you run the IECookiesView utility while one instance of the utility is already running, 
+the current instance of the utility will be shown, instead of creating a new instance of IECookiesView.
+<br>
+If you want to run more than one instance of IECookiesView at the same time, run the IECookiesView utility with "/mi" command-line parameter: <br>
+iecv.exe /mi
+ 
+<tr>
+<td>/dir folder
+<td>
+Starts IECookiesView utility with another cookies folder, instead of the default cookies folder.
+If the folder name contains one or more space characters, it must be enclosed in double quotes.
+<br>
+For example: <br>
+iecv.exe /dir &quot;C:\Documents and Settings\Administrator\Cookies&quot;
+<p>
+<tr>
+<td>/nsl
+<td>
+Starts IECookiesView without loading the settings from the previous time.
+
+<p>
+<tr>
+<td>/inst
+<td>
+Add shortcuts to IECookiesView in the desktop and in the start menu and
+add cookies icon into the toolbar of Internet Explorer.
+
+<p>
+<tr>
+<td>/uninst
+<td>
+Remove the shortcuts and the toolbar icon created by the '/inst' command-line option or by "Installation Options" window.
+<p>
+<tr>
+<td><nobr>/user &lt;User Name&gt;</nobr>
+<td>
+Starts IECookiesView with the cookies folder of another user.
+<br>
+For example:<br>
+/user admin1<br>
+</table>
+
+
+
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, you can send a message to <a href="mailto:nirsofer@yahoo.com">nirsofer@yahoo.com</a>
+
+
+
+
+<p>
+<table border="0" cellpadding="10" width="100%">
+<tr><td align="center">
+<a class="downloadline" href="internet_explorer_cookies_view.html">Read more about IECookiesView</a>
+
+<tr><td align="center">
+<a class="downloadline" href="iecv.zip">Download IECookiesView</a>
+
+
+
+
+</table>
+
+
+<p>
+<table>
+<tr>
+<td><a href="http://www.snapfiles.com/get/iecookies.html"><IMG src="http://www.snapfiles.com/linkedimg/r_snapfiles50-05.gif" alt="Rated 5 stars at SnapFiles"  border=0></a>
+<td><a href="http://www.SofoTex.com/download/software/5117.html" target="sofo"><img border="0" src="sofo5stars120x60.gif"></a>
+<td><A target="lockergnome" href="http://channels.lockergnome.com/windows/backissues/20020618.phtml" ><img border="0" src="http://www.lockergnome.com/images/award-2.gif"></A>
+
+</table>
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+	
+
+</BODY>
+</HTML>

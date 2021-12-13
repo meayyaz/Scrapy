@@ -1,0 +1,553 @@
+<html>
+<head>
+<title>Articles, Tips and Tricks, and more...</title>
+<link rel="stylesheet" href="../main.css">
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/articles/" />
+<link rel="canonical" href="https://www.nirsoft.net/articles/" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+<table class="title1">
+<tr><td>Articles, Tips and Tricks, and more...
+</table>
+<p>
+
+<table class="filestable" border="0" cellspacing="7" cellpadding="7">
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="send-email-message-on-failed-ping.html">How to send email message when a ping fails using the PingInfoView tool </a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-edge-history.html">View Edge Web browser history with BrowsingHistoryView tool</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="run-as-different-user.html">Run as different user from command line and GUI with AdvancedRun tool</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="check-password-strength.html">Check password strength on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-outlook-attachment.html">Search Outlook attachment with the OutlookAttachView tool</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-android-files-by-date.html">Search Android files by date from Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-windows-10-wifi-passwords.html">View Windows 10 wifi passwords</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="disable-usb-device-from-shortcut.html">Disable USB device from a shortcut on your desktop</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="list-android-folders.html">List folders of Android device from Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-files-on-android-device.html">Search files on Android device from Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="share-clipboard-between-computers.html">Share clipboard between computers on your network</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-windows-updates-remotely.html">How to view the installed Windows updates on remote computer</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-windows-10-update-history.html">View Windows 10 update history on local and remote computer</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="delete-chrome-history.html">Delete Chrome history records</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-event-log-by-id.html">Search Windows Event Log by Event ID</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="open-semicolon-delimited-file.html">Open semicolon delimited file on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="delete-firefox-cache-files.html">Delete Firefox cache files</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="delete-chrome-cookies.html">Delete Chrome cookies from command line and GUI</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="open-comma-delimited-program-output.html">Open comma-delimited text from output (stdout) of another program</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="convert-tab-delimited-comma-delimited.html">Convert tab delimited file to comma delimited (csv) file on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="convert-comma-delimited-tab-delimited.html">Convert comma delimited to tab delimited file on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-chrome-history-by-date.html">View Chrome history by date on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-firefox-history-by-date.html">View Firefox history by date on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-all-running-tasks.html">View all running tasks of Windows task scheduler</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="run-program-custom-environment-variables.html">Run a program with custom environment variables</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="close-all-windows-monitor.html">Close / minimize all windows on specific monitor from command-line</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="no-default-mail-client-outlook.html">Outlook Error: Either there is no default mail client or the current mail client cannot fulfill the messaging request...</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="connect-access-point-mac-address.html">Connect to access point by MAC address (BSSID) on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="connect-access-point-command-line.html">Connect to wireless access point from command line on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-text-multiple-pdf.html">Search text in multiple .pdf files</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="folder-size-summary-report.html">Create folder size summary report on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="turn-off-monitor.html">How to turn off monitor from GUI and command-line on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="open-tab-delimited-file.html">How to open tab delimited or comma delimited file on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="get-process-network-usage.html">How to get network usage of every process on Windows</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="extract-windows-updates-list-external-drive.html">How to extract Windows updates list from external drive</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-windows-updates-remotely.html">How to view the installed Windows updates on remote computer</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="application-consume-most-bandwidth.html">How to watch the application that consumes the most download bandwidth on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="which-application-most-disk-write.html">How to check which application has the most disk write activity on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="create-shortcut-mute-unmute-web-browser.html">How to create shortcut to mute and unmute your Web browser on Windows</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="set-audio-balance-command-line.html">How to set the left/right audio balance from command line on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="minimize-all-web-browser-windows-command-line.html">How to minimize all Web browser windows from command-line</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="close-all-explorer-windows-command-line.html">How to close all Explorer windows from command-line</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view-process-download-upload-speed.html">How to view the download and upload speed of every process on Windows</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="save-outlook-attachments-automatically.html">How to save outlook attachments automatically from command-line</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="disable-enable-uninstall-device-command-line.html">How to disable, enable, and uninstall a device from command-line on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="change-media-created-acquired-date-multiple-mp4.html">How to change the media created date and acquired date of multiple .mp4 files</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="tcp-ping-windows.html">How to send a TCP ping On Windows using PingInfoView</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="search-windows-registry-command-line.html">How to search Windows Registry from command line</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="export_windows_events_from_evtx_file.html">How to export Windows events stored in .evtx file to csv file from command line</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="export_windows_event_log_remote_computer.html">How to export Windows events of remote computer to csv file from command line</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="view_bssid_connected_access_point.html">How to view the BSSID of connected wireless access point</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="delete-old-outlook-addresses.html">How to delete old addresses from Outlook AutoComplete file</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="convert_ex_address_to_smtp_outlook.html">How to convert EX address to SMTP in Outlook AutoComplete file (For migration)</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="create_device_properties_shortcut.html">How to create a shortcut to device properties on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="run_application_without_elevation.html">How to force application to run without elevation on Windows 10/8/7/Vista</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="uninstall_software_remotely.html">How to uninstall software on remote Windows machine with UninstallView and PsExec tools</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="list_installed_applications_offline.html">How to list installed Windows applications offline (From external hard drive)</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="export_installed_programs_command_line.html">How to export installed programs list from command line on Windows</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="list_installed_applications_remote_computer.html">How to list applications installed on remote Windows computer</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="eject_disconnect_usb_device_command_line.html">How to eject / disconnect a USB device (Safely Remove Hardware) from command line on Windows</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="disable_enable_usb_device_command_line.html">How to disable and enable USB device from command-line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="increase-decrease-audio-volume-command-line.html">How to increase and decrease audio volume from command-line on Windows</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="mute_application_sound_command_line.html">How to mute and unmute application sound from command-line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="disable_enable_audio_device_command_line.html">How to disable and enable audio device from command-line on Windows operating system</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="set_default_audio_device_command_line.html">How to set default audio device from command line on Windows operating system</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="mute_speaker_command_line.html">How to mute and unmute your speaker from command-line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="mute_microphone_command_line.html">How to mute and unmute your microphone from command-line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="get_current_monitor_brightness.html">How to get the current brightness of your monitor from command line on Windows</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="set_monitor_speaker_volume_command_line.html">How to change the volume of your monitor speaker from command line on Windows operating system</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="change_monitor_contrast_command_line.html">How to change the contrast of your monitor from command line on Windows operating system</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="set_monitor_input_source_command_line.html">How to set monitor input source (VGA, DVI, HDMI) from command line on Windows operating system</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="turn_off_single_monitor_command_line.html">How to turn off and turn on a single monitor from command line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="change_monitor_brightness_command_line.html">How to change monitor brightness from command line on Windows operating system</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="copy_vpn_dialup_passwords_another_computer.html">How to easily copy your VPN / dialup passwords from one computer to another. </a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="move_wireless_keys_another_computer.html">How to move your wireless network keys from one computer to another</a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="recover_lost_gmail_password.html">How to Recover your lost Gmail password </a><br>
+
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="recover_lost_facebook_password.html">How to Recover your lost facebook password</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="recover-lost-forgot-password-from-windows.html">Recover lost password from Windows 7/XP/Vista/2003/2008</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="usb_remote_network_computer.html">View the USB devices plugged in a remote network computer</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="lost_adsl_isp_password.html">Recover lost ADSL password or other ISP password</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="outlook_autocomplete_stopped_working.html">What to do when Outlook AutoComplete stopped working</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="find_duplicate_files.html">Find duplicate files in your system with SearchMyFiles utility </a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="speak_from_command_line.html">Cause your computer to speak - from command-line </a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="extract_windows_xp_product_cd_key.html">Extracting product key of Windows XP that cannot boot</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="convert_html_to_image.html">Convert HTML report to image file (png/jpg/gif)</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="find_special_folder_location.html">Finding the location of all special folders in Windows</a><br>
+
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="hosting_company_web_site.html">Finding which Web hosting company hosts a Web site</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="saved_password_location.html">Password Storage Locations For Popular Windows Applications</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="printing_nirsoft_utilities.html">Printing data in NirSoft utilities</a><br>
+
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="find_registry_large_values.html">Viewing the list of the largest Registry values in your system </a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="find_modified_time_registry_key.html">Viewing the list of Registry keys modified in the last hours/days</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="mailto_bug.html">The mailto: bug</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="mute_volume_hotkey.html">Mute and unmute the system volume by pressing a key combination </a><br>
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="open_close_cdrom_hotkey.html">Open and close the CD-ROM door by pressing a key combination</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="ie7_passwords.html">Passwords In Internet Explorer 7</a><br>
+
+
+<tr class="filesrow"><td>
+<a class="filetitle" href="pst_password_bug.html">Bug in Outlook PST password protection</a><br>
+
+
+
+
+</table>
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+
+
+</html>

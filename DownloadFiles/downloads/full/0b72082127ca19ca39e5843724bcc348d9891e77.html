@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>NirBlog: Current AVG False Positives</title>
+
+  <script type="text/javascript">(function() { var a=window;function f(e){this.t={};this.tick=function(d,b,c){var i=c?c:(new Date).getTime();this.t[d]=[i,b]};this.tick("start",null,e)}var g=new f;a.jstiming={Timer:f,load:g};try{a.jstiming.pt=a.external.pageT}catch(h){};a.tickAboveFold=function(e){var d,b=e,c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}d=c;d<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){if(!j){j=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k); })();</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="generator" content="Blogger" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.blogger.com/favicon.ico"/>
+<link rel="alternate" type="application/atom+xml" title="NirBlog - Atom" href="http://www.nirsoft.net/blog/atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="NirBlog - RSS" href="http://www.nirsoft.net/blog/rss.xml" />
+<link rel="service.post" type="application/atom+xml" title="NirBlog - Atom" href="http://www.blogger.com/feeds/4304412731085068788/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=4304412731085068788" />
+<link rel="alternate" type="application/atom+xml" title="NirBlog - Atom" href="http://www.blogger.com/feeds/4304412731085068788/7071205474657712869/comments/default" />
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/3727950723-blog_controls.css"/> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=4304412731085068788&zx=4f28de51-0b4d-499d-abdf-9aa3689f3be7"/>
+
+  <style type="text/css">
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+
+
+body {
+  background:#f8f8f8;
+  margin:0;
+  padding:40px 20px;
+  font:x-small Arial,Serif;
+  text-align:center;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+a:link {
+  color:#58a;
+  text-decoration:none;
+  }
+a:visited {
+  color:#969;
+  text-decoration:none;
+  }
+a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+
+/* Header
+----------------------------------------------- */
+@media all {
+  #header {
+    width:850px;
+    margin:0 auto 10px;
+    border:1px solid #ccc;
+    }
+  }
+@media handheld {
+  #header {
+    width:90%;
+    }
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:200%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#666;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#c60;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:820px;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+/* Content
+----------------------------------------------- */
+@media all {
+  #content {
+    width:850px;
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+    }
+  #main {
+    width:550px;
+    float:left;
+    }
+  #sidebar {
+    width:220px;
+    float:right;
+    }
+  }
+@media handheld {
+  #content {
+    width:90%;
+    }
+  #main {
+    width:100%;
+    float:none;
+    }
+  #sidebar {
+    width:100%;
+    float:none;
+    }
+  }
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+@media all {
+  .date-header {
+    margin:1.5em 0 .5em;
+    }
+  .post {
+    margin:.5em 0 1.5em;
+    border-bottom:1px dotted #ccc;
+    padding-bottom:1.5em;
+    }
+  }
+@media handheld {
+  .date-header {
+    padding:0 1.5em 0 1.5em;
+    }
+  .post {
+    padding:0 1.5em 0 1.5em;
+    }
+  }
+.post-title {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:#4040ff;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  color:#333;
+  }
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post img {
+  padding:4px;
+  border:1px solid #ddd;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+  color:#666;
+  line-height:1.5em;
+  }
+
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:850px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Feeds
+----------------------------------------------- */
+#blogfeeds {
+  }
+#postfeeds {
+  }
+  </style>
+
+</head>
+
+<body>
+
+<div id="header">
+
+  <h1 id="blog-title">
+    <a href="http://www.nirsoft.net/blog/">
+	NirBlog
+	</a>
+  </h1>
+  <p id="description">The official blog of nirsoft.net</p>
+  <p>
+  <h1><font color="#ff0000">
+  NirBlog moved to a new address: <a href="http://blog.nirsoft.net">http://blog.nirsoft.net</a>	
+  </font>
+  </h1>
+  </p>
+
+</div>
+
+
+<!-- Begin #content -->
+<div id="content">
+
+
+<!-- Begin #main -->
+<div id="main"><div id="main2">
+
+
+
+    
+  <h2 class="date-header">Saturday, October 4, 2008</h2>
+  
+
+  
+     
+  <!-- Begin .post -->
+  <div class="post"><a name="7071205474657712869"></a>
+         
+    <h3 class="post-title">
+	 
+	 Current AVG False Positives
+	 
+    </h3>
+    
+
+	         <div class="post-body">
+	<div>
+      Messages like "You have a Virus in your software" are received into my Inbox on daily basis, and a lots of them comes from AVG Antivirus. So I decided to check the current status of AVG false positives, by scanning the utilities folder of my site.<br />First, I copied the utils folder of my site into a new place (I don't really want that AVG will touch my original site folder...), and then I allowed AVG Antivirus to scan the folder.<br />After AVG finished the scan, it splited the scan result into 2 categories: Infections and Spyware.<br />Most of the alerts on my utilities folder appeared under the 'Spyware' section.<br />I really would want to understand what is going in the minds of AVG guys when they decided to detect my software as Spyware.<br /><br />Anyway, I used my own <a href="http://www.nirsoft.net/utils/sysexp.html">SysExporter</a> utility to grab the scan result from AVG and display it as HTML. Luckily, <a href="http://www.nirsoft.net/utils/sysexp.html">SysExporter</a> is not detected as infection by AVG, otherwise, it wouldn't allow me to run and use it.<br />So here's the AVG "False Positive" list, the Spyware section:<br /><table border="1" cellpadding="5"><tbody><br /><tr><td bgcolor="#fffff0"> C:\Utils\asterie.zip </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.DOI<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\asterie.zip:\asterie.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.DOI<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\netpass.zip </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FAJ<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\netpass.zip:\netpass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FAJ<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\netpass_setup.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FAJ<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\netpass_setup.exe:\netpass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FAJ<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\netpass_setup.exe:\ziz1384.tmp:\netpass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FAJ<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\pspv.zip </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.CBX<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\pspv.zip:\pspv.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.CBX<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\sniffpass.zip </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FMT<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\sniffpass.zip:\SniffPass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FMT<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\sniffpass_setup.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FMT<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\sniffpass_setup.exe:\SniffPass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FMT<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\sniffpass_setup.exe:\ziz1384.tmp:\SniffPass.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.FMT<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\vncpassview.zip </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.EEI<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\vncpassview.zip:\VNCPassView.exe </td><td bgcolor="#fff0f0"> Potentially harmful program HackTool.EEI<br /></td></tr></tbody></table><br /><br /><p><br />And this one is the Infections section:<br /><table border="1" cellpadding="5"><tbody><br /><tr><td bgcolor="#fffff0"> C:\Utils\lsasecretsdump.zip </td><td bgcolor="#fff0f0"> Trojan horse Generic10.SZR<br /></td></tr><tr><td bgcolor="#fffff0"> C:\Utils\lsasecretsdump.zip:\LSASecretsDump.exe </td><td bgcolor="#fff0f0"> Trojan horse Generic10.SZR<br /></td></tr></tbody></table><br /><br /></p><p>And finally, here's another issue with AVG and other Antivirus software:<br />When you exit from the Antivirus software, it won't display any Virus/Trojan/Spyware warning, but the service of the Antivirus is still running in the background, and prohibits you from running any file that is detected as infected.<br />This mean that if you try to run one of my tools that are detected as Spyware/Virus while AVG application is not running, you'll get the following error message:<br />"Windows cannot access the specified device, path, or file. You may not have the appropriate permission to access the item".<br /><br /><a onblur1="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.nirsoft.net/blog/uploaded_images/avg_permission-716523.PNG"><img style="cursor: pointer;" src="http://www.nirsoft.net/blog/uploaded_images/avg_permission-716521.PNG" alt="" border="0" /></a></p><p>Most people that get this kind of error, think that there is a bug in my software, and don't know that the Antivirus is the one that cause the problem.<br /><br /></p>
+    </div>
+    </div>
+    
+    <p class="post-footer">
+      <em>posted by Nir Sofer at 
+    <a class="post-footer-link" href="http://www.nirsoft.net/blog/2008/10/current-avg-false-positives.html" title="permanent link"> 3:06 AM </a></em>
+        <span class="item-control blog-admin pid-723303040"><a style="border:none;" href="http://www.blogger.com/post-edit.g?blogID=4304412731085068788&postID=7071205474657712869" title="Edit Post"><img class="icon-action" alt="" src="http://www.blogger.com:80/img/icon18_edit_allbkg.gif" height="18" width="18"></a></span>
+    </p>
+  
+  </div>
+  <!-- End .post -->
+  
+  
+  
+  <!-- Begin #comments -->
+ 
+  <div id="comments">
+
+	<a name="comments"></a>
+        <h4>4 Comments:</h4>
+        <dl id="comments-block">
+      
+      <dt class="comment-poster" id="c1059020835764517849"><a name="c1059020835764517849"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://www.blogger.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/11076998656086183875" rel="nofollow">domestic empire</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>Avast anti virus (the Home version is free), makes far fewer false positives in my view. Never troubles me over legitimate software such as yours.<BR/><BR/>But I really came to say a big <B>THANK YOU Nir</B> for <B>OperaCacheView</B>. I wrote asking if such a untility was possible but never expected to see it so soon. Perhaps it was already in the planning?<BR/><BR/>I've blogged about it on my Opera blog <A HREF="http://my.opera.com/garywalsh/blog/2008/10/04/operacacheview-v1-05-from-nir-sofer" REL="nofollow">here</A>, and I shall do like wise at the Opera community forums, if I've not already been beaten me to it.<BR/><BR/>Many thanks (";)</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#1059020835764517849" title="comment permalink">October 4, 2008 4:57 PM</a>
+	  <span class="item-control blog-admin pid-911637380"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=4304412731085068788&postID=1059020835764517849" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c2377071544672238107"><a name="c2377071544672238107"></a>
+        <span style="line-height:16px" class="comment-icon blogger-comment-icon"><img src="http://www.blogger.com/img/b16-rounded.gif" alt="Blogger" style="display:inline;" /></span>&nbsp;<a href="http://www.blogger.com/profile/06278420557286965562" rel="nofollow">Irreligious</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>I can tell you what is going on in the minds of the AVG guys when they add your software as "spyware".  They're thinking some of the utilities can be used to reveal passwords or cache items, and so on...  Hence they are forensic tools and should be detected.<BR/><BR/>Other utilities such as NirCmd are detected because it can be used to kill processes.  Maybe it would help to imagine the case where a parent wanted to help prevent their child from using a utility to kill security or parental-control processes.<BR/><BR/>Most AV software I've used detects some of your software in this general manner, including the one I'm using now, Avira AntiVir Premium.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#2377071544672238107" title="comment permalink">October 6, 2008 8:03 AM</a>
+	  <span class="item-control blog-admin pid-277735527"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=4304412731085068788&postID=2377071544672238107" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c5451938816074341666"><a name="c5451938816074341666"></a>
+        <span style="line-height:16px" class="comment-icon openid-comment-icon"><img src="http://www.blogger.com/img/openid16-rounded.gif" alt="OpenID" style="display:inline;" /></span>&nbsp;<a href="http://openid.aol.com/r2mahara" rel="nofollow">r2mahara</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>I just tried to use NirCmd at work and got a Sophos alert that it was adware :-(</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#5451938816074341666" title="comment permalink">October 21, 2008 8:00 AM</a>
+	  <span class="item-control blog-admin pid-981864631"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=4304412731085068788&postID=5451938816074341666" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+      <dt class="comment-poster" id="c8126879243082721115"><a name="c8126879243082721115"></a>
+        <span style="line-height:16px" class="comment-icon openid-comment-icon"><img src="http://www.blogger.com/img/openid16-rounded.gif" alt="OpenID" style="display:inline;" /></span>&nbsp;<a href="http://openid.aol.com/xylog" rel="nofollow">xylog</a> said...
+      </dt>
+      <dd class="comment-body">
+
+        <p>Symantec Enpoint Protection 11 detects some of your utils as threats:<BR/><BR/>ï»¿Date and Time,Risk,Action,Filename,Risk Type,Original Location,Computer,User,Status,Current Location,Primary Action,Secondary Action,Logged By,Action Description<BR/>11/19/2008 7:07:07 AM,Trojan Horse,Quarantined,LSASecretsDump.exe,File,C:\Program Files\NirSoft\,Infected,Quarantine,Clean security risk,Quarantine,Auto-Protect scan,The file was quarantined successfully.<BR/>11/19/2008 6:54:50 AM,ProduKey,Access Denied,ProduKey.exe,Other,C:\Program Files\NirSoft\,Infected,C:\Program Files\NirSoft\,Quarantine,Leave alone (log only),Auto-Protect scan, <BR/>11/19/2008 6:54:48 AM,DialupPwd,Access Denied,dialupass2.exe,Other,C:\Program Files\NirSoft\,Infected,C:\Program Files\NirSoft\,Quarantine,Leave alone (log only),Auto-Protect scan, <BR/>11/19/2008 6:54:47 AM,Hacktool,Cleaned by deletion,rdpv.exe,File,C:\Program Files\NirSoft\,Deleted,Deleted,Clean security risk,Quarantine,Auto-Protect scan,The file was deleted successfully.<BR/>11/19/2008 6:54:46 AM,Trojan Horse,Quarantined,LSASecretsDump.exe,File,C:\Program Files\NirSoft\,Infected,Quarantine,Clean security risk,Quarantine,Auto-Protect scan,The file was quarantined successfully.<BR/>11/19/2008 6:54:46 AM,Hacktool,Cleaned by deletion,HeapMemView.exe,File,C:\Program Files\NirSoft\,Deleted,Deleted,Clean security risk,Quarantine,Auto-Protect scan,The file was deleted successfully.<BR/>11/19/2008 6:54:45 AM,Hacktool,Cleaned by deletion,asterwin.exe,File,C:\Program Files\NirSoft\,Deleted,Deleted,Clean security risk,Quarantine,Auto-Protect scan,The file was deleted successfully.<BR/>11/19/2008 6:54:45 AM,W32.IRCBot.Gen,Cleaned by deletion,pspv.exe,File,C:\Program Files\NirSoft\,Deleted,Deleted,Clean security risk,Quarantine,Auto-Protect scan,The file was deleted successfully.<BR/>11/19/2008 6:54:43 AM,Hacktool.PassReminder,Access Denied,mspass.exe,Hack Tools,C:\Program Files\NirSoft\,Infected,C:\Program Files\NirSoft\,Quarantine,Leave alone (log only),Auto-Protect scan, <BR/>11/8/2008 8:00:40 PM,Backdoor.Trojan,Log only,nwcwks.dll,File,Y:\xylog\,Log only,Y:\xylog\,Clean security risk,Quarantine,Auto-Protect scan,The file was left unchanged.<BR/>11/7/2008 11:12:18 PM,Backdoor.Trojan,Log only,nwcwks.dll,File,Y:\xylog\,Log only,Y:\xylog\,Clean security risk,Quarantine,Auto-Protect scan,The file was left unchanged.</p>
+      </dd>
+      <dd class="comment-timestamp"><a href="#8126879243082721115" title="comment permalink">November 19, 2008 7:12 AM</a>
+	  <span class="item-control blog-admin pid-1158500270"><a style="border:none;" href="http://www.blogger.com/delete-comment.g?blogID=4304412731085068788&postID=8126879243082721115" title="Delete Comment" ><span class="delete-comment-icon">&nbsp;</span></a></span>
+	  </dd>
+      
+    </dl>
+		<p class="comment-timestamp">
+
+    <div class='comment-form'>
+<a name='comment-form'></a>
+<h4>Post a Comment</h4><p></p>
+<a id='comment-editor-src' href='http://www.blogger.com/comment-iframe.g?blogID=4304412731085068788&postID=7071205474657712869'></a><iframe id='comment-editor' src='' class='blogger-iframe-colorize' width='100%' height='410' scrolling='no' frameborder='0' allowtransparency='true'></iframe>
+<script type="text/javascript" src="http://www.blogger.com/static/v1/jsbin/138310862-iframe_colorizer.js"></script>
+</div>
+    </p>
+    <p id="postfeeds">
+    
+  
+    </p>
+    	    
+    
+
+
+		<p class="comment-timestamp">
+	<a href="http://www.nirsoft.net/blog/">&lt;&lt; Home</a>
+    </p>
+    </div>
+
+
+
+  <!-- End #comments -->
+
+<script type="text/javascript" src="http://www.blogger.com/static/v1/common/js/327583163-csitaillib.js"></script>
+<script>if (typeof(window.attachCsiOnload) != 'undefined' && window.attachCsiOnload != null) { window.attachCsiOnload('ext_blogspot'); }</script>
+</div></div>
+<!-- End #main -->
+
+
+
+
+
+
+
+<!-- Begin #sidebar -->
+<div id="sidebar"><div id="sidebar2">
+  
+  
+  <!-- Begin #profile-container -->
+
+   
+  <!-- End #profile -->
+    
+        
+
+  
+  <h2 class="sidebar-title">Previous Posts</h2>
+    <ul id="recently">
+    
+        <li><a href="http://www.nirsoft.net/blog/2008/10/openedfilesview-hide-system-files.html">OpenedFilesView - Hide system files</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2008/09/webvideocap-now-captures-silverlight.html">WebVideoCap now captures Silverlight video streams...</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2008/09/currports-addrsss-and-port-in-same.html">CurrPorts - address and port in the same column</a></li>
+     
+        <li><a href="http://www.nirsoft.net/blog/2008/09/new-indicator-type-in-volumouse-on.html">New indicator type in Volumouse - On Screen Displa...</a></li>
+     
+  </ul>
+    
+
+      <p id="powered-by"><a href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></p>
+      <p id="blogfeeds">
+    <a href="http://www.nirsoft.net/blog/atom.xml"><img src="/feed.png" border="0"></a>
+  
+</p>
+	<p id="addthis">  
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">var addthis_pub  = "nirsofer";</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/button1-addthis.gif" width="125" height="16" border="0" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+</p>
+
+  <!--
+  <p>This is a paragraph of text that could go in the sidebar.</p>
+  -->
+  
+
+
+</div></div>
+<!-- End #sidebar -->
+
+
+</div>
+<!-- End #content -->
+
+
+
+<!-- Begin #footer -->
+<div id="footer"><hr />
+  <p><!--This is an optional footer. If you want text here, place it inside these tags, and remove this comment. -->&nbsp;</p>
+
+</div>
+<!-- End #footer -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+</body>
+</html>

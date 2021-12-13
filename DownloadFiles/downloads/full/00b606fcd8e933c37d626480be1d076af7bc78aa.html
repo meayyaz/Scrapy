@@ -1,0 +1,716 @@
+<!doctype html>
+<html>
+<head>
+<title>Windows Updates History Viewer</title>
+<meta name="keywords" content="Windows,Updates,History,view,remote,external,DataStore.edb, Windows 10">
+<meta name="description" content="Displays the history of Windows updates for your local system, remote system, or external drive">
+<link rel="stylesheet" href="../main.css">
+
+<meta property="og:title" content="Windows Updates History Viewer" />
+<meta property="og:description" content="Displays the history of Windows updates for your local system, remote system, or external drive" />
+<meta property="og:image" content="https://www.nirsoft.net/utils/windows_updates_history_viewer.png" />
+<meta property="og:image:width" content="751" />
+<meta property="og:image:height" content="452" />
+
+
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NirSoft" />
+<meta property="og:url" content="https://www.nirsoft.net/utils/windows_updates_history_viewer.html" />
+<link rel="canonical" href="https://www.nirsoft.net/utils/windows_updates_history_viewer.html" />
+<link rel="alternate" type="application/rss+xml" title="NirSoft Updates" href="https://feeds.feedburner.com/nirsoft/voiG">
+
+
+
+
+	
+
+
+
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td colspan="3" class="siteheader" height="50">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr style="height:10px">
+<td>
+<td>
+
+<tr>
+<td>
+<a href="//www.nirsoft.net">
+<img src="/nirsoft2.gif" border="0">
+</a>
+
+<td>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- NirSoft Top Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5286073190998405"
+     data-ad-slot="3603023613"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+
+
+<tr style="height:10px">
+<td>
+<td>
+
+
+</table>
+
+
+
+</td>
+</tr>
+
+
+<tr>
+<td valign="top" class="siteheader" style="width:170px">
+
+<table border="0" cellpadding="3" width="100%"  style="width:170px">
+<tr class="menub1"><td nowrap><a href="//www.nirsoft.net">Main Page</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="//blog.nirsoft.net">Blog</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/search_freeware.html">Search</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/faq.html">FAQ</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/top_utilities_downloads.html">TOP 10</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/pad">Pad Files</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/contact-new.html">Contact</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="/about_nirsoft_freeware.html">About...</a><br>
+</td></tr>
+<tr class="menub1"><td nowrap><a href="https://www.nirsoft.net/donate.html" style="color:#000080">Donate</a><br>
+</td></tr>
+</table>
+
+<table border="0" cellpadding="3" width="100%">
+<tr class="menub2"><td nowrap><a href="/utils/index.html">All Utilities</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/password_recovery_tools.html">Password Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/system_tools.html">System Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/web_browser_tools.html">Browser Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/programmer_tools.html">Programmer Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/network_tools.html">Network Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/outlook_office_software.html">Outlook/Office</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/x64_download_package.html">64-bit Download</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/panel">Panel</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/computer_forensic_software.html">Forensics</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/alpha">Pre-Release Tools</a><br>
+</td></tr>
+<tr class="menub2"><td nowrap><a href="/articles">Articles</a><br>
+</td></tr>
+
+</table>
+
+
+
+
+<p>
+
+<center>
+
+
+
+<script src="https://ap.lijit.com/www/delivery/fpi.js?z=701248&width=160&height=600"></script> 
+
+
+
+
+
+
+
+</center>
+
+
+
+</td>
+
+<td class="menutomain">&nbsp;
+</td>
+
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="toptomain" colspan="3">
+</td>
+<tr>
+<td style="width:7px">&nbsp;</td>
+<td valign="top">
+
+
+<table class="utilcaption">
+<tr>
+<td><img src="winupdatesview_icon.png"></td>
+
+<td>WinUpdatesView v1.16 - Windows Updates History Viewer 
+<br/>
+Copyright (c) 2019 - 2021 Nir Sofer
+
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+<p/>
+<h4 class="utilsubject">Description</h4>
+WinUpdatesView is a simple tool that displays the history of Windows updates on your system.
+WinUpdatesView can load the Windows updates history from your local system, using API, and it can also read and parse the Windows updates database file (DataStore.edb)
+from external drive or from remote computer on your network.
+<br/>
+For every Windows update history record,  WinUpdatesView displays the following fields:
+Title, Description, Install Date, Update Operation (Install, Uninstall, Not Started, In Progress), Operation Result (Succeeded, Succeeded With Errors, Failed, Aborted), Category, 
+Information URL, Support URL, Uninstall Notes, Client Application ID, Service ID, Update ID, Revision Number, Unmapped Result Code, Server Selection, hResult
+
+<p/>
+
+<img src="windows_updates_history_viewer.png" alt = "Windows Updates History Viewer Screenshot" />
+
+<p/>
+<h4 class="utilsubject">System Requirements</h4>
+This tool works on any version of Windows, starting from Windows XP, and up to Windows 10. Both 32-bit and 64-bit systems are supported.
+
+
+<p/>
+<h4 class="utilsubject">Versions History</h4>
+<ul class="spacelist">
+
+<li>Version 1.16
+<ul class="spacelist">
+<li>Added option to change the sorting column from the menu (View -> Sort By). Like the column header click sorting, if you click again the same sorting menu item, it'll switch between ascending and descending order. Also, if you hold down the shift key while choosing the sort menu item, you'll get a secondary sorting. 
+</li>
+
+</ul>
+
+</li>
+
+
+<li>Version 1.15
+<ul class="spacelist">
+<li>Fixed some display issues in high DPI mode. 
+</li>
+
+</ul>
+
+</li>
+
+
+
+
+
+<li>Version 1.14
+<ul class="spacelist">
+<li>Fixed the /cfg command-line option to load the .cfg file from the current directory if full path is not specified. 
+</li>
+
+<li>Added 'Copy Clicked Cell' option to the right-click context menu, which copies to the clipboard the text of cell that you right-clicked with the mouse. 
+</li>
+
+</ul>
+
+</li>
+
+
+
+<li>Version 1.13
+<ul class="spacelist">
+
+<li>Fixed the 'Hide Windows Defender Updates' option to work properly with the latest Windows Defender updates (The Category field is now 'Microsoft Defender Antivirus' instead of 'Windows Defender' )
+</li>
+
+
+<li>Added 'Save All Items' option (Shift+Ctrl+S).
+</li>
+
+
+</ul>
+
+</li>
+
+
+<li>Version 1.12
+<ul class="spacelist">
+<li>Added /cfg command-line option to start WinUpdatesView with the specified config file.
+
+
+</li>
+</ul>
+
+</li>
+
+
+
+<li>Version 1.11
+<ul class="spacelist">
+<li>Added 'KB Number' column.
+
+</li>
+</ul>
+
+</li>
+
+
+<li>Version 1.10
+<ul class="spacelist">
+<li>Added 'Hide Windows Defender Updates' option.
+</li>
+
+<li>Fixed to save the 'Case Sensitive' option of the Quick Filter in the .cfg file. 
+</li>
+
+</ul>
+
+</li>
+
+
+<li>Version 1.06
+<ul class="spacelist">
+<li>Added option to choose another font (name and size) to display in the main window. 
+
+</li>
+</ul>
+
+</li>
+
+<li>Version 1.05
+<ul class="spacelist">
+<li>Added 'Hide Items For API Compatibility' option. This option is added because when reading the Windows 10 updates database directly, there are more items than getting the Windows updates list using API.
+When this option is turned on, and WinUpdatesView reads the Windows 10 updates history database directly - it automatically hides items that are not provided by Windows API, so you'll get the same result for both API method and 
+database reading method.
+</li>
+
+<li>Added 'Show Time In GMT' option.
+</li>
+
+</ul>
+
+</li>
+
+<li>Version 1.00 - First release.
+</li>
+
+</ul>
+
+
+<p/>
+<h4 class="utilsubject">Start Using Windows Updates History Viewer</h4>
+WinUpdatesView doesn't require any installation process or additional DLL files. In order to start using it, simply run the executable file - WinUpdatesView.exe
+<br/>
+After running WinUpdatesView, it loads the Windows updates history from your local system, using API, and displays the information on the main window.
+You can select one or more items and then export them to csv/tab-delimited/HTML5/XML/JSON file (File -> 'Save Selected Items' or Ctrl+S ), or 
+you can copy them to the clipboard (Ctrl+C) and then paste them to Excel or other application.
+<p/>
+If you want to load the Windows updates history from another source (remote computer or external drive), go to the 'Advanced Options' window (F9) and 
+choose the desired options.
+
+
+
+<p/>
+<h4 class="utilsubject">Quick Filter</h4>
+If you want to search a specific Windows update, simply press Ctrl+Q, and in the 'Quick Filter' window, type the string you want to find,
+and WinUpdatesView will instantly display the Windows updates contain the string you typed.
+
+
+<p/>
+<h4 class="utilsubject">Getting Windows updates history from a remote computer</h4>
+You can view the Windows updates history of a remote computer, by opening the 'Advanced Options' window (F9), choosing 'Remote computer' in the 'Load From' combo-box and typing the remote computer name.
+<br/>
+
+In order to access the Windows updates database on the remote computer, you need a full admin access with admin share ( \\ComputerName\Admin$ ).
+<br/>
+Also, in many systems the Windows updates database is locked for reading, so in order to release the file, WinUpdatesView provides an option to 
+temporarily stop the Windows Update service. If you choose this option, WinUpdatesView automatically stops the
+Windows Update service on the remote computer if the database is locked, reads the database file, and then starts again the Windows Update service.
+<p/>
+<span class="special3">Warning !!</span> 
+You should not use 'Temporarily stop the Windows Updates service' option while updates are downloaded and installed, because stopping the Windows update service
+will disrupt the update process.
+<p/>
+
+
+
+
+<p/>
+<h4 class="utilsubject">Getting Windows updates history from external drive</h4>
+In order to load the Windows updates history from external drive, simply go to the 'Advanced Options' window (F9), choose 'External database file' in the 'Load From' combo-box and 
+then type the location of the database file. 
+You can find the Windows updates database file in Windows\SoftwareDistribution\DataStore\DataStore.edb
+
+
+<p/>
+<h4 class="utilsubject">Windows version on status bar</h4>
+The status bar displays the Windows version and build number taken from hal.dll, for both local computer and remote computer.
+Be aware that the displayed build number from hal.dll might be a little different from the build you see when using ver command. 
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Command-Line Options</h4>
+
+<table class="mytable1">
+
+
+
+<tr>
+<td class="tdnowrap">
+/cfg &lt;Filename&gt;
+</td>
+<td>
+Start WinUpdatesView with the specified configuration file.
+For example:
+<br>
+WinUpdatesView.exe /cfg &quot;c:\config\wuv.cfg&quot;
+<br>
+WinUpdatesView.exe /cfg &quot;%AppData%\WinUpdatesView.cfg&quot;
+</td>
+</tr>
+
+	
+	
+<tr>
+<td class="tdnowrap">
+/stext &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to a simple text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/stab &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to a tab-delimited text file.
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/scomma &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to a  comma-delimited text file (csv).
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/shtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to HTML5 file (Horizontal).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sverhtml &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to HTML5 file (Vertical).
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/sxml &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to XML file.
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/sjson &lt;Filename&gt;
+</td>
+
+<td>
+Save the Windows updates history to JSON file.
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/sort &lt;column&gt; 
+</td>
+
+<td>
+This command-line option can be used with other save options for sorting by the desired column. The &lt;column&gt;  parameter can specify the column index (0 for the first column, 1 for the second column, and so on) or the name of the column, like &quot;Install Date&quot; and &quot;Title&quot;. You can specify the '~' prefix character (e.g: &quot;~Description&quot;) if you want to sort in descending order. You can put multiple /sort in the command-line if you want to sort by multiple columns. 
+
+</td>
+</tr>
+
+
+
+<tr>
+<td class="tdnowrap">
+/LoadFrom &lt;Load From&gt;
+</td>
+<td>
+Specifies the type of data source to load:
+<br/>1 - Local computer, with API
+<br/>2 - Local computer, Read database file directly.
+<br/>3 - Load from external database file.
+<br/>4 - Load from remote computer.
+</td>
+</tr>
+
+<tr>
+<td class="tdnowrap">
+/ExternalFilename &lt;Filename&gt;
+</td>
+<td>
+Specifies the external database file (for using with /LoadFrom 3 )
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/ComputerName &lt;Filename&gt;
+</td>
+<td>
+Specifies the computer name (for using with /LoadFrom 4 )
+</td>
+</tr>
+
+
+<tr>
+<td class="tdnowrap">
+/StopWinUpdatesService &lt;0 | 1&gt;
+</td>
+<td>
+Specifies whether to temporarily stop the Windows Update service if the database file is locked. 0 = No, 1 = Yes.
+</td>
+</tr>
+
+
+
+
+
+
+
+</table>
+
+
+
+ 
+<p>
+<h4 class="utilsubject">Read more about using WinUpdatesView</h4>
+<ul  class="spacelist">
+
+<li><a href="https://www.nirsoft.net/articles/view-windows-10-update-history.html">View Windows 10 update history on local and remote computer</a>
+</li>
+
+<li><a href="https://www.nirsoft.net/articles/view-windows-updates-remotely.html">How to view the installed Windows updates on remote computer</a>
+</li>
+
+<li><a href="https://www.nirsoft.net/articles/extract-windows-updates-list-external-drive.html">How to extract Windows updates list from external drive</a>
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">License</h4>
+This utility is released as freeware. 
+You are allowed to freely distribute this utility via CD-ROM, DVD,
+Internet, or in any other way, as long as you don't charge anything for this and you don't
+sell it or distribute it as a part of commercial product.  
+If you distribute this utility, you must include all files in
+the distribution package, without any modification !
+
+
+
+
+
+<p/>
+<h4 class="utilsubject">Disclaimer</h4>
+The software is provided &quot;AS IS&quot; without any warranty, either expressed or implied,
+including, but not limited to, the implied warranties of merchantability and fitness
+for a particular purpose. The author will not be liable for any special, incidental,
+consequential or indirect damages due to loss of data or any other reason. 
+
+<p/>
+<h4 class="utilsubject">Feedback</h4>
+If you have any problem, suggestion, comment, or you found a bug in my utility, 
+you can send a message to <a href="mailto:support@nirsoft.net">support@nirsoft.net</a>
+
+
+
+
+<p/>
+
+<table class="downloadline1">
+<tr><td>
+<a href="winupdatesview.zip">Download WinUpdatesView (32-bit)</a>
+</td>
+</tr>
+
+
+<tr><td>
+<a href="winupdatesview-x64.zip">Download WinUpdatesView (64-bit)</a>
+</td>
+</tr>
+
+
+<tr><td>
+<a href="https://www.nirsoft.net/hash_check/?software=winupdatesview">Check Download MD5/SHA1/SHA256 Hashes</a>
+</td>
+</tr>
+
+
+</table>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+WinUpdatesView is also available in other languages. In order to change the language of 
+WinUpdatesView, download the appropriate language zip file, extract the 'winupdatesview_lng.ini', 
+and put it in the same folder that you Installed WinUpdatesView utility.
+<p/>
+<table class="mytable1"><tr class="utiltableheader">
+<th>Language</th><th>Translated By</th><th>Date</th><th>Version</th></tr>
+
+<tr><td><a href="trans/winupdatesview_brazilian_portuguese.zip">Brazilian Portuguese</a></td><td>igorruckert</td><td>10/11/2019</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/winupdatesview_dutch.zip">Dutch</a></td><td>Jan Verheijen</td><td>18/09/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_french.zip">French</a></td><td>Largo</td><td>07/11/2019</td><td>1.00</td></tr>
+
+<tr><td><a href="trans/winupdatesview_german.zip">German</a></td><td>
+<a href="https://www.wintotal.de/nirsoft-uebersetzungen/" target="trans">«Latino» auf WinTotal.de</a></td><td>17/09/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_greek.zip">Greek</a></td><td>
+<a href="https://www.geogeo.gr" target="trans">geogeo.gr</a></td><td>02/12/2019</td><td>1.05</td></tr>
+
+<tr><td><a href="trans/winupdatesview_hungarian.zip">Hungarian</a></td><td>
+<a href="http://dakadran.hu/" target="trans">DoWtHen</a></td><td>29/11/2019</td><td>1.05</td></tr>
+
+<tr><td><a href="trans/winupdatesview_italian.zip">Italian</a></td><td>Styb</td><td>21/09/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_japanese.zip">Japanese</a></td><td>
+<a href="https://pc.genkaku.in/" target="trans">maboroshin</a></td><td>27/10/2020</td><td>1.14</td></tr>
+
+<tr><td><a href="trans/winupdatesview_polish.zip">Polish</a></td><td>Hightower</td><td>20/09/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_russian.zip">Russian</a></td><td>Dmitry Yerokhin</td><td>17/09/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_schinese.zip">Simplified Chinese</a></td><td>
+<a href="http://dickmoore.cn" target="trans">DickMoore</a></td><td>11/04/2021</td><td>1.15</td></tr>
+
+<tr><td><a href="trans/winupdatesview_slovak.zip">Slovak</a></td><td>František Fico</td><td>08/10/2021</td><td>1.16</td></tr>
+
+<tr><td><a href="trans/winupdatesview_spanish.zip">Spanish</a></td><td>
+<a href="https://sites.google.com/site/rivica" target="trans">Ricardo A. Rivas</a></td><td>21/10/2020</td><td>1.14</td></tr>
+
+<tr><td><a href="trans/winupdatesview_tchinese.zip">Traditional Chinese</a></td><td>
+<a href="https://zhtwnet.com" target="trans">Danfong Hsieh</a></td><td>18/09/2021</td><td>1.16</td></tr>
+
+</table>
+<p/>
+
+
+<p class="belowdownloadlinespc"></p>
+
+
+</td>
+
+<td width="10">&nbsp;&nbsp;</td>
+</tr>
+
+</table>
+
+<p>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6647006-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+
+</html>
